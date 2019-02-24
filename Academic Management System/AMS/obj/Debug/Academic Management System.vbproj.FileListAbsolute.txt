@@ -72,3 +72,24 @@ C:\Users\bob\Documents\Visual Studio 2015\Projects\OLD_PROJECTS\Academic Managem
 C:\Users\bob\Documents\Visual Studio 2015\Projects\OLD_PROJECTS\Academic Management System\AMS\bin\Debug\GPA-Academic History Look Up.resx
 C:\Users\bob\Documents\Visual Studio 2015\Projects\OLD_PROJECTS\Academic Management System\AMS\bin\Debug\GPA-Academic History Look Up.Designer.vb
 C:\Users\bob\Documents\Visual Studio 2015\Projects\OLD_PROJECTS\Academic Management System\AMS\bin\Debug\GPA-Academic History Look Up.vb
+C:\Users\bob\Documents\Visual Studio 2015\Projects\Academic Management System\Academic Management System\AMS\bin\Debug\AMS.exe.config
+C:\Users\bob\Documents\Visual Studio 2015\Projects\Academic Management System\Academic Management System\AMS\obj\Debug\AMS.exe
+C:\Users\bob\Documents\Visual Studio 2015\Projects\Academic Management System\Academic Management System\AMS\obj\Debug\AMS.xml
+C:\Users\bob\Documents\Visual Studio 2015\Projects\Academic Management System\Academic Management System\AMS\obj\Debug\AMS.pdb
+C:\Users\bob\Documents\Visual Studio 2015\Projects\Academic Management System\Academic Management System\AMS\bin\Debug\GPA-Academic History Look Up.resx
+C:\Users\bob\Documents\Visual Studio 2015\Projects\Academic Management System\Academic Management System\AMS\bin\Debug\GPA-Academic History Look Up.Designer.vb
+C:\Users\bob\Documents\Visual Studio 2015\Projects\Academic Management System\Academic Management System\AMS\bin\Debug\GPA-Academic History Look Up.vb
+C:\Users\bob\Documents\Visual Studio 2015\Projects\Academic Management System\Academic Management System\AMS\bin\Debug\AMS.exe
+C:\Users\bob\Documents\Visual Studio 2015\Projects\Academic Management System\Academic Management System\AMS\bin\Debug\AMS.pdb
+C:\Users\bob\Documents\Visual Studio 2015\Projects\Academic Management System\Academic Management System\AMS\bin\Debug\AMS.xml
+C:\Users\bob\Documents\Visual Studio 2015\Projects\Academic Management System\Academic Management System\AMS\obj\Debug\Academic Management System.vbprojResolveAssemblyReference.cache
+C:\Users\bob\Documents\Visual Studio 2015\Projects\Academic Management System\Academic Management System\AMS\obj\Debug\AMS.Add_Course_Teacher_Student.resources
+C:\Users\bob\Documents\Visual Studio 2015\Projects\Academic Management System\Academic Management System\AMS\obj\Debug\AMS.Course_Registration.resources
+C:\Users\bob\Documents\Visual Studio 2015\Projects\Academic Management System\Academic Management System\AMS\obj\Debug\AMS.Form1.resources
+C:\Users\bob\Documents\Visual Studio 2015\Projects\Academic Management System\Academic Management System\AMS\obj\Debug\AMS.GPA_Academic_History_Look_Up.resources
+C:\Users\bob\Documents\Visual Studio 2015\Projects\Academic Management System\Academic Management System\AMS\obj\Debug\AMS.Main_Menu.resources
+C:\Users\bob\Documents\Visual Studio 2015\Projects\Academic Management System\Academic Management System\AMS\obj\Debug\AMS.Resources.resources
+C:\Users\bob\Documents\Visual Studio 2015\Projects\Academic Management System\Academic Management System\AMS\obj\Debug\AMS.Schedule_Look_Up.resources
+C:\Users\bob\Documents\Visual Studio 2015\Projects\Academic Management System\Academic Management System\AMS\obj\Debug\AMS.Search_Student_Teacher_Info.resources
+C:\Users\bob\Documents\Visual Studio 2015\Projects\Academic Management System\Academic Management System\AMS\obj\Debug\AMS.Update_Student_Teacher_Course_Info.resources
+C:\Users\bob\Documents\Visual Studio 2015\Projects\Academic Management System\Academic Management System\AMS\obj\Debug\Academic Management System.vbproj.GenerateResource.Cache
