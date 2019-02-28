@@ -91,7 +91,7 @@ Partial Class Update_Student_Teacher_Course_Info
         Me.UpdateCourseBTN = New System.Windows.Forms.Button()
         Me.RemoveCourseBTN = New System.Windows.Forms.Button()
         Me.LookUpBTNCourseInfo = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
+        Me.UpStuTeachCourInfoMMBTN = New System.Windows.Forms.Button()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.Update_Teacher_Info.SuspendLayout()
@@ -821,21 +821,21 @@ Partial Class Update_Student_Teacher_Course_Info
         Me.LookUpBTNCourseInfo.Text = "Look Up"
         Me.LookUpBTNCourseInfo.UseVisualStyleBackColor = True
         '
-        'Button10
+        'UpStuTeachCourInfoMMBTN
         '
-        Me.Button10.Location = New System.Drawing.Point(718, 330)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(132, 74)
-        Me.Button10.TabIndex = 145
-        Me.Button10.Text = "Main Menu"
-        Me.Button10.UseVisualStyleBackColor = True
+        Me.UpStuTeachCourInfoMMBTN.Location = New System.Drawing.Point(718, 330)
+        Me.UpStuTeachCourInfoMMBTN.Name = "UpStuTeachCourInfoMMBTN"
+        Me.UpStuTeachCourInfoMMBTN.Size = New System.Drawing.Size(132, 74)
+        Me.UpStuTeachCourInfoMMBTN.TabIndex = 145
+        Me.UpStuTeachCourInfoMMBTN.Text = "Main Menu"
+        Me.UpStuTeachCourInfoMMBTN.UseVisualStyleBackColor = True
         '
         'Update_Student_Teacher_Course_Info
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(862, 586)
-        Me.Controls.Add(Me.Button10)
+        Me.Controls.Add(Me.UpStuTeachCourInfoMMBTN)
         Me.Controls.Add(Me.TabControl1)
         Me.Name = "Update_Student_Teacher_Course_Info"
         Me.Text = "Update_Student_Teacher_Course_Info"
@@ -891,7 +891,7 @@ Partial Class Update_Student_Teacher_Course_Info
     Friend WithEvents UpdateCourseBTN As Button
     Friend WithEvents RemoveCourseBTN As Button
     Friend WithEvents LookUpBTNCourseInfo As Button
-    Friend WithEvents Button10 As Button
+    Friend WithEvents UpStuTeachCourInfoMMBTN As Button
     Friend WithEvents UpdatePrereqTxtBox As TextBox
     Friend WithEvents Prereq As Label
     Friend WithEvents Label25 As Label

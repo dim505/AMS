@@ -26,8 +26,7 @@ Partial Class Main_Menu
         Me.Course_RegistrationBTNMM = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.CourseHistory_GPALookUpBTN = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
+        Me.ReportBTN = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button2
@@ -59,38 +58,28 @@ Partial Class Main_Menu
         '
         'CourseHistory_GPALookUpBTN
         '
-        Me.CourseHistory_GPALookUpBTN.Location = New System.Drawing.Point(169, 200)
+        Me.CourseHistory_GPALookUpBTN.Location = New System.Drawing.Point(247, 200)
         Me.CourseHistory_GPALookUpBTN.Name = "CourseHistory_GPALookUpBTN"
         Me.CourseHistory_GPALookUpBTN.Size = New System.Drawing.Size(207, 108)
         Me.CourseHistory_GPALookUpBTN.TabIndex = 5
         Me.CourseHistory_GPALookUpBTN.Text = "Course History/GPA Look Up"
         Me.CourseHistory_GPALookUpBTN.UseVisualStyleBackColor = True
         '
-        'Button9
+        'ReportBTN
         '
-        Me.Button9.Location = New System.Drawing.Point(711, 200)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(153, 108)
-        Me.Button9.TabIndex = 8
-        Me.Button9.Text = "Schdule Look Up"
-        Me.Button9.UseVisualStyleBackColor = True
-        '
-        'Button11
-        '
-        Me.Button11.Location = New System.Drawing.Point(418, 200)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(195, 108)
-        Me.Button11.TabIndex = 10
-        Me.Button11.Text = "Transcript Look Up"
-        Me.Button11.UseVisualStyleBackColor = True
+        Me.ReportBTN.Location = New System.Drawing.Point(560, 200)
+        Me.ReportBTN.Name = "ReportBTN"
+        Me.ReportBTN.Size = New System.Drawing.Size(195, 108)
+        Me.ReportBTN.TabIndex = 10
+        Me.ReportBTN.Text = "Reports"
+        Me.ReportBTN.UseVisualStyleBackColor = True
         '
         'Main_Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1039, 492)
-        Me.Controls.Add(Me.Button11)
-        Me.Controls.Add(Me.Button9)
+        Me.Controls.Add(Me.ReportBTN)
         Me.Controls.Add(Me.CourseHistory_GPALookUpBTN)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Course_RegistrationBTNMM)
@@ -104,6 +93,5 @@ Partial Class Main_Menu
     Friend WithEvents Course_RegistrationBTNMM As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents CourseHistory_GPALookUpBTN As Button
-    Friend WithEvents Button9 As Button
-    Friend WithEvents Button11 As Button
+    Friend WithEvents ReportBTN As Button
 End Class

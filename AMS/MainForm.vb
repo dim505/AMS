@@ -9,8 +9,9 @@
 
     End Sub
 
-    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
-
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles ReportBTN.Click
+        Reports.Show()
+        Me.Hide()
     End Sub
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) 

@@ -164,7 +164,7 @@ Public Class Update_Student_Teacher_Course_Info
 
     End Sub
 
-    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles UpStuTeachCourInfoMMBTN.Click
 
 
         Me.Hide()

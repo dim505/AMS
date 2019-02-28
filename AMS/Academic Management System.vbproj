@@ -84,17 +84,11 @@
     <Compile Include="Course Registration.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GPA-Academic History Look Up.Designer.vb">
-      <DependentUpon>GPA-Academic History Look Up.vb</DependentUpon>
+    <Compile Include="Course_Grade_History Look Up.Designer.vb">
+      <DependentUpon>Course_Grade_History Look Up.vb</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
-    <Compile Include="GPA-Academic History Look Up.vb">
+    <Compile Include="Course_Grade_History Look Up.vb">
       <SubType>Form</SubType>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
@@ -120,23 +114,11 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Schedule Look Up.Designer.vb">
-      <DependentUpon>Schedule Look Up.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Schedule Look Up.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Search Student_Teacher Info.Designer.vb">
-      <DependentUpon>Search Student_Teacher Info.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Search Student_Teacher Info.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Settings.vb" />
-    <Compile Include="TranscriptLookUp.Designer.vb">
-      <DependentUpon>TranscriptLookUp.vb</DependentUpon>
+    <Compile Include="Reports.Designer.vb">
+      <DependentUpon>Reports.vb</DependentUpon>
     </Compile>
-    <Compile Include="TranscriptLookUp.vb">
+    <Compile Include="Reports.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Update Student_Teacher_Course Info.Designer.vb">
@@ -154,11 +136,8 @@
     <EmbeddedResource Include="Course Registration.resx">
       <DependentUpon>Course Registration.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GPA-Academic History Look Up.resx">
-      <DependentUpon>GPA-Academic History Look Up.vb</DependentUpon>
+    <EmbeddedResource Include="Course_Grade_History Look Up.resx">
+      <DependentUpon>Course_Grade_History Look Up.vb</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
@@ -167,16 +146,11 @@
     <EmbeddedResource Include="My Project\Resources.resx">
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Schedule Look Up.resx">
-      <DependentUpon>Schedule Look Up.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Search Student_Teacher Info.resx">
-      <DependentUpon>Search Student_Teacher Info.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TranscriptLookUp.resx">
-      <DependentUpon>TranscriptLookUp.vb</DependentUpon>
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Update Student_Teacher_Course Info.resx">
       <DependentUpon>Update Student_Teacher_Course Info.vb</DependentUpon>
