@@ -153,61 +153,64 @@ Partial Class Update_Student_Teacher_Course_Info
         '
         'UpStuIDTxtBox
         '
-        Me.UpStuIDTxtBox.Location = New System.Drawing.Point(193, 16)
+        Me.UpStuIDTxtBox.Location = New System.Drawing.Point(234, 11)
         Me.UpStuIDTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpStuIDTxtBox.Name = "UpStuIDTxtBox"
-        Me.UpStuIDTxtBox.Size = New System.Drawing.Size(140, 22)
+        Me.UpStuIDTxtBox.Size = New System.Drawing.Size(351, 22)
         Me.UpStuIDTxtBox.TabIndex = 139
         '
         'UpStuStateTxtBox
         '
-        Me.UpStuStateTxtBox.Location = New System.Drawing.Point(213, 216)
+        Me.UpStuStateTxtBox.Location = New System.Drawing.Point(234, 216)
         Me.UpStuStateTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpStuStateTxtBox.Name = "UpStuStateTxtBox"
-        Me.UpStuStateTxtBox.Size = New System.Drawing.Size(237, 22)
+        Me.UpStuStateTxtBox.Size = New System.Drawing.Size(351, 22)
         Me.UpStuStateTxtBox.TabIndex = 137
         '
         'UpStuCityTxtBox
         '
-        Me.UpStuCityTxtBox.Location = New System.Drawing.Point(213, 259)
+        Me.UpStuCityTxtBox.Location = New System.Drawing.Point(234, 259)
         Me.UpStuCityTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpStuCityTxtBox.Name = "UpStuCityTxtBox"
-        Me.UpStuCityTxtBox.Size = New System.Drawing.Size(237, 22)
+        Me.UpStuCityTxtBox.Size = New System.Drawing.Size(351, 22)
         Me.UpStuCityTxtBox.TabIndex = 136
         '
         'UpStuUpdateBTN
         '
-        Me.UpStuUpdateBTN.Location = New System.Drawing.Point(276, 388)
+        Me.UpStuUpdateBTN.Font = New System.Drawing.Font("Showcard Gothic", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.UpStuUpdateBTN.Location = New System.Drawing.Point(234, 388)
         Me.UpStuUpdateBTN.Name = "UpStuUpdateBTN"
-        Me.UpStuUpdateBTN.Size = New System.Drawing.Size(85, 38)
+        Me.UpStuUpdateBTN.Size = New System.Drawing.Size(165, 111)
         Me.UpStuUpdateBTN.TabIndex = 135
         Me.UpStuUpdateBTN.Text = "Update"
         Me.UpStuUpdateBTN.UseVisualStyleBackColor = True
         '
         'UpStuRemoveBTN
         '
-        Me.UpStuRemoveBTN.Location = New System.Drawing.Point(448, 388)
+        Me.UpStuRemoveBTN.Font = New System.Drawing.Font("Showcard Gothic", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.UpStuRemoveBTN.Location = New System.Drawing.Point(425, 388)
         Me.UpStuRemoveBTN.Name = "UpStuRemoveBTN"
-        Me.UpStuRemoveBTN.Size = New System.Drawing.Size(93, 38)
+        Me.UpStuRemoveBTN.Size = New System.Drawing.Size(171, 111)
         Me.UpStuRemoveBTN.TabIndex = 134
         Me.UpStuRemoveBTN.Text = "Remove"
         Me.UpStuRemoveBTN.UseVisualStyleBackColor = True
         '
         'UpStuLookUpBTN
         '
+        Me.UpStuLookUpBTN.Font = New System.Drawing.Font("Showcard Gothic", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.UpStuLookUpBTN.Location = New System.Drawing.Point(62, 388)
         Me.UpStuLookUpBTN.Name = "UpStuLookUpBTN"
-        Me.UpStuLookUpBTN.Size = New System.Drawing.Size(87, 38)
+        Me.UpStuLookUpBTN.Size = New System.Drawing.Size(150, 111)
         Me.UpStuLookUpBTN.TabIndex = 133
         Me.UpStuLookUpBTN.Text = "Look Up"
         Me.UpStuLookUpBTN.UseVisualStyleBackColor = True
         '
         'UpStuSSNTxtBox
         '
-        Me.UpStuSSNTxtBox.Location = New System.Drawing.Point(191, 97)
+        Me.UpStuSSNTxtBox.Location = New System.Drawing.Point(234, 101)
         Me.UpStuSSNTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpStuSSNTxtBox.Name = "UpStuSSNTxtBox"
-        Me.UpStuSSNTxtBox.Size = New System.Drawing.Size(259, 22)
+        Me.UpStuSSNTxtBox.Size = New System.Drawing.Size(351, 22)
         Me.UpStuSSNTxtBox.TabIndex = 132
         '
         'Label1
@@ -223,10 +226,10 @@ Partial Class Update_Student_Teacher_Course_Info
         '
         'UpStuAddressTxtBox
         '
-        Me.UpStuAddressTxtBox.Location = New System.Drawing.Point(193, 140)
+        Me.UpStuAddressTxtBox.Location = New System.Drawing.Point(234, 140)
         Me.UpStuAddressTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpStuAddressTxtBox.Name = "UpStuAddressTxtBox"
-        Me.UpStuAddressTxtBox.Size = New System.Drawing.Size(257, 22)
+        Me.UpStuAddressTxtBox.Size = New System.Drawing.Size(351, 22)
         Me.UpStuAddressTxtBox.TabIndex = 123
         '
         'Label12
@@ -264,10 +267,10 @@ Partial Class Update_Student_Teacher_Course_Info
         '
         'UpStuLNameTxtBox
         '
-        Me.UpStuLNameTxtBox.Location = New System.Drawing.Point(191, 71)
+        Me.UpStuLNameTxtBox.Location = New System.Drawing.Point(234, 74)
         Me.UpStuLNameTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpStuLNameTxtBox.Name = "UpStuLNameTxtBox"
-        Me.UpStuLNameTxtBox.Size = New System.Drawing.Size(142, 22)
+        Me.UpStuLNameTxtBox.Size = New System.Drawing.Size(351, 22)
         Me.UpStuLNameTxtBox.TabIndex = 119
         '
         'Label15
@@ -315,18 +318,18 @@ Partial Class Update_Student_Teacher_Course_Info
         '
         'UpStuFNameTxtBox
         '
-        Me.UpStuFNameTxtBox.Location = New System.Drawing.Point(193, 41)
+        Me.UpStuFNameTxtBox.Location = New System.Drawing.Point(234, 41)
         Me.UpStuFNameTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpStuFNameTxtBox.Name = "UpStuFNameTxtBox"
-        Me.UpStuFNameTxtBox.Size = New System.Drawing.Size(140, 22)
+        Me.UpStuFNameTxtBox.Size = New System.Drawing.Size(351, 22)
         Me.UpStuFNameTxtBox.TabIndex = 118
         '
         'UpStuPhoneNumTxtBox
         '
-        Me.UpStuPhoneNumTxtBox.Location = New System.Drawing.Point(234, 178)
+        Me.UpStuPhoneNumTxtBox.Location = New System.Drawing.Point(234, 179)
         Me.UpStuPhoneNumTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpStuPhoneNumTxtBox.Name = "UpStuPhoneNumTxtBox"
-        Me.UpStuPhoneNumTxtBox.Size = New System.Drawing.Size(216, 22)
+        Me.UpStuPhoneNumTxtBox.Size = New System.Drawing.Size(351, 22)
         Me.UpStuPhoneNumTxtBox.TabIndex = 124
         '
         'Label20
@@ -384,61 +387,64 @@ Partial Class Update_Student_Teacher_Course_Info
         '
         'UpTeachIDTxtBox
         '
-        Me.UpTeachIDTxtBox.Location = New System.Drawing.Point(193, 24)
+        Me.UpTeachIDTxtBox.Location = New System.Drawing.Point(234, 24)
         Me.UpTeachIDTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpTeachIDTxtBox.Name = "UpTeachIDTxtBox"
-        Me.UpTeachIDTxtBox.Size = New System.Drawing.Size(237, 22)
+        Me.UpTeachIDTxtBox.Size = New System.Drawing.Size(351, 22)
         Me.UpTeachIDTxtBox.TabIndex = 142
         '
         'UpTeachCityTxtBox
         '
-        Me.UpTeachCityTxtBox.Location = New System.Drawing.Point(213, 285)
+        Me.UpTeachCityTxtBox.Location = New System.Drawing.Point(234, 285)
         Me.UpTeachCityTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpTeachCityTxtBox.Name = "UpTeachCityTxtBox"
-        Me.UpTeachCityTxtBox.Size = New System.Drawing.Size(217, 22)
+        Me.UpTeachCityTxtBox.Size = New System.Drawing.Size(351, 22)
         Me.UpTeachCityTxtBox.TabIndex = 140
         '
         'UpTeachStateTxtBox
         '
-        Me.UpTeachStateTxtBox.Location = New System.Drawing.Point(213, 247)
+        Me.UpTeachStateTxtBox.Location = New System.Drawing.Point(234, 247)
         Me.UpTeachStateTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpTeachStateTxtBox.Name = "UpTeachStateTxtBox"
-        Me.UpTeachStateTxtBox.Size = New System.Drawing.Size(217, 22)
+        Me.UpTeachStateTxtBox.Size = New System.Drawing.Size(351, 22)
         Me.UpTeachStateTxtBox.TabIndex = 139
         '
         'UpTeachuPDATEBtn
         '
-        Me.UpTeachuPDATEBtn.Location = New System.Drawing.Point(289, 385)
+        Me.UpTeachuPDATEBtn.Font = New System.Drawing.Font("Showcard Gothic", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.UpTeachuPDATEBtn.Location = New System.Drawing.Point(234, 385)
         Me.UpTeachuPDATEBtn.Name = "UpTeachuPDATEBtn"
-        Me.UpTeachuPDATEBtn.Size = New System.Drawing.Size(85, 38)
+        Me.UpTeachuPDATEBtn.Size = New System.Drawing.Size(125, 105)
         Me.UpTeachuPDATEBtn.TabIndex = 138
         Me.UpTeachuPDATEBtn.Text = "Update"
         Me.UpTeachuPDATEBtn.UseVisualStyleBackColor = True
         '
         'UpTeachRemoveBtn
         '
-        Me.UpTeachRemoveBtn.Location = New System.Drawing.Point(461, 385)
+        Me.UpTeachRemoveBtn.Font = New System.Drawing.Font("Showcard Gothic", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.UpTeachRemoveBtn.Location = New System.Drawing.Point(412, 385)
         Me.UpTeachRemoveBtn.Name = "UpTeachRemoveBtn"
-        Me.UpTeachRemoveBtn.Size = New System.Drawing.Size(93, 38)
+        Me.UpTeachRemoveBtn.Size = New System.Drawing.Size(152, 105)
         Me.UpTeachRemoveBtn.TabIndex = 137
         Me.UpTeachRemoveBtn.Text = "Remove"
         Me.UpTeachRemoveBtn.UseVisualStyleBackColor = True
         '
         'UpTeachLookUpBtn
         '
+        Me.UpTeachLookUpBtn.Font = New System.Drawing.Font("Showcard Gothic", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.UpTeachLookUpBtn.Location = New System.Drawing.Point(75, 385)
         Me.UpTeachLookUpBtn.Name = "UpTeachLookUpBtn"
-        Me.UpTeachLookUpBtn.Size = New System.Drawing.Size(87, 38)
+        Me.UpTeachLookUpBtn.Size = New System.Drawing.Size(125, 105)
         Me.UpTeachLookUpBtn.TabIndex = 136
         Me.UpTeachLookUpBtn.Text = "Look Up"
         Me.UpTeachLookUpBtn.UseVisualStyleBackColor = True
         '
         'UpTeachSSNTxtBox
         '
-        Me.UpTeachSSNTxtBox.Location = New System.Drawing.Point(191, 123)
+        Me.UpTeachSSNTxtBox.Location = New System.Drawing.Point(234, 119)
         Me.UpTeachSSNTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpTeachSSNTxtBox.Name = "UpTeachSSNTxtBox"
-        Me.UpTeachSSNTxtBox.Size = New System.Drawing.Size(239, 22)
+        Me.UpTeachSSNTxtBox.Size = New System.Drawing.Size(351, 22)
         Me.UpTeachSSNTxtBox.TabIndex = 130
         '
         'Label2
@@ -454,10 +460,10 @@ Partial Class Update_Student_Teacher_Course_Info
         '
         'UpTeachAddressTxtBox
         '
-        Me.UpTeachAddressTxtBox.Location = New System.Drawing.Point(193, 166)
+        Me.UpTeachAddressTxtBox.Location = New System.Drawing.Point(234, 161)
         Me.UpTeachAddressTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpTeachAddressTxtBox.Name = "UpTeachAddressTxtBox"
-        Me.UpTeachAddressTxtBox.Size = New System.Drawing.Size(237, 22)
+        Me.UpTeachAddressTxtBox.Size = New System.Drawing.Size(351, 22)
         Me.UpTeachAddressTxtBox.TabIndex = 121
         '
         'Label3
@@ -495,10 +501,10 @@ Partial Class Update_Student_Teacher_Course_Info
         '
         'UpTeachLNameTxtBox
         '
-        Me.UpTeachLNameTxtBox.Location = New System.Drawing.Point(191, 84)
+        Me.UpTeachLNameTxtBox.Location = New System.Drawing.Point(234, 87)
         Me.UpTeachLNameTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpTeachLNameTxtBox.Name = "UpTeachLNameTxtBox"
-        Me.UpTeachLNameTxtBox.Size = New System.Drawing.Size(239, 22)
+        Me.UpTeachLNameTxtBox.Size = New System.Drawing.Size(351, 22)
         Me.UpTeachLNameTxtBox.TabIndex = 117
         '
         'Label6
@@ -546,10 +552,10 @@ Partial Class Update_Student_Teacher_Course_Info
         '
         'UpTeachFNameTxtBox
         '
-        Me.UpTeachFNameTxtBox.Location = New System.Drawing.Point(193, 59)
+        Me.UpTeachFNameTxtBox.Location = New System.Drawing.Point(234, 54)
         Me.UpTeachFNameTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpTeachFNameTxtBox.Name = "UpTeachFNameTxtBox"
-        Me.UpTeachFNameTxtBox.Size = New System.Drawing.Size(237, 22)
+        Me.UpTeachFNameTxtBox.Size = New System.Drawing.Size(351, 22)
         Me.UpTeachFNameTxtBox.TabIndex = 116
         '
         'UpTeachPhoneTxtBox
@@ -557,7 +563,7 @@ Partial Class Update_Student_Teacher_Course_Info
         Me.UpTeachPhoneTxtBox.Location = New System.Drawing.Point(234, 204)
         Me.UpTeachPhoneTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpTeachPhoneTxtBox.Name = "UpTeachPhoneTxtBox"
-        Me.UpTeachPhoneTxtBox.Size = New System.Drawing.Size(196, 22)
+        Me.UpTeachPhoneTxtBox.Size = New System.Drawing.Size(351, 22)
         Me.UpTeachPhoneTxtBox.TabIndex = 122
         '
         'Label9
@@ -606,7 +612,7 @@ Partial Class Update_Student_Teacher_Course_Info
         '
         'UpdatePrereqTxtBox
         '
-        Me.UpdatePrereqTxtBox.Location = New System.Drawing.Point(197, 371)
+        Me.UpdatePrereqTxtBox.Location = New System.Drawing.Point(253, 371)
         Me.UpdatePrereqTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpdatePrereqTxtBox.Name = "UpdatePrereqTxtBox"
         Me.UpdatePrereqTxtBox.Size = New System.Drawing.Size(311, 22)
@@ -636,18 +642,18 @@ Partial Class Update_Student_Teacher_Course_Info
         '
         'UpdateTeacherIDtxtbox
         '
-        Me.UpdateTeacherIDtxtbox.Location = New System.Drawing.Point(249, 135)
+        Me.UpdateTeacherIDtxtbox.Location = New System.Drawing.Point(255, 135)
         Me.UpdateTeacherIDtxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpdateTeacherIDtxtbox.Name = "UpdateTeacherIDtxtbox"
-        Me.UpdateTeacherIDtxtbox.Size = New System.Drawing.Size(259, 22)
+        Me.UpdateTeacherIDtxtbox.Size = New System.Drawing.Size(309, 22)
         Me.UpdateTeacherIDtxtbox.TabIndex = 158
         '
         'UpdateEndTimeTxtbox
         '
-        Me.UpdateEndTimeTxtbox.Location = New System.Drawing.Point(197, 329)
+        Me.UpdateEndTimeTxtbox.Location = New System.Drawing.Point(255, 335)
         Me.UpdateEndTimeTxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpdateEndTimeTxtbox.Name = "UpdateEndTimeTxtbox"
-        Me.UpdateEndTimeTxtbox.Size = New System.Drawing.Size(311, 22)
+        Me.UpdateEndTimeTxtbox.Size = New System.Drawing.Size(309, 22)
         Me.UpdateEndTimeTxtbox.TabIndex = 157
         '
         'Label24
@@ -663,23 +669,23 @@ Partial Class Update_Student_Teacher_Course_Info
         '
         'UpdateStartTimeTxtBox
         '
-        Me.UpdateStartTimeTxtBox.Location = New System.Drawing.Point(197, 288)
+        Me.UpdateStartTimeTxtBox.Location = New System.Drawing.Point(255, 294)
         Me.UpdateStartTimeTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpdateStartTimeTxtBox.Name = "UpdateStartTimeTxtBox"
-        Me.UpdateStartTimeTxtBox.Size = New System.Drawing.Size(311, 22)
+        Me.UpdateStartTimeTxtBox.Size = New System.Drawing.Size(309, 22)
         Me.UpdateStartTimeTxtBox.TabIndex = 155
         '
         'UpdateCorDesTxtBox
         '
-        Me.UpdateCorDesTxtBox.Location = New System.Drawing.Point(249, 199)
+        Me.UpdateCorDesTxtBox.Location = New System.Drawing.Point(255, 199)
         Me.UpdateCorDesTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpdateCorDesTxtBox.Name = "UpdateCorDesTxtBox"
-        Me.UpdateCorDesTxtBox.Size = New System.Drawing.Size(259, 22)
+        Me.UpdateCorDesTxtBox.Size = New System.Drawing.Size(309, 22)
         Me.UpdateCorDesTxtBox.TabIndex = 154
         '
         'UpdateDaysTaughttxtbox
         '
-        Me.UpdateDaysTaughttxtbox.Location = New System.Drawing.Point(197, 240)
+        Me.UpdateDaysTaughttxtbox.Location = New System.Drawing.Point(255, 249)
         Me.UpdateDaysTaughttxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpdateDaysTaughttxtbox.Name = "UpdateDaysTaughttxtbox"
         Me.UpdateDaysTaughttxtbox.Size = New System.Drawing.Size(311, 22)
@@ -709,10 +715,10 @@ Partial Class Update_Student_Teacher_Course_Info
         '
         'UpdateCourseNameTxtbox
         '
-        Me.UpdateCourseNameTxtbox.Location = New System.Drawing.Point(249, 165)
+        Me.UpdateCourseNameTxtbox.Location = New System.Drawing.Point(255, 165)
         Me.UpdateCourseNameTxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpdateCourseNameTxtbox.Name = "UpdateCourseNameTxtbox"
-        Me.UpdateCourseNameTxtbox.Size = New System.Drawing.Size(259, 22)
+        Me.UpdateCourseNameTxtbox.Size = New System.Drawing.Size(309, 22)
         Me.UpdateCourseNameTxtbox.TabIndex = 148
         '
         'Label26
@@ -739,10 +745,10 @@ Partial Class Update_Student_Teacher_Course_Info
         '
         'UpdateTeacherLastNametxtbox
         '
-        Me.UpdateTeacherLastNametxtbox.Location = New System.Drawing.Point(270, 80)
+        Me.UpdateTeacherLastNametxtbox.Location = New System.Drawing.Point(253, 80)
         Me.UpdateTeacherLastNametxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpdateTeacherLastNametxtbox.Name = "UpdateTeacherLastNametxtbox"
-        Me.UpdateTeacherLastNametxtbox.Size = New System.Drawing.Size(238, 22)
+        Me.UpdateTeacherLastNametxtbox.Size = New System.Drawing.Size(313, 22)
         Me.UpdateTeacherLastNametxtbox.TabIndex = 144
         '
         'Label28
@@ -769,18 +775,18 @@ Partial Class Update_Student_Teacher_Course_Info
         '
         'UpdateTeacherFirstNametxtbox
         '
-        Me.UpdateTeacherFirstNametxtbox.Location = New System.Drawing.Point(293, 47)
+        Me.UpdateTeacherFirstNametxtbox.Location = New System.Drawing.Point(253, 47)
         Me.UpdateTeacherFirstNametxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpdateTeacherFirstNametxtbox.Name = "UpdateTeacherFirstNametxtbox"
-        Me.UpdateTeacherFirstNametxtbox.Size = New System.Drawing.Size(215, 22)
+        Me.UpdateTeacherFirstNametxtbox.Size = New System.Drawing.Size(311, 22)
         Me.UpdateTeacherFirstNametxtbox.TabIndex = 143
         '
         'UpdateCourseIDtxtbox
         '
-        Me.UpdateCourseIDtxtbox.Location = New System.Drawing.Point(254, 18)
+        Me.UpdateCourseIDtxtbox.Location = New System.Drawing.Point(255, 18)
         Me.UpdateCourseIDtxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpdateCourseIDtxtbox.Name = "UpdateCourseIDtxtbox"
-        Me.UpdateCourseIDtxtbox.Size = New System.Drawing.Size(254, 22)
+        Me.UpdateCourseIDtxtbox.Size = New System.Drawing.Size(309, 22)
         Me.UpdateCourseIDtxtbox.TabIndex = 149
         '
         'Label30
@@ -796,36 +802,40 @@ Partial Class Update_Student_Teacher_Course_Info
         '
         'UpdateCourseBTN
         '
-        Me.UpdateCourseBTN.Location = New System.Drawing.Point(239, 436)
+        Me.UpdateCourseBTN.Font = New System.Drawing.Font("Showcard Gothic", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.UpdateCourseBTN.Location = New System.Drawing.Point(240, 413)
         Me.UpdateCourseBTN.Name = "UpdateCourseBTN"
-        Me.UpdateCourseBTN.Size = New System.Drawing.Size(85, 38)
+        Me.UpdateCourseBTN.Size = New System.Drawing.Size(145, 96)
         Me.UpdateCourseBTN.TabIndex = 141
         Me.UpdateCourseBTN.Text = "Update"
         Me.UpdateCourseBTN.UseVisualStyleBackColor = True
         '
         'RemoveCourseBTN
         '
-        Me.RemoveCourseBTN.Location = New System.Drawing.Point(467, 436)
+        Me.RemoveCourseBTN.Font = New System.Drawing.Font("Showcard Gothic", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.RemoveCourseBTN.Location = New System.Drawing.Point(404, 413)
         Me.RemoveCourseBTN.Name = "RemoveCourseBTN"
-        Me.RemoveCourseBTN.Size = New System.Drawing.Size(93, 38)
+        Me.RemoveCourseBTN.Size = New System.Drawing.Size(160, 96)
         Me.RemoveCourseBTN.TabIndex = 140
         Me.RemoveCourseBTN.Text = "Remove"
         Me.RemoveCourseBTN.UseVisualStyleBackColor = True
         '
         'LookUpBTNCourseInfo
         '
-        Me.LookUpBTNCourseInfo.Location = New System.Drawing.Point(51, 436)
+        Me.LookUpBTNCourseInfo.Font = New System.Drawing.Font("Showcard Gothic", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.LookUpBTNCourseInfo.Location = New System.Drawing.Point(50, 413)
         Me.LookUpBTNCourseInfo.Name = "LookUpBTNCourseInfo"
-        Me.LookUpBTNCourseInfo.Size = New System.Drawing.Size(87, 38)
+        Me.LookUpBTNCourseInfo.Size = New System.Drawing.Size(173, 96)
         Me.LookUpBTNCourseInfo.TabIndex = 139
         Me.LookUpBTNCourseInfo.Text = "Look Up"
         Me.LookUpBTNCourseInfo.UseVisualStyleBackColor = True
         '
         'UpStuTeachCourInfoMMBTN
         '
+        Me.UpStuTeachCourInfoMMBTN.Font = New System.Drawing.Font("Showcard Gothic", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.UpStuTeachCourInfoMMBTN.Location = New System.Drawing.Point(718, 330)
         Me.UpStuTeachCourInfoMMBTN.Name = "UpStuTeachCourInfoMMBTN"
-        Me.UpStuTeachCourInfoMMBTN.Size = New System.Drawing.Size(132, 74)
+        Me.UpStuTeachCourInfoMMBTN.Size = New System.Drawing.Size(132, 101)
         Me.UpStuTeachCourInfoMMBTN.TabIndex = 145
         Me.UpStuTeachCourInfoMMBTN.Text = "Main Menu"
         Me.UpStuTeachCourInfoMMBTN.UseVisualStyleBackColor = True

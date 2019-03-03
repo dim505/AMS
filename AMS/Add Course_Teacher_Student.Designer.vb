@@ -23,7 +23,7 @@ Partial Class Add_Course_Teacher_Student
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.AddCourStuTeaTabControl = New System.Windows.Forms.TabControl()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.PrereqTxtBox = New System.Windows.Forms.TextBox()
         Me.Prereq = New System.Windows.Forms.Label()
@@ -88,24 +88,24 @@ Partial Class Add_Course_Teacher_Student
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.TabControl1.SuspendLayout()
+        Me.AddCourStuTeaTabControl.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         Me.SuspendLayout()
         '
-        'TabControl1
+        'AddCourStuTeaTabControl
         '
-        Me.TabControl1.Controls.Add(Me.TabPage2)
-        Me.TabControl1.Controls.Add(Me.TabPage1)
-        Me.TabControl1.Controls.Add(Me.TabPage3)
-        Me.TabControl1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TabControl1.Location = New System.Drawing.Point(160, 60)
-        Me.TabControl1.Margin = New System.Windows.Forms.Padding(4)
-        Me.TabControl1.Name = "TabControl1"
-        Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(883, 544)
-        Me.TabControl1.TabIndex = 101
+        Me.AddCourStuTeaTabControl.Controls.Add(Me.TabPage2)
+        Me.AddCourStuTeaTabControl.Controls.Add(Me.TabPage1)
+        Me.AddCourStuTeaTabControl.Controls.Add(Me.TabPage3)
+        Me.AddCourStuTeaTabControl.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AddCourStuTeaTabControl.Location = New System.Drawing.Point(160, 60)
+        Me.AddCourStuTeaTabControl.Margin = New System.Windows.Forms.Padding(4)
+        Me.AddCourStuTeaTabControl.Name = "AddCourStuTeaTabControl"
+        Me.AddCourStuTeaTabControl.SelectedIndex = 0
+        Me.AddCourStuTeaTabControl.Size = New System.Drawing.Size(883, 544)
+        Me.AddCourStuTeaTabControl.TabIndex = 101
         '
         'TabPage2
         '
@@ -141,17 +141,17 @@ Partial Class Add_Course_Teacher_Student
         '
         'PrereqTxtBox
         '
-        Me.PrereqTxtBox.Location = New System.Drawing.Point(228, 379)
+        Me.PrereqTxtBox.Location = New System.Drawing.Point(277, 379)
         Me.PrereqTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.PrereqTxtBox.Name = "PrereqTxtBox"
-        Me.PrereqTxtBox.Size = New System.Drawing.Size(259, 34)
+        Me.PrereqTxtBox.Size = New System.Drawing.Size(264, 34)
         Me.PrereqTxtBox.TabIndex = 124
         '
         'Prereq
         '
         Me.Prereq.AutoSize = True
         Me.Prereq.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Prereq.Location = New System.Drawing.Point(81, 379)
+        Me.Prereq.Location = New System.Drawing.Point(76, 379)
         Me.Prereq.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Prereq.Name = "Prereq"
         Me.Prereq.Size = New System.Drawing.Size(76, 25)
@@ -162,7 +162,7 @@ Partial Class Add_Course_Teacher_Student
         '
         Me.Label25.AutoSize = True
         Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(77, 83)
+        Me.Label25.Location = New System.Drawing.Point(76, 83)
         Me.Label25.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(119, 25)
@@ -171,25 +171,25 @@ Partial Class Add_Course_Teacher_Student
         '
         'TeacherIDtxtbox
         '
-        Me.TeacherIDtxtbox.Location = New System.Drawing.Point(310, 83)
+        Me.TeacherIDtxtbox.Location = New System.Drawing.Point(277, 83)
         Me.TeacherIDtxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.TeacherIDtxtbox.Name = "TeacherIDtxtbox"
-        Me.TeacherIDtxtbox.Size = New System.Drawing.Size(177, 34)
+        Me.TeacherIDtxtbox.Size = New System.Drawing.Size(264, 34)
         Me.TeacherIDtxtbox.TabIndex = 121
         '
         'EndTimeTxtbox
         '
-        Me.EndTimeTxtbox.Location = New System.Drawing.Point(228, 337)
+        Me.EndTimeTxtbox.Location = New System.Drawing.Point(277, 337)
         Me.EndTimeTxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.EndTimeTxtbox.Name = "EndTimeTxtbox"
-        Me.EndTimeTxtbox.Size = New System.Drawing.Size(259, 34)
+        Me.EndTimeTxtbox.Size = New System.Drawing.Size(264, 34)
         Me.EndTimeTxtbox.TabIndex = 120
         '
         'Label24
         '
         Me.Label24.AutoSize = True
         Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.Location = New System.Drawing.Point(81, 343)
+        Me.Label24.Location = New System.Drawing.Point(76, 343)
         Me.Label24.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(104, 25)
@@ -198,33 +198,33 @@ Partial Class Add_Course_Teacher_Student
         '
         'StartTimeTxtBox
         '
-        Me.StartTimeTxtBox.Location = New System.Drawing.Point(228, 296)
+        Me.StartTimeTxtBox.Location = New System.Drawing.Point(277, 296)
         Me.StartTimeTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.StartTimeTxtBox.Name = "StartTimeTxtBox"
-        Me.StartTimeTxtBox.Size = New System.Drawing.Size(259, 34)
+        Me.StartTimeTxtBox.Size = New System.Drawing.Size(264, 34)
         Me.StartTimeTxtBox.TabIndex = 118
         '
         'CorDesTxtBox
         '
-        Me.CorDesTxtBox.Location = New System.Drawing.Point(280, 207)
+        Me.CorDesTxtBox.Location = New System.Drawing.Point(277, 207)
         Me.CorDesTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.CorDesTxtBox.Name = "CorDesTxtBox"
-        Me.CorDesTxtBox.Size = New System.Drawing.Size(255, 34)
+        Me.CorDesTxtBox.Size = New System.Drawing.Size(264, 34)
         Me.CorDesTxtBox.TabIndex = 117
         '
         'DaysTaughttxtbox
         '
-        Me.DaysTaughttxtbox.Location = New System.Drawing.Point(228, 248)
+        Me.DaysTaughttxtbox.Location = New System.Drawing.Point(277, 251)
         Me.DaysTaughttxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.DaysTaughttxtbox.Name = "DaysTaughttxtbox"
-        Me.DaysTaughttxtbox.Size = New System.Drawing.Size(259, 34)
+        Me.DaysTaughttxtbox.Size = New System.Drawing.Size(264, 34)
         Me.DaysTaughttxtbox.TabIndex = 116
         '
         'Label23
         '
         Me.Label23.AutoSize = True
         Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.Location = New System.Drawing.Point(81, 302)
+        Me.Label23.Location = New System.Drawing.Point(76, 302)
         Me.Label23.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(124, 25)
@@ -235,7 +235,7 @@ Partial Class Add_Course_Teacher_Student
         '
         Me.Label22.AutoSize = True
         Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.Location = New System.Drawing.Point(81, 257)
+        Me.Label22.Location = New System.Drawing.Point(76, 257)
         Me.Label22.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label22.Name = "Label22"
         Me.Label22.Size = New System.Drawing.Size(135, 25)
@@ -244,6 +244,7 @@ Partial Class Add_Course_Teacher_Student
         '
         'Register_Course
         '
+        Me.Register_Course.Font = New System.Drawing.Font("Showcard Gothic", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.Register_Course.Location = New System.Drawing.Point(143, 429)
         Me.Register_Course.Name = "Register_Course"
         Me.Register_Course.Size = New System.Drawing.Size(376, 55)
@@ -253,10 +254,10 @@ Partial Class Add_Course_Teacher_Student
         '
         'CourseNameTxtbox
         '
-        Me.CourseNameTxtbox.Location = New System.Drawing.Point(228, 117)
+        Me.CourseNameTxtbox.Location = New System.Drawing.Point(277, 119)
         Me.CourseNameTxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.CourseNameTxtbox.Name = "CourseNameTxtbox"
-        Me.CourseNameTxtbox.Size = New System.Drawing.Size(259, 34)
+        Me.CourseNameTxtbox.Size = New System.Drawing.Size(264, 34)
         Me.CourseNameTxtbox.TabIndex = 104
         '
         'Label12
@@ -274,7 +275,7 @@ Partial Class Add_Course_Teacher_Student
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(77, 50)
+        Me.Label14.Location = New System.Drawing.Point(76, 50)
         Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(201, 25)
@@ -283,10 +284,10 @@ Partial Class Add_Course_Teacher_Student
         '
         'TeacherLastNametxtbox
         '
-        Me.TeacherLastNametxtbox.Location = New System.Drawing.Point(310, 50)
+        Me.TeacherLastNametxtbox.Location = New System.Drawing.Point(277, 44)
         Me.TeacherLastNametxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.TeacherLastNametxtbox.Name = "TeacherLastNametxtbox"
-        Me.TeacherLastNametxtbox.Size = New System.Drawing.Size(177, 34)
+        Me.TeacherLastNametxtbox.Size = New System.Drawing.Size(264, 34)
         Me.TeacherLastNametxtbox.TabIndex = 100
         '
         'Label15
@@ -304,7 +305,7 @@ Partial Class Add_Course_Teacher_Student
         '
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(81, 207)
+        Me.Label18.Location = New System.Drawing.Point(76, 207)
         Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(196, 25)
@@ -313,25 +314,25 @@ Partial Class Add_Course_Teacher_Student
         '
         'TeacherFirstNametxtbox
         '
-        Me.TeacherFirstNametxtbox.Location = New System.Drawing.Point(310, 14)
+        Me.TeacherFirstNametxtbox.Location = New System.Drawing.Point(277, 8)
         Me.TeacherFirstNametxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.TeacherFirstNametxtbox.Name = "TeacherFirstNametxtbox"
-        Me.TeacherFirstNametxtbox.Size = New System.Drawing.Size(177, 34)
+        Me.TeacherFirstNametxtbox.Size = New System.Drawing.Size(264, 34)
         Me.TeacherFirstNametxtbox.TabIndex = 99
         '
         'CourseIDtxtbox
         '
-        Me.CourseIDtxtbox.Location = New System.Drawing.Point(270, 161)
+        Me.CourseIDtxtbox.Location = New System.Drawing.Point(277, 161)
         Me.CourseIDtxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.CourseIDtxtbox.Name = "CourseIDtxtbox"
-        Me.CourseIDtxtbox.Size = New System.Drawing.Size(217, 34)
+        Me.CourseIDtxtbox.Size = New System.Drawing.Size(264, 34)
         Me.CourseIDtxtbox.TabIndex = 105
         '
         'Label20
         '
         Me.Label20.AutoSize = True
         Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(81, 161)
+        Me.Label20.Location = New System.Drawing.Point(76, 161)
         Me.Label20.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(109, 25)
@@ -369,17 +370,17 @@ Partial Class Add_Course_Teacher_Student
         '
         'AddTchIDtxtbox
         '
-        Me.AddTchIDtxtbox.Location = New System.Drawing.Point(309, 148)
+        Me.AddTchIDtxtbox.Location = New System.Drawing.Point(324, 165)
         Me.AddTchIDtxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.AddTchIDtxtbox.Name = "AddTchIDtxtbox"
-        Me.AddTchIDtxtbox.Size = New System.Drawing.Size(259, 34)
+        Me.AddTchIDtxtbox.Size = New System.Drawing.Size(352, 34)
         Me.AddTchIDtxtbox.TabIndex = 136
         '
         'Label26
         '
         Me.Label26.AutoSize = True
         Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label26.Location = New System.Drawing.Point(175, 157)
+        Me.Label26.Location = New System.Drawing.Point(175, 174)
         Me.Label26.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(33, 25)
@@ -398,33 +399,33 @@ Partial Class Add_Course_Teacher_Student
         '
         'TCitytxtbox
         '
-        Me.TCitytxtbox.Location = New System.Drawing.Point(340, 309)
+        Me.TCitytxtbox.Location = New System.Drawing.Point(324, 324)
         Me.TCitytxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.TCitytxtbox.Name = "TCitytxtbox"
-        Me.TCitytxtbox.Size = New System.Drawing.Size(228, 34)
+        Me.TCitytxtbox.Size = New System.Drawing.Size(351, 34)
         Me.TCitytxtbox.TabIndex = 133
         '
         'TStatetxtbox
         '
-        Me.TStatetxtbox.Location = New System.Drawing.Point(329, 265)
+        Me.TStatetxtbox.Location = New System.Drawing.Point(324, 282)
         Me.TStatetxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.TStatetxtbox.Name = "TStatetxtbox"
-        Me.TStatetxtbox.Size = New System.Drawing.Size(238, 34)
+        Me.TStatetxtbox.Size = New System.Drawing.Size(352, 34)
         Me.TStatetxtbox.TabIndex = 132
         '
         'TSSNtxtbox
         '
-        Me.TSSNtxtbox.Location = New System.Drawing.Point(307, 106)
+        Me.TSSNtxtbox.Location = New System.Drawing.Point(322, 123)
         Me.TSSNtxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.TSSNtxtbox.Name = "TSSNtxtbox"
-        Me.TSSNtxtbox.Size = New System.Drawing.Size(259, 34)
+        Me.TSSNtxtbox.Size = New System.Drawing.Size(352, 34)
         Me.TSSNtxtbox.TabIndex = 131
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(173, 115)
+        Me.Label1.Location = New System.Drawing.Point(173, 132)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(57, 25)
@@ -433,6 +434,7 @@ Partial Class Add_Course_Teacher_Student
         '
         'RegisterTeacher
         '
+        Me.RegisterTeacher.Font = New System.Drawing.Font("Showcard Gothic", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.RegisterTeacher.Location = New System.Drawing.Point(240, 431)
         Me.RegisterTeacher.Name = "RegisterTeacher"
         Me.RegisterTeacher.Size = New System.Drawing.Size(376, 55)
@@ -442,17 +444,17 @@ Partial Class Add_Course_Teacher_Student
         '
         'TAddresstxtbox
         '
-        Me.TAddresstxtbox.Location = New System.Drawing.Point(309, 190)
+        Me.TAddresstxtbox.Location = New System.Drawing.Point(324, 207)
         Me.TAddresstxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.TAddresstxtbox.Name = "TAddresstxtbox"
-        Me.TAddresstxtbox.Size = New System.Drawing.Size(259, 34)
+        Me.TAddresstxtbox.Size = New System.Drawing.Size(352, 34)
         Me.TAddresstxtbox.TabIndex = 121
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(173, 16)
+        Me.Label2.Location = New System.Drawing.Point(173, 33)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(116, 25)
@@ -474,7 +476,7 @@ Partial Class Add_Course_Teacher_Student
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(173, 64)
+        Me.Label3.Location = New System.Drawing.Point(173, 81)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(115, 25)
@@ -483,17 +485,17 @@ Partial Class Add_Course_Teacher_Student
         '
         'TLNametxtbox
         '
-        Me.TLNametxtbox.Location = New System.Drawing.Point(307, 64)
+        Me.TLNametxtbox.Location = New System.Drawing.Point(322, 81)
         Me.TLNametxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.TLNametxtbox.Name = "TLNametxtbox"
-        Me.TLNametxtbox.Size = New System.Drawing.Size(261, 34)
+        Me.TLNametxtbox.Size = New System.Drawing.Size(354, 34)
         Me.TLNametxtbox.TabIndex = 117
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(173, 196)
+        Me.Label4.Location = New System.Drawing.Point(173, 213)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(92, 25)
@@ -504,7 +506,7 @@ Partial Class Add_Course_Teacher_Student
         '
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(173, 309)
+        Me.Label16.Location = New System.Drawing.Point(173, 326)
         Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(50, 25)
@@ -515,7 +517,7 @@ Partial Class Add_Course_Teacher_Student
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(173, 271)
+        Me.Label5.Location = New System.Drawing.Point(173, 288)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(63, 25)
@@ -524,25 +526,25 @@ Partial Class Add_Course_Teacher_Student
         '
         'TFNametxtbox
         '
-        Me.TFNametxtbox.Location = New System.Drawing.Point(309, 16)
+        Me.TFNametxtbox.Location = New System.Drawing.Point(324, 33)
         Me.TFNametxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.TFNametxtbox.Name = "TFNametxtbox"
-        Me.TFNametxtbox.Size = New System.Drawing.Size(259, 34)
+        Me.TFNametxtbox.Size = New System.Drawing.Size(352, 34)
         Me.TFNametxtbox.TabIndex = 116
         '
         'TPhoneNumbertxtbox
         '
-        Me.TPhoneNumbertxtbox.Location = New System.Drawing.Point(350, 228)
+        Me.TPhoneNumbertxtbox.Location = New System.Drawing.Point(324, 245)
         Me.TPhoneNumbertxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.TPhoneNumbertxtbox.Name = "TPhoneNumbertxtbox"
-        Me.TPhoneNumbertxtbox.Size = New System.Drawing.Size(217, 34)
+        Me.TPhoneNumbertxtbox.Size = New System.Drawing.Size(352, 34)
         Me.TPhoneNumbertxtbox.TabIndex = 122
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(173, 225)
+        Me.Label6.Location = New System.Drawing.Point(173, 242)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(155, 25)
@@ -580,10 +582,10 @@ Partial Class Add_Course_Teacher_Student
         '
         'StuIDTxtBox
         '
-        Me.StuIDTxtBox.Location = New System.Drawing.Point(307, 121)
+        Me.StuIDTxtBox.Location = New System.Drawing.Point(331, 121)
         Me.StuIDTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.StuIDTxtBox.Name = "StuIDTxtBox"
-        Me.StuIDTxtBox.Size = New System.Drawing.Size(259, 34)
+        Me.StuIDTxtBox.Size = New System.Drawing.Size(351, 34)
         Me.StuIDTxtBox.TabIndex = 137
         '
         'Label27
@@ -599,26 +601,26 @@ Partial Class Add_Course_Teacher_Student
         '
         'StuCityTBox
         '
-        Me.StuCityTBox.Location = New System.Drawing.Point(351, 342)
+        Me.StuCityTBox.Location = New System.Drawing.Point(331, 342)
         Me.StuCityTBox.Margin = New System.Windows.Forms.Padding(4)
         Me.StuCityTBox.Name = "StuCityTBox"
-        Me.StuCityTBox.Size = New System.Drawing.Size(217, 34)
+        Me.StuCityTBox.Size = New System.Drawing.Size(351, 34)
         Me.StuCityTBox.TabIndex = 135
         '
         'StuStateTBox
         '
-        Me.StuStateTBox.Location = New System.Drawing.Point(351, 298)
+        Me.StuStateTBox.Location = New System.Drawing.Point(331, 298)
         Me.StuStateTBox.Margin = New System.Windows.Forms.Padding(4)
         Me.StuStateTBox.Name = "StuStateTBox"
-        Me.StuStateTBox.Size = New System.Drawing.Size(217, 34)
+        Me.StuStateTBox.Size = New System.Drawing.Size(351, 34)
         Me.StuStateTBox.TabIndex = 134
         '
         'StuSSNTBox
         '
-        Me.StuSSNTBox.Location = New System.Drawing.Point(307, 163)
+        Me.StuSSNTBox.Location = New System.Drawing.Point(331, 163)
         Me.StuSSNTBox.Margin = New System.Windows.Forms.Padding(4)
         Me.StuSSNTBox.Name = "StuSSNTBox"
-        Me.StuSSNTBox.Size = New System.Drawing.Size(259, 34)
+        Me.StuSSNTBox.Size = New System.Drawing.Size(351, 34)
         Me.StuSSNTBox.TabIndex = 133
         '
         'Label7
@@ -634,6 +636,7 @@ Partial Class Add_Course_Teacher_Student
         '
         'Register_Student
         '
+        Me.Register_Student.Font = New System.Drawing.Font("Showcard Gothic", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.Register_Student.Location = New System.Drawing.Point(240, 431)
         Me.Register_Student.Name = "Register_Student"
         Me.Register_Student.Size = New System.Drawing.Size(376, 55)
@@ -643,10 +646,10 @@ Partial Class Add_Course_Teacher_Student
         '
         'StuAddressTBox
         '
-        Me.StuAddressTBox.Location = New System.Drawing.Point(307, 202)
+        Me.StuAddressTBox.Location = New System.Drawing.Point(331, 202)
         Me.StuAddressTBox.Margin = New System.Windows.Forms.Padding(4)
         Me.StuAddressTBox.Name = "StuAddressTBox"
-        Me.StuAddressTBox.Size = New System.Drawing.Size(259, 34)
+        Me.StuAddressTBox.Size = New System.Drawing.Size(351, 34)
         Me.StuAddressTBox.TabIndex = 123
         '
         'Label8
@@ -684,10 +687,10 @@ Partial Class Add_Course_Teacher_Student
         '
         'StuLNameTBox
         '
-        Me.StuLNameTBox.Location = New System.Drawing.Point(307, 64)
+        Me.StuLNameTBox.Location = New System.Drawing.Point(331, 79)
         Me.StuLNameTBox.Margin = New System.Windows.Forms.Padding(4)
         Me.StuLNameTBox.Name = "StuLNameTBox"
-        Me.StuLNameTBox.Size = New System.Drawing.Size(137, 34)
+        Me.StuLNameTBox.Size = New System.Drawing.Size(351, 34)
         Me.StuLNameTBox.TabIndex = 119
         '
         'Label11
@@ -704,7 +707,7 @@ Partial Class Add_Course_Teacher_Student
         'StuDOBDTP
         '
         Me.StuDOBDTP.Font = New System.Drawing.Font("Modern No. 20", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.StuDOBDTP.Location = New System.Drawing.Point(350, 384)
+        Me.StuDOBDTP.Location = New System.Drawing.Point(331, 384)
         Me.StuDOBDTP.Margin = New System.Windows.Forms.Padding(4)
         Me.StuDOBDTP.Name = "StuDOBDTP"
         Me.StuDOBDTP.Size = New System.Drawing.Size(351, 29)
@@ -735,18 +738,18 @@ Partial Class Add_Course_Teacher_Student
         '
         'StuFNameTBox
         '
-        Me.StuFNameTBox.Location = New System.Drawing.Point(309, 16)
+        Me.StuFNameTBox.Location = New System.Drawing.Point(331, 16)
         Me.StuFNameTBox.Margin = New System.Windows.Forms.Padding(4)
         Me.StuFNameTBox.Name = "StuFNameTBox"
-        Me.StuFNameTBox.Size = New System.Drawing.Size(129, 34)
+        Me.StuFNameTBox.Size = New System.Drawing.Size(351, 34)
         Me.StuFNameTBox.TabIndex = 118
         '
         'StuPhoneNumTBox
         '
-        Me.StuPhoneNumTBox.Location = New System.Drawing.Point(350, 255)
+        Me.StuPhoneNumTBox.Location = New System.Drawing.Point(331, 252)
         Me.StuPhoneNumTBox.Margin = New System.Windows.Forms.Padding(4)
         Me.StuPhoneNumTBox.Name = "StuPhoneNumTBox"
-        Me.StuPhoneNumTBox.Size = New System.Drawing.Size(217, 34)
+        Me.StuPhoneNumTBox.Size = New System.Drawing.Size(351, 34)
         Me.StuPhoneNumTBox.TabIndex = 124
         '
         'Label21
@@ -762,6 +765,7 @@ Partial Class Add_Course_Teacher_Student
         '
         'Button2
         '
+        Me.Button2.Font = New System.Drawing.Font("Showcard Gothic", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.Button2.Location = New System.Drawing.Point(1075, 482)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(167, 109)
@@ -775,10 +779,10 @@ Partial Class Add_Course_Teacher_Student
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1315, 603)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.TabControl1)
+        Me.Controls.Add(Me.AddCourStuTeaTabControl)
         Me.Name = "Add_Course_Teacher_Student"
         Me.Text = "Add_Course_Student_Teacher_Info"
-        Me.TabControl1.ResumeLayout(False)
+        Me.AddCourStuTeaTabControl.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
         Me.TabPage1.ResumeLayout(False)
@@ -789,7 +793,7 @@ Partial Class Add_Course_Teacher_Student
 
     End Sub
 
-    Friend WithEvents TabControl1 As TabControl
+    Friend WithEvents AddCourStuTeaTabControl As TabControl
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents Register_Course As Button
     Friend WithEvents CourseNameTxtbox As TextBox

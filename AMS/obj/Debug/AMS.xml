@@ -22,6 +22,16 @@ AMS
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:AMS.My.Resources.Resources._exit1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AMS.My.Resources.Resources.ADD">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:AMS.My.Resources.Resources.Add_Course_Teacher_Student">
 <summary>
   Looks up a localized string similar to &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
@@ -62,6 +72,26 @@ AMS
     ... ado.net/XML headers &amp; schema ...
     &lt;resheader name=&quot;resmimetype&quot;&gt;text/microsoft-resx&lt;/resheader&gt;
     &lt;resheader n [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:AMS.My.Resources.Resources.GPA">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AMS.My.Resources.Resources.mis_report">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AMS.My.Resources.Resources.Registration">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:AMS.My.Resources.Resources.update">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:AMS.My.Resources.Resources.Update_Student_Teacher_Course_Info">

@@ -28,4 +28,9 @@ Public Class GPA_Academic_History_Look_Up
     Private Sub StuGPAGridView_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles StuGPAGridView.CellContentClick
 
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Hide()
+        Main_Menu.Show()
+    End Sub
 End Class

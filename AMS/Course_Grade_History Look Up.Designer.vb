@@ -29,14 +29,16 @@ Partial Class GPA_Academic_History_Look_Up
         Me.Grade = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.AcaHisStuIDTxtBox = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me.StuGPAGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'LookUpGradesBTN
         '
-        Me.LookUpGradesBTN.Location = New System.Drawing.Point(813, 241)
+        Me.LookUpGradesBTN.Font = New System.Drawing.Font("Showcard Gothic", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.LookUpGradesBTN.Location = New System.Drawing.Point(795, 154)
         Me.LookUpGradesBTN.Name = "LookUpGradesBTN"
-        Me.LookUpGradesBTN.Size = New System.Drawing.Size(75, 120)
+        Me.LookUpGradesBTN.Size = New System.Drawing.Size(148, 131)
         Me.LookUpGradesBTN.TabIndex = 8
         Me.LookUpGradesBTN.Text = "Look Up"
         Me.LookUpGradesBTN.UseVisualStyleBackColor = True
@@ -79,25 +81,38 @@ Partial Class GPA_Academic_History_Look_Up
         '
         'AcaHisStuIDTxtBox
         '
-        Me.AcaHisStuIDTxtBox.Location = New System.Drawing.Point(187, 91)
+        Me.AcaHisStuIDTxtBox.Location = New System.Drawing.Point(267, 94)
+        Me.AcaHisStuIDTxtBox.Multiline = True
         Me.AcaHisStuIDTxtBox.Name = "AcaHisStuIDTxtBox"
-        Me.AcaHisStuIDTxtBox.Size = New System.Drawing.Size(170, 22)
+        Me.AcaHisStuIDTxtBox.Size = New System.Drawing.Size(188, 36)
         Me.AcaHisStuIDTxtBox.TabIndex = 6
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(90, 94)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(74, 17)
+        Me.Label1.Size = New System.Drawing.Size(155, 36)
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Student ID"
+        '
+        'Button2
+        '
+        Me.Button2.Font = New System.Drawing.Font("Showcard Gothic", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.Button2.Location = New System.Drawing.Point(795, 310)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(148, 120)
+        Me.Button2.TabIndex = 147
+        Me.Button2.Text = "Main Menu"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'GPA_Academic_History_Look_Up
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(979, 536)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.LookUpGradesBTN)
         Me.Controls.Add(Me.StuGPAGridView)
         Me.Controls.Add(Me.AcaHisStuIDTxtBox)
@@ -117,4 +132,5 @@ Partial Class GPA_Academic_History_Look_Up
     Friend WithEvents Student_ID As DataGridViewTextBoxColumn
     Friend WithEvents Course_ID As DataGridViewTextBoxColumn
     Friend WithEvents Grade As DataGridViewTextBoxColumn
+    Friend WithEvents Button2 As Button
 End Class

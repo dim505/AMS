@@ -34,12 +34,14 @@ Partial Class Course_Registration
         '
         Me.CRStuIDTxtBox.Location = New System.Drawing.Point(444, 79)
         Me.CRStuIDTxtBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.CRStuIDTxtBox.Multiline = True
         Me.CRStuIDTxtBox.Name = "CRStuIDTxtBox"
-        Me.CRStuIDTxtBox.Size = New System.Drawing.Size(259, 22)
+        Me.CRStuIDTxtBox.Size = New System.Drawing.Size(259, 35)
         Me.CRStuIDTxtBox.TabIndex = 133
         '
         'Course_Registation_BTN
         '
+        Me.Course_Registation_BTN.Font = New System.Drawing.Font("Showcard Gothic", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.Course_Registation_BTN.Location = New System.Drawing.Point(233, 313)
         Me.Course_Registation_BTN.Name = "Course_Registation_BTN"
         Me.Course_Registation_BTN.Size = New System.Drawing.Size(376, 55)
@@ -49,6 +51,7 @@ Partial Class Course_Registration
         '
         'Button2
         '
+        Me.Button2.Font = New System.Drawing.Font("Showcard Gothic", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
         Me.Button2.Location = New System.Drawing.Point(650, 313)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(376, 55)
@@ -60,29 +63,30 @@ Partial Class Course_Registration
         '
         Me.CRCourseIDtxtBox.Location = New System.Drawing.Point(444, 122)
         Me.CRCourseIDtxtBox.Margin = New System.Windows.Forms.Padding(4)
+        Me.CRCourseIDtxtBox.Multiline = True
         Me.CRCourseIDtxtBox.Name = "CRCourseIDtxtBox"
-        Me.CRCourseIDtxtBox.Size = New System.Drawing.Size(217, 22)
+        Me.CRCourseIDtxtBox.Size = New System.Drawing.Size(259, 36)
         Me.CRCourseIDtxtBox.TabIndex = 141
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(250, 122)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(109, 25)
+        Me.Label6.Size = New System.Drawing.Size(157, 36)
         Me.Label6.TabIndex = 138
         Me.Label6.Text = "Course ID"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(251, 79)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(114, 25)
+        Me.Label1.Size = New System.Drawing.Size(165, 36)
         Me.Label1.TabIndex = 145
         Me.Label1.Text = "Student ID"
         '
