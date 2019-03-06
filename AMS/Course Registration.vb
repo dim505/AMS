@@ -1,17 +1,12 @@
 ﻿Public Class Course_Registration
-    Private Sub TextBox6_TextChanged(sender As Object, e As EventArgs)
 
-    End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Course_Registation_BTN.Click
 
 
 
-
-        Dim RegisterStudentWithCourseQuery As String = ""
-
-
-        RegisterStudentWithCourseQuery = "INSERT INTO CourseRegistration$(StudentID, CourseID) " &
+        'declares string for SQL query and assigns Query value
+        Dim RegisterStudentWithCourseQuery As String = "INSERT INTO CourseRegistration$(StudentID, CourseID) " &
         "VALUES(" & "'" & CRStuIDTxtBox.Text & "','" & CRCourseIDtxtBox.Text & "','" & "')"
 
 
@@ -20,14 +15,16 @@
 
 
 
-
+        'sets sql command that will be exicuted against DB 
         SQLCommand.CommandText = RegisterStudentWithCourseQuery
 
-
+        'declares value for rows affected after Query is run
         Dim rowsAffected As Integer = 0
+
+        'exicutes the query and returns the number of rows affected
         rowsAffected = SQLCommand.ExecuteNonQuery()
 
-
+        'if the returned value is greater than 1, it notifies user that registration was successful, else it failed
         If (rowsAffected > 0) Then
             MsgBox("Student was successfully added to the Course")
         Else
@@ -39,19 +36,16 @@
 
     End Sub
 
-    Private Sub Course_Registration_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-    End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-
+        'hides current form
         Me.Hide()
+        'takes you back to Main Menu
         Main_Menu.Show()
 
 
     End Sub
 
-    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
 
-    End Sub
 End Class

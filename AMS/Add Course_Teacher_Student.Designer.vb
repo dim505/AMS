@@ -100,7 +100,7 @@ Partial Class Add_Course_Teacher_Student
         Me.AddCourStuTeaTabControl.Controls.Add(Me.TabPage1)
         Me.AddCourStuTeaTabControl.Controls.Add(Me.TabPage3)
         Me.AddCourStuTeaTabControl.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AddCourStuTeaTabControl.Location = New System.Drawing.Point(160, 60)
+        Me.AddCourStuTeaTabControl.Location = New System.Drawing.Point(158, 13)
         Me.AddCourStuTeaTabControl.Margin = New System.Windows.Forms.Padding(4)
         Me.AddCourStuTeaTabControl.Name = "AddCourStuTeaTabControl"
         Me.AddCourStuTeaTabControl.SelectedIndex = 0
@@ -141,7 +141,7 @@ Partial Class Add_Course_Teacher_Student
         '
         'PrereqTxtBox
         '
-        Me.PrereqTxtBox.Location = New System.Drawing.Point(277, 379)
+        Me.PrereqTxtBox.Location = New System.Drawing.Point(298, 385)
         Me.PrereqTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.PrereqTxtBox.Name = "PrereqTxtBox"
         Me.PrereqTxtBox.Size = New System.Drawing.Size(264, 34)
@@ -171,7 +171,7 @@ Partial Class Add_Course_Teacher_Student
         '
         'TeacherIDtxtbox
         '
-        Me.TeacherIDtxtbox.Location = New System.Drawing.Point(277, 83)
+        Me.TeacherIDtxtbox.Location = New System.Drawing.Point(298, 89)
         Me.TeacherIDtxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.TeacherIDtxtbox.Name = "TeacherIDtxtbox"
         Me.TeacherIDtxtbox.Size = New System.Drawing.Size(264, 34)
@@ -179,7 +179,7 @@ Partial Class Add_Course_Teacher_Student
         '
         'EndTimeTxtbox
         '
-        Me.EndTimeTxtbox.Location = New System.Drawing.Point(277, 337)
+        Me.EndTimeTxtbox.Location = New System.Drawing.Point(298, 343)
         Me.EndTimeTxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.EndTimeTxtbox.Name = "EndTimeTxtbox"
         Me.EndTimeTxtbox.Size = New System.Drawing.Size(264, 34)
@@ -198,7 +198,7 @@ Partial Class Add_Course_Teacher_Student
         '
         'StartTimeTxtBox
         '
-        Me.StartTimeTxtBox.Location = New System.Drawing.Point(277, 296)
+        Me.StartTimeTxtBox.Location = New System.Drawing.Point(298, 302)
         Me.StartTimeTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.StartTimeTxtBox.Name = "StartTimeTxtBox"
         Me.StartTimeTxtBox.Size = New System.Drawing.Size(264, 34)
@@ -206,7 +206,7 @@ Partial Class Add_Course_Teacher_Student
         '
         'CorDesTxtBox
         '
-        Me.CorDesTxtBox.Location = New System.Drawing.Point(277, 207)
+        Me.CorDesTxtBox.Location = New System.Drawing.Point(298, 213)
         Me.CorDesTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.CorDesTxtBox.Name = "CorDesTxtBox"
         Me.CorDesTxtBox.Size = New System.Drawing.Size(264, 34)
@@ -214,7 +214,7 @@ Partial Class Add_Course_Teacher_Student
         '
         'DaysTaughttxtbox
         '
-        Me.DaysTaughttxtbox.Location = New System.Drawing.Point(277, 251)
+        Me.DaysTaughttxtbox.Location = New System.Drawing.Point(298, 257)
         Me.DaysTaughttxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.DaysTaughttxtbox.Name = "DaysTaughttxtbox"
         Me.DaysTaughttxtbox.Size = New System.Drawing.Size(264, 34)
@@ -254,7 +254,7 @@ Partial Class Add_Course_Teacher_Student
         '
         'CourseNameTxtbox
         '
-        Me.CourseNameTxtbox.Location = New System.Drawing.Point(277, 119)
+        Me.CourseNameTxtbox.Location = New System.Drawing.Point(298, 125)
         Me.CourseNameTxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.CourseNameTxtbox.Name = "CourseNameTxtbox"
         Me.CourseNameTxtbox.Size = New System.Drawing.Size(264, 34)
@@ -284,7 +284,7 @@ Partial Class Add_Course_Teacher_Student
         '
         'TeacherLastNametxtbox
         '
-        Me.TeacherLastNametxtbox.Location = New System.Drawing.Point(277, 44)
+        Me.TeacherLastNametxtbox.Location = New System.Drawing.Point(298, 50)
         Me.TeacherLastNametxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.TeacherLastNametxtbox.Name = "TeacherLastNametxtbox"
         Me.TeacherLastNametxtbox.Size = New System.Drawing.Size(264, 34)
@@ -314,7 +314,7 @@ Partial Class Add_Course_Teacher_Student
         '
         'TeacherFirstNametxtbox
         '
-        Me.TeacherFirstNametxtbox.Location = New System.Drawing.Point(277, 8)
+        Me.TeacherFirstNametxtbox.Location = New System.Drawing.Point(298, 14)
         Me.TeacherFirstNametxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.TeacherFirstNametxtbox.Name = "TeacherFirstNametxtbox"
         Me.TeacherFirstNametxtbox.Size = New System.Drawing.Size(264, 34)
@@ -322,7 +322,7 @@ Partial Class Add_Course_Teacher_Student
         '
         'CourseIDtxtbox
         '
-        Me.CourseIDtxtbox.Location = New System.Drawing.Point(277, 161)
+        Me.CourseIDtxtbox.Location = New System.Drawing.Point(298, 167)
         Me.CourseIDtxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.CourseIDtxtbox.Name = "CourseIDtxtbox"
         Me.CourseIDtxtbox.Size = New System.Drawing.Size(264, 34)
@@ -341,6 +341,7 @@ Partial Class Add_Course_Teacher_Student
         '
         'TabPage1
         '
+        Me.TabPage1.BackColor = System.Drawing.Color.White
         Me.TabPage1.Controls.Add(Me.AddTchIDtxtbox)
         Me.TabPage1.Controls.Add(Me.Label26)
         Me.TabPage1.Controls.Add(Me.AddTeacherDTP)
@@ -366,7 +367,6 @@ Partial Class Add_Course_Teacher_Student
         Me.TabPage1.Size = New System.Drawing.Size(875, 502)
         Me.TabPage1.TabIndex = 2
         Me.TabPage1.Text = "Add Teacher"
-        Me.TabPage1.UseVisualStyleBackColor = True
         '
         'AddTchIDtxtbox
         '
@@ -553,6 +553,7 @@ Partial Class Add_Course_Teacher_Student
         '
         'TabPage3
         '
+        Me.TabPage3.BackColor = System.Drawing.Color.White
         Me.TabPage3.Controls.Add(Me.StuIDTxtBox)
         Me.TabPage3.Controls.Add(Me.Label27)
         Me.TabPage3.Controls.Add(Me.StuCityTBox)
@@ -578,7 +579,6 @@ Partial Class Add_Course_Teacher_Student
         Me.TabPage3.Size = New System.Drawing.Size(875, 502)
         Me.TabPage3.TabIndex = 3
         Me.TabPage3.Text = "Add Student"
-        Me.TabPage3.UseVisualStyleBackColor = True
         '
         'StuIDTxtBox
         '

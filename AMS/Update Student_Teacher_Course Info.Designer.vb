@@ -111,6 +111,7 @@ Partial Class Update_Student_Teacher_Course_Info
         '
         'TabPage1
         '
+        Me.TabPage1.BackColor = System.Drawing.Color.White
         Me.TabPage1.Controls.Add(Me.Label11)
         Me.TabPage1.Controls.Add(Me.UpStuIDTxtBox)
         Me.TabPage1.Controls.Add(Me.UpStuStateTxtBox)
@@ -138,7 +139,6 @@ Partial Class Update_Student_Teacher_Course_Info
         Me.TabPage1.Size = New System.Drawing.Size(643, 515)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Update Student Info"
-        Me.TabPage1.UseVisualStyleBackColor = True
         '
         'Label11
         '
@@ -345,6 +345,7 @@ Partial Class Update_Student_Teacher_Course_Info
         '
         'Update_Teacher_Info
         '
+        Me.Update_Teacher_Info.BackColor = System.Drawing.Color.White
         Me.Update_Teacher_Info.Controls.Add(Me.Label10)
         Me.Update_Teacher_Info.Controls.Add(Me.UpTeachIDTxtBox)
         Me.Update_Teacher_Info.Controls.Add(Me.UpTeachCityTxtBox)
@@ -372,7 +373,6 @@ Partial Class Update_Student_Teacher_Course_Info
         Me.Update_Teacher_Info.Size = New System.Drawing.Size(643, 515)
         Me.Update_Teacher_Info.TabIndex = 1
         Me.Update_Teacher_Info.Text = "Update Teacher Info"
-        Me.Update_Teacher_Info.UseVisualStyleBackColor = True
         '
         'Label10
         '
@@ -579,6 +579,7 @@ Partial Class Update_Student_Teacher_Course_Info
         '
         'TabPage3
         '
+        Me.TabPage3.BackColor = System.Drawing.Color.White
         Me.TabPage3.Controls.Add(Me.UpdatePrereqTxtBox)
         Me.TabPage3.Controls.Add(Me.Prereq)
         Me.TabPage3.Controls.Add(Me.Label25)
@@ -608,7 +609,6 @@ Partial Class Update_Student_Teacher_Course_Info
         Me.TabPage3.Size = New System.Drawing.Size(643, 515)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Update Course Info"
-        Me.TabPage3.UseVisualStyleBackColor = True
         '
         'UpdatePrereqTxtBox
         '

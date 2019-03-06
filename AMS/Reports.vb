@@ -7,6 +7,7 @@ Imports System.Data.SqlClient
 
 Public Class Reports
     Private Sub Reports_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'this prepoplates the dropbox with report options
         ReportSelComboBox.Items.Clear()
         ReportSelComboBox.Items.Add("All students with grades of 80 and higher")
         ReportSelComboBox.Items.Add("All teachers who teach courses")
@@ -15,9 +16,11 @@ Public Class Reports
 
     Private Sub RunRptBtn_Click(sender As Object, e As EventArgs) Handles RunRptBtn.Click
 
+        'declares report sql query
+        Dim ReportSqlStr As String = ""
 
-        Dim ReportSqlStr As String = "test"
 
+        'checks what report was selected and  gives the SQLStr the appropriate query 
         If (ReportSelComboBox.Text = "All teachers who teach courses") Then
 
 
@@ -43,15 +46,19 @@ Public Class Reports
         End If
 
 
-
+        'checks to see if there is a value in ReportSqlStr, if there is, then it populates the data grid view 
         If (Not (String.IsNullOrEmpty(ReportSqlStr))) Then
 
+            'sets sql command that will be exicuted against DB 
             SQLCommand.CommandText = ReportSqlStr
-            SQLCommand.CommandType = CommandType.Text
 
+            'declaring OleDbDataAdapte: contains data commands and a database connection to exicute against DB 
             Dim DataAdpt As OleDbDataAdapter = New OleDbDataAdapter(SQLCommand)
+            'declaring new instance of a data table 
             Dim DtRptResults As DataTable = New DataTable()
+            'filling the data table from the query results
             DataAdpt.Fill(DtRptResults)
+            'binds the data table to the data source of the grid view Thus prepopulating it with data 
             ReportsGridView.DataSource = DtRptResults
 
         End If
@@ -66,7 +73,9 @@ Public Class Reports
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        'hides current form
         Me.Hide()
+        'makes main form active 
         Main_Menu.Show()
     End Sub
 End Class

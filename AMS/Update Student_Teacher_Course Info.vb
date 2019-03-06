@@ -2,28 +2,25 @@
 
 
 Public Class Update_Student_Teacher_Course_Info
-    Private Sub TabPage2_Click(sender As Object, e As EventArgs) Handles Update_Teacher_Info.Click
 
-    End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles UpStuLookUpBTN.Click
 
+        'declares SQL Query 
+        Dim LookUpCourseQuery As String = "Select ID, StudentFName, StudentLName, SSN, Address, City, State, PhoneNumber, DateOfBirth from StudentInfo$ where ID=" & "'" & UpStuIDTxtBox.Text & "';"
 
-        Dim LookUpCourseQuery As String = ""
-
-
-        LookUpCourseQuery = "Select ID, StudentFName, StudentLName, SSN, Address, City, State, PhoneNumber, DateOfBirth from StudentInfo$ where ID=" & "'" & UpStuIDTxtBox.Text & "';"
-
+        'sets sql command that will be exicuted against DB 
         SQLCommand.CommandText = LookUpCourseQuery
 
-
+        ' this combines the sql query with the Connection and builds a OleDbDataReader.
         Dim QueryResults As OleDbDataReader = SQLCommand.ExecuteReader()
 
 
 
-
+        'loop read through data 
         Do While (QueryResults.Read())
 
+            'prepopulates all the text boxes from the query results
             UpStuIDTxtBox.Text = QueryResults.GetString(0)
             UpStuFNameTxtBox.Text = QueryResults.GetString(1)
             UpStuLNameTxtBox.Text = QueryResults.GetString(2)
@@ -36,7 +33,7 @@ Public Class Update_Student_Teacher_Course_Info
             UpStuDTP.Text = QueryResults.GetString(8)
 
         Loop
-
+        'closes DB connection and data reader 
         QueryResults.Close()
 
 
@@ -46,28 +43,26 @@ Public Class Update_Student_Teacher_Course_Info
 
     Private Sub Button9_Click(sender As Object, e As EventArgs) Handles LookUpBTNCourseInfo.Click
 
+        'declares string for SQL query and assigns a Query value
+        Dim LookUpCourseQuery As String = "Select CourseID, CourseName, CourseDescription, TeacherFName, TeacherLName, TeacherID, DaysTaught, StartTime, EndTime, PreReq from CourseInfo$ where CourseID=" & "'" & UpdateCourseIDtxtbox.Text & "';"
 
-        Dim LookUpCourseQuery As String = ""
-
-
-        LookUpCourseQuery = "Select CourseID, CourseName, CourseDescription, TeacherFName, TeacherLName, TeacherID, DaysTaught, StartTime, EndTime, PreReq from CourseInfo$ where CourseID=" & "'" & UpdateCourseIDtxtbox.Text & "';"
-
+        'sets sql command that will be exicuted against DB 
         SQLCommand.CommandText = LookUpCourseQuery
 
 
 
 
-
-
+        ' this combines the sql query with the Connection and builds a OleDbDataReader.
         Dim QueryResults As OleDbDataReader = SQLCommand.ExecuteReader()
 
 
 
+        'This loop reads through all the data 
 
         Do While (QueryResults.Read())
 
 
-
+            'prepopulates all the text boxes from the query results
             UpdateCourseIDtxtbox.Text = QueryResults.GetString(0)
             UpdateCourseNameTxtbox.Text = QueryResults.GetString(1)
             UpdateCorDesTxtBox.Text = QueryResults.GetString(2)
@@ -86,6 +81,7 @@ Public Class Update_Student_Teacher_Course_Info
 
         Loop
 
+        'closes DB connection and data reader 
         QueryResults.Close()
 
 
@@ -100,23 +96,22 @@ Public Class Update_Student_Teacher_Course_Info
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles UpdateCourseBTN.Click
 
-
-        Dim UpdateQuery As String = ""
-
-
-        UpdateQuery = "Update CourseInfo$ SET CourseID ='" & UpdateCourseIDtxtbox.Text & "', " & "CourseName ='" & UpdateCourseNameTxtbox.Text & "', " & "CourseDescription ='" &
+        'declares SQL Query 
+        Dim UpdateQuery As String = "Update CourseInfo$ SET CourseID ='" & UpdateCourseIDtxtbox.Text & "', " & "CourseName ='" & UpdateCourseNameTxtbox.Text & "', " & "CourseDescription ='" &
         UpdateCorDesTxtBox.Text & "', " & "TeacherFName ='" & UpdateTeacherFirstNametxtbox.Text & "', " & "TeacherLName ='" & UpdateTeacherLastNametxtbox.Text & "', " &
         "TeacherID ='" & UpdateTeacherIDtxtbox.Text & "', " & "DaysTaught = '" & UpdateDaysTaughttxtbox.Text & "', " & "StartTime ='" & UpdateStartTimeTxtBox.Text & "', " & "EndTime ='" & UpdateEndTimeTxtbox.Text & "', " & "PreReq='" & UpdatePrereqTxtBox.Text & "'" & "where CourseID =" & "'" & UpdateCourseIDtxtbox.Text & "';"
 
 
 
 
-
+        'sets sql command that will be exicuted against DB 
         SQLCommand.CommandText = UpdateQuery
 
 
+        'exicutes the query and returns the number of rows affected
         Dim RowFlag As Integer = SQLCommand.ExecuteNonQuery()
 
+        'if the returned value is greater than or equal to 1, it notifies the user that the update was successful, else it failed
         If (RowFlag > 0) Then
             MsgBox("Course info updated successfully")
         Else
@@ -133,22 +128,19 @@ Public Class Update_Student_Teacher_Course_Info
 
     Private Sub RemoveCourseBTN_Click(sender As Object, e As EventArgs) Handles RemoveCourseBTN.Click
 
-
-        Dim RemoveCourseQuery As String = ""
-
-
-        RemoveCourseQuery = "DELETE From CourseInfo$ where CourseID =" & "'" & UpdateCourseIDtxtbox.Text & "';"
+        'declares string for SQL query and assigns Query value\
+        Dim RemoveCourseQuery As String = "DELETE From CourseInfo$ where CourseID =" & "'" & UpdateCourseIDtxtbox.Text & "';"
 
 
 
 
-
+        'sets sql command that will be exicuted against DB 
         SQLCommand.CommandText = RemoveCourseQuery
 
-
+        'declares variable for rows affected after Query is run
         Dim RowFlag As Integer = SQLCommand.ExecuteNonQuery()
 
-
+        'exicutes the query and returns the number of rows affected
         If (RowFlag > 0) Then
             MsgBox("Course info deleted successfully")
         Else
@@ -166,8 +158,9 @@ Public Class Update_Student_Teacher_Course_Info
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles UpStuTeachCourInfoMMBTN.Click
 
-
+        'hides current form
         Me.Hide()
+        'makes main form active 
         Main_Menu.Show()
 
 
@@ -175,24 +168,23 @@ Public Class Update_Student_Teacher_Course_Info
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles UpTeachLookUpBtn.Click
 
+        'declares string for SQL query and assigns Query value
+        Dim LookUpCourseQuery As String = "Select ID, TeacherFName, TeacherLName,SSN, Address, City, State, PhoneNumber, DateOfBirth from TeacherInfo$ where ID=" & "'" & UpTeachIDTxtBox.Text & "';"
 
-        Dim LookUpCourseQuery As String = ""
 
 
-        LookUpCourseQuery = "Select ID, TeacherFName, TeacherLName,SSN, Address, City, State, PhoneNumber, DateOfBirth from TeacherInfo$ where ID=" & "'" & UpTeachIDTxtBox.Text & "';"
-
+        'sets sql command that will be exicuted against DB 
         SQLCommand.CommandText = LookUpCourseQuery
 
-
+        ' this combines the sql query with the Connection and builds a OleDbDataReader.
         Dim QueryResults As OleDbDataReader = SQLCommand.ExecuteReader()
 
 
-
-
+        'This loop reads through all the data 
         Do While (QueryResults.Read())
 
 
-
+            'prepopulates all the text boxes from the query results
             UpTeachIDTxtBox.Text = QueryResults.GetString(0)
             UpTeachFNameTxtBox.Text = QueryResults.GetString(1)
             UpTeachLNameTxtBox.Text = QueryResults.GetString(2)
@@ -205,29 +197,20 @@ Public Class Update_Student_Teacher_Course_Info
 
         Loop
 
+        'closes DB connection and data reader 
         QueryResults.Close()
 
 
 
     End Sub
 
-    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles UpTeachSSNTxtBox.TextChanged
 
-    End Sub
-
-    Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
-
-    End Sub
-
-    Private Sub TextBox2_TextChanged_1(sender As Object, e As EventArgs) Handles UpTeachIDTxtBox.TextChanged
-
-    End Sub
 
     Private Sub UpTeachuPDATEBtn_Click(sender As Object, e As EventArgs) Handles UpTeachuPDATEBtn.Click
-        Dim UpdateQuery As String = ""
 
 
-        UpdateQuery = "Update TeacherInfo$ SET ID ='" & UpTeachIDTxtBox.Text & "', " & "TeacherFName ='" & UpTeachFNameTxtBox.Text & "', " &
+        'declares string for SQL query and assigns a Query value
+        Dim UpdateQuery As String = "Update TeacherInfo$ SET ID ='" & UpTeachIDTxtBox.Text & "', " & "TeacherFName ='" & UpTeachFNameTxtBox.Text & "', " &
         "TeacherLName ='" & UpTeachLNameTxtBox.Text & "', " &
         "SSN ='" & UpTeachSSNTxtBox.Text & "', " &
         "Address ='" & UpTeachAddressTxtBox.Text & "', " &
@@ -238,23 +221,14 @@ Public Class Update_Student_Teacher_Course_Info
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+        'sets sql command that will be exicuted against DB 
         SQLCommand.CommandText = UpdateQuery
 
-
+        'exicutes the query and returns the number of rows affected
         Dim RowFlag As Integer = SQLCommand.ExecuteNonQuery()
 
+
+        'if the returned value is greater than or equal to 1, it notifies the user that update was successful, else it failed
         If (RowFlag > 0) Then
             MsgBox("Teacher info updated successfully")
         Else
@@ -270,22 +244,19 @@ Public Class Update_Student_Teacher_Course_Info
 
 
 
-
-        Dim RemoveCourseQuery As String = ""
-
-
-        RemoveCourseQuery = "DELETE From TeacherInfo$ where ID =" & "'" & UpTeachIDTxtBox.Text & "';"
+        'declares SQL Query 
+        Dim RemoveCourseQuery As String = "DELETE From TeacherInfo$ where ID =" & "'" & UpTeachIDTxtBox.Text & "';"
 
 
 
 
-
+        'sets sql command that will be exicuted against DB 
         SQLCommand.CommandText = RemoveCourseQuery
 
-
+        'exicutes the query and returns the number of rows affected
         Dim RowFlag As Integer = SQLCommand.ExecuteNonQuery()
 
-
+        'if the returned value is greater than or equal to 1, it notifies the user that delete was successful, else it failed
         If (RowFlag > 0) Then
             MsgBox("Teacher record deleted successfully")
         Else
@@ -299,17 +270,8 @@ Public Class Update_Student_Teacher_Course_Info
 
     Private Sub UpStuUpdateBTN_Click(sender As Object, e As EventArgs) Handles UpStuUpdateBTN.Click
 
-
-        Dim UpdateQuery As String = ""
-
-
-
-
-
-
-
-
-        UpdateQuery = "Update StudentInfo$ SET ID ='" & UpStuIDTxtBox.Text & "', " & "StudentFName ='" & UpStuFNameTxtBox.Text & "', " &
+        'declares SQL Query 
+        Dim UpdateQuery As String = "Update StudentInfo$ SET ID ='" & UpStuIDTxtBox.Text & "', " & "StudentFName ='" & UpStuFNameTxtBox.Text & "', " &
             "StudentLName ='" & UpStuLNameTxtBox.Text & "', " &
             "SSN ='" & UpStuSSNTxtBox.Text & "', " &
             "Address ='" & UpStuAddressTxtBox.Text & "', " &
@@ -318,25 +280,13 @@ Public Class Update_Student_Teacher_Course_Info
             "PhoneNumber ='" & UpStuPhoneNumTxtBox.Text & "', " &
             "DateOfBirth ='" & UpStuDTP.Text & "'" & "" & "where ID =" & "'" & UpStuIDTxtBox.Text & "';"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        'sets sql command that will be exicuted against DB 
         SQLCommand.CommandText = UpdateQuery
 
-
+        'exicutes the query and returns the number of rows affected
         Dim RowFlag As Integer = SQLCommand.ExecuteNonQuery()
 
+        'if the returned value is greater than or equal to 1, it notifies the user that update was successful, else it failed
         If (RowFlag > 0) Then
             MsgBox("Student info updated successfully")
         Else
@@ -352,22 +302,19 @@ Public Class Update_Student_Teacher_Course_Info
     Private Sub UpStuRemoveBTN_Click(sender As Object, e As EventArgs) Handles UpStuRemoveBTN.Click
 
 
-
-        Dim RemoveCourseQuery As String = ""
-
-
-        RemoveCourseQuery = "DELETE From StudentInfo$ where ID =" & "'" & UpStuIDTxtBox.Text & "';"
+        'declares string for SQL query and assigns a Query value
+        Dim RemoveCourseQuery As String = "DELETE From StudentInfo$ where ID =" & "'" & UpStuIDTxtBox.Text & "';"
 
 
 
 
-
+        'sets sql command that will be exicuted against DB 
         SQLCommand.CommandText = RemoveCourseQuery
 
-
+        'exicutes the query and returns the number of rows affected
         Dim RowFlag As Integer = SQLCommand.ExecuteNonQuery()
 
-
+        'if the returned value is greater than or equal to 1, it notifies the user that delete was successful, else it failed
         If (RowFlag > 0) Then
             MsgBox("Student record deleted successfully")
         Else
@@ -377,5 +324,6 @@ Public Class Update_Student_Teacher_Course_Info
 
 
     End Sub
+
 
 End Class

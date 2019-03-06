@@ -29,7 +29,7 @@ Partial Class GPA_Academic_History_Look_Up
         Me.Grade = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.AcaHisStuIDTxtBox = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.BtnMainMenu = New System.Windows.Forms.Button()
         CType(Me.StuGPAGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -97,22 +97,22 @@ Partial Class GPA_Academic_History_Look_Up
         Me.Label1.TabIndex = 5
         Me.Label1.Text = "Student ID"
         '
-        'Button2
+        'BtnMainMenu
         '
-        Me.Button2.Font = New System.Drawing.Font("Showcard Gothic", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
-        Me.Button2.Location = New System.Drawing.Point(795, 310)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(148, 120)
-        Me.Button2.TabIndex = 147
-        Me.Button2.Text = "Main Menu"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.BtnMainMenu.Font = New System.Drawing.Font("Showcard Gothic", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.BtnMainMenu.Location = New System.Drawing.Point(795, 310)
+        Me.BtnMainMenu.Name = "BtnMainMenu"
+        Me.BtnMainMenu.Size = New System.Drawing.Size(148, 120)
+        Me.BtnMainMenu.TabIndex = 147
+        Me.BtnMainMenu.Text = "Main Menu"
+        Me.BtnMainMenu.UseVisualStyleBackColor = True
         '
         'GPA_Academic_History_Look_Up
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(979, 536)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.BtnMainMenu)
         Me.Controls.Add(Me.LookUpGradesBTN)
         Me.Controls.Add(Me.StuGPAGridView)
         Me.Controls.Add(Me.AcaHisStuIDTxtBox)
@@ -132,5 +132,5 @@ Partial Class GPA_Academic_History_Look_Up
     Friend WithEvents Student_ID As DataGridViewTextBoxColumn
     Friend WithEvents Course_ID As DataGridViewTextBoxColumn
     Friend WithEvents Grade As DataGridViewTextBoxColumn
-    Friend WithEvents Button2 As Button
+    Friend WithEvents BtnMainMenu As Button
 End Class
