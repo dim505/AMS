@@ -66,3 +66,5 @@ C:\Users\bob\Documents\Visual Studio 2015\Projects\OLD_PROJECTS\Academic Managem
 C:\Users\bob\Documents\Visual Studio 2015\Projects\OLD_PROJECTS\Academic Management System\AMS\obj\Debug\AMS.exe
 C:\Users\bob\Documents\Visual Studio 2015\Projects\OLD_PROJECTS\Academic Management System\AMS\obj\Debug\AMS.xml
 C:\Users\bob\Documents\Visual Studio 2015\Projects\OLD_PROJECTS\Academic Management System\AMS\obj\Debug\AMS.pdb
+C:\Users\bob\Documents\Visual Studio 2015\Projects\OLD_PROJECTS\Academic Management System\AMS\obj\Debug\Academic Management System.vbprojResolveAssemblyReference.cache
+C:\Users\bob\Documents\Visual Studio 2015\Projects\OLD_PROJECTS\Academic Management System\AMS\obj\Debug\AMS.LogIn.resources

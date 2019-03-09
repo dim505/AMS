@@ -19,17 +19,16 @@
 
 
     Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
-        'hides current form
-        Add_Course_Teacher_Student.Show()
         'makes main form active 
+        Add_Course_Teacher_Student.Show()
+        'hides current form
         Me.Hide()
 
 
     End Sub
 
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'call sub to start the DB connection 
-        StartDBConnection()
+
 
 
     End Sub
