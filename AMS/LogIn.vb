@@ -10,50 +10,72 @@ Public Class LogIn
     Private Sub LogInBtn_Click_1(sender As Object, e As EventArgs) Handles LogInBtn.Click
 
 
+        If (String.IsNullOrWhiteSpace(LogInUserTxtBox.Text)) Then
+
+            'notifes user they can't leave a blank user name
+            MsgBox("Please Input UserName")
+            'clears user name text box
+            LogInUserTxtBox.Clear()
+            'points cursor on textbox
+            LogInUserTxtBox.Select()
 
 
 
+        ElseIf (String.IsNullOrWhiteSpace(LoginPassTxtBox.Text)) Then
 
 
-
-        'sets sql command that will be exicuted against DB 
-
-
-        SQLCommand.CommandText = "select * from LogInCreds where UserName = @username and Password = @password"
-        SQLCommand.Parameters.AddWithValue("@username", LogInUserTxtBox.Text)
-        SQLCommand.Parameters.AddWithValue("@password", LoginPassTxtBox.Text)
-
-
-
-
-
-        'declares variable for rows affected after Query is run
-        Dim rowsAffected As Integer = 0
-
-
-        'exicutes the query and returns the number of rows affected
-
-
-        'rowsAffected = SQLCommand.ExecuteNonQuery()
-
-
-
-
-        Dim reader As OleDbDataReader = SQLCommand.ExecuteReader()
-
-
-
-
-        'if the returned value is greater than or equal to 1, it notifies the user that registration was successful, else it failed
-        If (reader.HasRows) Then
-
-            MsgBox("Login Secuessfull")
-            Me.Hide()
-
+            'notifes user they can't leave a blank password
+            MsgBox("Please Input Password")
+            'clears password text box
+            LoginPassTxtBox.Clear()
+            'points cursor on textbox
+            LoginPassTxtBox.Select()
 
         Else
-            MsgBox("Invalid Username or Password")
+
+            'sets sql command that will be exicuted against DB along with its parameters 
+            SQLCommand.CommandText = "select * from LogInCreds where Rtrim(LTrim(UserName)) = ? and Rtrim(LTrim(Password)) = ?"
+            'declares datareader, this allows you to read rows of  data from a data source
+            Dim reader As OleDbDataReader
+
+            'clears any exisisting parameters as adding new ones do not over write the old ones 
+            SQLCommand.Parameters.Clear()
+
+            'declares the parameters for the SQl statement and assigns a value from the textboxs  
+            With SQLCommand.Parameters
+                .Add("@p0", OleDbType.VarChar).Value = LogInUserTxtBox.Text
+                .Add("@p1", OleDbType.VarChar).Value = LoginPassTxtBox.Text
+            End With
+
+            'declares a data reader so you can read a stream of data rows from a database and exicutes it 
+            reader = SQLCommand.ExecuteReader()
+
+            'if the query returns any results, it will show Main menu, if not, it will display error
+            If (reader.HasRows) Then
+
+                'shows main menu
+                Main_Menu.Show()
+                'hides current Form
+                Me.Hide()
+            Else
+                'notifes user username or password wrong
+                MsgBox("Invalid Username or Password")
+                'clears user name and password text boxes
+
+                LogInUserTxtBox.Clear()
+                LoginPassTxtBox.Clear()
+                'focuses cursor baack on the user text box
+                LogInUserTxtBox.Select()
+
+
+            End If
+            'closes reader object so it can be used else where in the program
+            reader.Close()
+
         End If
+
+
+
 
     End Sub
 
@@ -62,11 +84,5 @@ Public Class LogIn
         StartDBConnection()
     End Sub
 
-    Private Sub LogInUserTxtBox_TextChanged(sender As Object, e As EventArgs) Handles LogInUserTxtBox.TextChanged
 
-    End Sub
-
-    Private Sub LoginPassTxtBox_TextChanged(sender As Object, e As EventArgs) Handles LoginPassTxtBox.TextChanged
-
-    End Sub
 End Class

@@ -22,28 +22,28 @@ Partial Class Main_Menu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.AddStuTeaCourBTN = New System.Windows.Forms.Button()
         Me.Course_RegistrationBTNMM = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
+        Me.UpStuTeachCourBTN = New System.Windows.Forms.Button()
         Me.CourseHistory_GPALookUpBTN = New System.Windows.Forms.Button()
         Me.ReportBTN = New System.Windows.Forms.Button()
         Me.MMExitBtn = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel1.SuspendLayout()
+        Me.MMPanel = New System.Windows.Forms.Panel()
+        Me.MMPanel.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Button2
+        'AddStuTeaCourBTN
         '
-        Me.Button2.BackgroundImage = Global.AMS.My.Resources.Resources.ADD
-        Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button2.Font = New System.Drawing.Font("Showcard Gothic", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(33, 30)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(272, 165)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Add Student/Teacher/Course"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.AddStuTeaCourBTN.BackgroundImage = Global.AMS.My.Resources.Resources.ADD
+        Me.AddStuTeaCourBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.AddStuTeaCourBTN.Font = New System.Drawing.Font("Showcard Gothic", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AddStuTeaCourBTN.Location = New System.Drawing.Point(33, 30)
+        Me.AddStuTeaCourBTN.Name = "AddStuTeaCourBTN"
+        Me.AddStuTeaCourBTN.Size = New System.Drawing.Size(272, 165)
+        Me.AddStuTeaCourBTN.TabIndex = 1
+        Me.AddStuTeaCourBTN.Text = "Add Student/Teacher/Course"
+        Me.AddStuTeaCourBTN.UseVisualStyleBackColor = True
         '
         'Course_RegistrationBTNMM
         '
@@ -57,17 +57,17 @@ Partial Class Main_Menu
         Me.Course_RegistrationBTNMM.Text = "Course Registration"
         Me.Course_RegistrationBTNMM.UseVisualStyleBackColor = True
         '
-        'Button5
+        'UpStuTeachCourBTN
         '
-        Me.Button5.BackgroundImage = Global.AMS.My.Resources.Resources.update
-        Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button5.Font = New System.Drawing.Font("Showcard Gothic", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
-        Me.Button5.Location = New System.Drawing.Point(531, 30)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(239, 165)
-        Me.Button5.TabIndex = 4
-        Me.Button5.Text = "Update Student/Teacher/Course"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.UpStuTeachCourBTN.BackgroundImage = Global.AMS.My.Resources.Resources.update
+        Me.UpStuTeachCourBTN.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.UpStuTeachCourBTN.Font = New System.Drawing.Font("Showcard Gothic", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.UpStuTeachCourBTN.Location = New System.Drawing.Point(531, 30)
+        Me.UpStuTeachCourBTN.Name = "UpStuTeachCourBTN"
+        Me.UpStuTeachCourBTN.Size = New System.Drawing.Size(239, 165)
+        Me.UpStuTeachCourBTN.TabIndex = 4
+        Me.UpStuTeachCourBTN.Text = "Update Student/Teacher/Course"
+        Me.UpStuTeachCourBTN.UseVisualStyleBackColor = True
         '
         'CourseHistory_GPALookUpBTN
         '
@@ -117,40 +117,40 @@ Partial Class Main_Menu
         Me.Label1.TabIndex = 12
         Me.Label1.Text = "Academic Management System"
         '
-        'Panel1
+        'MMPanel
         '
-        Me.Panel1.BackColor = System.Drawing.Color.DarkSlateBlue
-        Me.Panel1.Controls.Add(Me.Button2)
-        Me.Panel1.Controls.Add(Me.Course_RegistrationBTNMM)
-        Me.Panel1.Controls.Add(Me.MMExitBtn)
-        Me.Panel1.Controls.Add(Me.Button5)
-        Me.Panel1.Controls.Add(Me.ReportBTN)
-        Me.Panel1.Controls.Add(Me.CourseHistory_GPALookUpBTN)
-        Me.Panel1.Location = New System.Drawing.Point(122, 81)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(861, 383)
-        Me.Panel1.TabIndex = 13
+        Me.MMPanel.BackColor = System.Drawing.Color.DarkSlateBlue
+        Me.MMPanel.Controls.Add(Me.AddStuTeaCourBTN)
+        Me.MMPanel.Controls.Add(Me.Course_RegistrationBTNMM)
+        Me.MMPanel.Controls.Add(Me.MMExitBtn)
+        Me.MMPanel.Controls.Add(Me.UpStuTeachCourBTN)
+        Me.MMPanel.Controls.Add(Me.ReportBTN)
+        Me.MMPanel.Controls.Add(Me.CourseHistory_GPALookUpBTN)
+        Me.MMPanel.Location = New System.Drawing.Point(122, 81)
+        Me.MMPanel.Name = "MMPanel"
+        Me.MMPanel.Size = New System.Drawing.Size(861, 383)
+        Me.MMPanel.TabIndex = 13
         '
         'Main_Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1039, 492)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.MMPanel)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Main_Menu"
         Me.Text = "Main Menu"
-        Me.Panel1.ResumeLayout(False)
+        Me.MMPanel.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button2 As Button
+    Friend WithEvents AddStuTeaCourBTN As Button
     Friend WithEvents Course_RegistrationBTNMM As Button
-    Friend WithEvents Button5 As Button
+    Friend WithEvents UpStuTeachCourBTN As Button
     Friend WithEvents CourseHistory_GPALookUpBTN As Button
     Friend WithEvents ReportBTN As Button
     Friend WithEvents MMExitBtn As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents Panel1 As Panel
+    Friend WithEvents MMPanel As Panel
 End Class

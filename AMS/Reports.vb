@@ -60,6 +60,9 @@ Public Class Reports
             DataAdpt.Fill(DtRptResults)
             'binds the data table to the data source of the grid view Thus prepopulating it with data 
             ReportsGridView.DataSource = DtRptResults
+            'closes DB connection and data reader 
+            DataAdpt.Dispose()
+
 
         End If
 

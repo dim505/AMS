@@ -26,6 +26,9 @@ Public Class GPA_Academic_History_Look_Up
         DataAdpt.Fill(DtStuResults)
         'binds the data table to the data source of the grid view Thus prepopulating it with data 
         StuGPAGridView.DataSource = DtStuResults
+        'closes DB connection and data reader 
+        DataAdpt.Dispose()
+
 
     End Sub
 
