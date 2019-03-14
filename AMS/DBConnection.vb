@@ -5,7 +5,7 @@
 Public Module DBConnection
 
     'Defines connection String 
-    Dim connectionStr As String = "provider=SQLOLEDB;Data Source=DESKTOP-N2G2IND;Initial Catalog=AMS;uid=DESKTOP-N2G2IND\bob;pwd=Ccleaner123!@;Integrated security=SSPI; MultipleActiveResultSets=true"
+    Dim connectionStr As String = "provider=SQLOLEDB;Data Source=DESKTOP-N2G2IND;Initial Catalog=AMS;Integrated security=SSPI; MultipleActiveResultSets=true"
     'declares OleDbConnection  instance, represents open connection to DB
     Public dbConnection As OleDbConnection = New OleDbConnection(connectionStr)
     'declares OleDbCommand, represents the Sql command that is going to exicuted against the DB

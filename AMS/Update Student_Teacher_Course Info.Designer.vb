@@ -157,7 +157,7 @@ Partial Class Update_Student_Teacher_Course_Info
         Me.UpStuIDTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpStuIDTxtBox.Name = "UpStuIDTxtBox"
         Me.UpStuIDTxtBox.Size = New System.Drawing.Size(351, 22)
-        Me.UpStuIDTxtBox.TabIndex = 139
+        Me.UpStuIDTxtBox.TabIndex = 117
         '
         'UpStuStateTxtBox
         '
@@ -165,7 +165,7 @@ Partial Class Update_Student_Teacher_Course_Info
         Me.UpStuStateTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpStuStateTxtBox.Name = "UpStuStateTxtBox"
         Me.UpStuStateTxtBox.Size = New System.Drawing.Size(351, 22)
-        Me.UpStuStateTxtBox.TabIndex = 137
+        Me.UpStuStateTxtBox.TabIndex = 130
         '
         'UpStuCityTxtBox
         '
@@ -181,7 +181,7 @@ Partial Class Update_Student_Teacher_Course_Info
         Me.UpStuUpdateBTN.Location = New System.Drawing.Point(234, 388)
         Me.UpStuUpdateBTN.Name = "UpStuUpdateBTN"
         Me.UpStuUpdateBTN.Size = New System.Drawing.Size(165, 111)
-        Me.UpStuUpdateBTN.TabIndex = 135
+        Me.UpStuUpdateBTN.TabIndex = 140
         Me.UpStuUpdateBTN.Text = "Update"
         Me.UpStuUpdateBTN.UseVisualStyleBackColor = True
         '
@@ -191,7 +191,7 @@ Partial Class Update_Student_Teacher_Course_Info
         Me.UpStuRemoveBTN.Location = New System.Drawing.Point(425, 388)
         Me.UpStuRemoveBTN.Name = "UpStuRemoveBTN"
         Me.UpStuRemoveBTN.Size = New System.Drawing.Size(171, 111)
-        Me.UpStuRemoveBTN.TabIndex = 134
+        Me.UpStuRemoveBTN.TabIndex = 141
         Me.UpStuRemoveBTN.Text = "Remove"
         Me.UpStuRemoveBTN.UseVisualStyleBackColor = True
         '
@@ -201,7 +201,7 @@ Partial Class Update_Student_Teacher_Course_Info
         Me.UpStuLookUpBTN.Location = New System.Drawing.Point(62, 388)
         Me.UpStuLookUpBTN.Name = "UpStuLookUpBTN"
         Me.UpStuLookUpBTN.Size = New System.Drawing.Size(150, 111)
-        Me.UpStuLookUpBTN.TabIndex = 133
+        Me.UpStuLookUpBTN.TabIndex = 139
         Me.UpStuLookUpBTN.Text = "Look Up"
         Me.UpStuLookUpBTN.UseVisualStyleBackColor = True
         '
@@ -211,7 +211,7 @@ Partial Class Update_Student_Teacher_Course_Info
         Me.UpStuSSNTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpStuSSNTxtBox.Name = "UpStuSSNTxtBox"
         Me.UpStuSSNTxtBox.Size = New System.Drawing.Size(351, 22)
-        Me.UpStuSSNTxtBox.TabIndex = 132
+        Me.UpStuSSNTxtBox.TabIndex = 120
         '
         'Label1
         '
@@ -291,7 +291,7 @@ Partial Class Update_Student_Teacher_Course_Info
         Me.UpStuDTP.Margin = New System.Windows.Forms.Padding(4)
         Me.UpStuDTP.Name = "UpStuDTP"
         Me.UpStuDTP.Size = New System.Drawing.Size(351, 29)
-        Me.UpStuDTP.TabIndex = 130
+        Me.UpStuDTP.TabIndex = 138
         Me.UpStuDTP.Value = New Date(2017, 11, 8, 12, 18, 54, 0)
         '
         'Label16
@@ -391,7 +391,7 @@ Partial Class Update_Student_Teacher_Course_Info
         Me.UpTeachIDTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpTeachIDTxtBox.Name = "UpTeachIDTxtBox"
         Me.UpTeachIDTxtBox.Size = New System.Drawing.Size(351, 22)
-        Me.UpTeachIDTxtBox.TabIndex = 142
+        Me.UpTeachIDTxtBox.TabIndex = 115
         '
         'UpTeachCityTxtBox
         '
@@ -399,7 +399,7 @@ Partial Class Update_Student_Teacher_Course_Info
         Me.UpTeachCityTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpTeachCityTxtBox.Name = "UpTeachCityTxtBox"
         Me.UpTeachCityTxtBox.Size = New System.Drawing.Size(351, 22)
-        Me.UpTeachCityTxtBox.TabIndex = 140
+        Me.UpTeachCityTxtBox.TabIndex = 124
         '
         'UpTeachStateTxtBox
         '
@@ -407,7 +407,7 @@ Partial Class Update_Student_Teacher_Course_Info
         Me.UpTeachStateTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpTeachStateTxtBox.Name = "UpTeachStateTxtBox"
         Me.UpTeachStateTxtBox.Size = New System.Drawing.Size(351, 22)
-        Me.UpTeachStateTxtBox.TabIndex = 139
+        Me.UpTeachStateTxtBox.TabIndex = 123
         '
         'UpTeachuPDATEBtn
         '
@@ -415,7 +415,7 @@ Partial Class Update_Student_Teacher_Course_Info
         Me.UpTeachuPDATEBtn.Location = New System.Drawing.Point(234, 385)
         Me.UpTeachuPDATEBtn.Name = "UpTeachuPDATEBtn"
         Me.UpTeachuPDATEBtn.Size = New System.Drawing.Size(125, 105)
-        Me.UpTeachuPDATEBtn.TabIndex = 138
+        Me.UpTeachuPDATEBtn.TabIndex = 127
         Me.UpTeachuPDATEBtn.Text = "Update"
         Me.UpTeachuPDATEBtn.UseVisualStyleBackColor = True
         '
@@ -425,7 +425,7 @@ Partial Class Update_Student_Teacher_Course_Info
         Me.UpTeachRemoveBtn.Location = New System.Drawing.Point(412, 385)
         Me.UpTeachRemoveBtn.Name = "UpTeachRemoveBtn"
         Me.UpTeachRemoveBtn.Size = New System.Drawing.Size(152, 105)
-        Me.UpTeachRemoveBtn.TabIndex = 137
+        Me.UpTeachRemoveBtn.TabIndex = 129
         Me.UpTeachRemoveBtn.Text = "Remove"
         Me.UpTeachRemoveBtn.UseVisualStyleBackColor = True
         '
@@ -435,7 +435,7 @@ Partial Class Update_Student_Teacher_Course_Info
         Me.UpTeachLookUpBtn.Location = New System.Drawing.Point(75, 385)
         Me.UpTeachLookUpBtn.Name = "UpTeachLookUpBtn"
         Me.UpTeachLookUpBtn.Size = New System.Drawing.Size(125, 105)
-        Me.UpTeachLookUpBtn.TabIndex = 136
+        Me.UpTeachLookUpBtn.TabIndex = 126
         Me.UpTeachLookUpBtn.Text = "Look Up"
         Me.UpTeachLookUpBtn.UseVisualStyleBackColor = True
         '
@@ -445,7 +445,7 @@ Partial Class Update_Student_Teacher_Course_Info
         Me.UpTeachSSNTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpTeachSSNTxtBox.Name = "UpTeachSSNTxtBox"
         Me.UpTeachSSNTxtBox.Size = New System.Drawing.Size(351, 22)
-        Me.UpTeachSSNTxtBox.TabIndex = 130
+        Me.UpTeachSSNTxtBox.TabIndex = 120
         '
         'Label2
         '
@@ -525,7 +525,7 @@ Partial Class Update_Student_Teacher_Course_Info
         Me.UpTeachDOBDTP.Margin = New System.Windows.Forms.Padding(4)
         Me.UpTeachDOBDTP.Name = "UpTeachDOBDTP"
         Me.UpTeachDOBDTP.Size = New System.Drawing.Size(351, 29)
-        Me.UpTeachDOBDTP.TabIndex = 128
+        Me.UpTeachDOBDTP.TabIndex = 125
         Me.UpTeachDOBDTP.Value = New Date(2017, 11, 8, 12, 18, 54, 0)
         '
         'Label7
@@ -612,7 +612,7 @@ Partial Class Update_Student_Teacher_Course_Info
         '
         'UpdatePrereqTxtBox
         '
-        Me.UpdatePrereqTxtBox.Location = New System.Drawing.Point(253, 371)
+        Me.UpdatePrereqTxtBox.Location = New System.Drawing.Point(283, 371)
         Me.UpdatePrereqTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpdatePrereqTxtBox.Name = "UpdatePrereqTxtBox"
         Me.UpdatePrereqTxtBox.Size = New System.Drawing.Size(311, 22)
@@ -642,15 +642,15 @@ Partial Class Update_Student_Teacher_Course_Info
         '
         'UpdateTeacherIDtxtbox
         '
-        Me.UpdateTeacherIDtxtbox.Location = New System.Drawing.Point(255, 135)
+        Me.UpdateTeacherIDtxtbox.Location = New System.Drawing.Point(285, 135)
         Me.UpdateTeacherIDtxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpdateTeacherIDtxtbox.Name = "UpdateTeacherIDtxtbox"
         Me.UpdateTeacherIDtxtbox.Size = New System.Drawing.Size(309, 22)
-        Me.UpdateTeacherIDtxtbox.TabIndex = 158
+        Me.UpdateTeacherIDtxtbox.TabIndex = 145
         '
         'UpdateEndTimeTxtbox
         '
-        Me.UpdateEndTimeTxtbox.Location = New System.Drawing.Point(255, 335)
+        Me.UpdateEndTimeTxtbox.Location = New System.Drawing.Point(285, 335)
         Me.UpdateEndTimeTxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpdateEndTimeTxtbox.Name = "UpdateEndTimeTxtbox"
         Me.UpdateEndTimeTxtbox.Size = New System.Drawing.Size(309, 22)
@@ -669,7 +669,7 @@ Partial Class Update_Student_Teacher_Course_Info
         '
         'UpdateStartTimeTxtBox
         '
-        Me.UpdateStartTimeTxtBox.Location = New System.Drawing.Point(255, 294)
+        Me.UpdateStartTimeTxtBox.Location = New System.Drawing.Point(285, 294)
         Me.UpdateStartTimeTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpdateStartTimeTxtBox.Name = "UpdateStartTimeTxtBox"
         Me.UpdateStartTimeTxtBox.Size = New System.Drawing.Size(309, 22)
@@ -677,15 +677,15 @@ Partial Class Update_Student_Teacher_Course_Info
         '
         'UpdateCorDesTxtBox
         '
-        Me.UpdateCorDesTxtBox.Location = New System.Drawing.Point(255, 199)
+        Me.UpdateCorDesTxtBox.Location = New System.Drawing.Point(285, 199)
         Me.UpdateCorDesTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpdateCorDesTxtBox.Name = "UpdateCorDesTxtBox"
         Me.UpdateCorDesTxtBox.Size = New System.Drawing.Size(309, 22)
-        Me.UpdateCorDesTxtBox.TabIndex = 154
+        Me.UpdateCorDesTxtBox.TabIndex = 150
         '
         'UpdateDaysTaughttxtbox
         '
-        Me.UpdateDaysTaughttxtbox.Location = New System.Drawing.Point(255, 249)
+        Me.UpdateDaysTaughttxtbox.Location = New System.Drawing.Point(285, 249)
         Me.UpdateDaysTaughttxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpdateDaysTaughttxtbox.Name = "UpdateDaysTaughttxtbox"
         Me.UpdateDaysTaughttxtbox.Size = New System.Drawing.Size(311, 22)
@@ -715,7 +715,7 @@ Partial Class Update_Student_Teacher_Course_Info
         '
         'UpdateCourseNameTxtbox
         '
-        Me.UpdateCourseNameTxtbox.Location = New System.Drawing.Point(255, 165)
+        Me.UpdateCourseNameTxtbox.Location = New System.Drawing.Point(285, 165)
         Me.UpdateCourseNameTxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpdateCourseNameTxtbox.Name = "UpdateCourseNameTxtbox"
         Me.UpdateCourseNameTxtbox.Size = New System.Drawing.Size(309, 22)
@@ -745,7 +745,7 @@ Partial Class Update_Student_Teacher_Course_Info
         '
         'UpdateTeacherLastNametxtbox
         '
-        Me.UpdateTeacherLastNametxtbox.Location = New System.Drawing.Point(253, 80)
+        Me.UpdateTeacherLastNametxtbox.Location = New System.Drawing.Point(283, 80)
         Me.UpdateTeacherLastNametxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpdateTeacherLastNametxtbox.Name = "UpdateTeacherLastNametxtbox"
         Me.UpdateTeacherLastNametxtbox.Size = New System.Drawing.Size(313, 22)
@@ -775,7 +775,7 @@ Partial Class Update_Student_Teacher_Course_Info
         '
         'UpdateTeacherFirstNametxtbox
         '
-        Me.UpdateTeacherFirstNametxtbox.Location = New System.Drawing.Point(253, 47)
+        Me.UpdateTeacherFirstNametxtbox.Location = New System.Drawing.Point(283, 47)
         Me.UpdateTeacherFirstNametxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpdateTeacherFirstNametxtbox.Name = "UpdateTeacherFirstNametxtbox"
         Me.UpdateTeacherFirstNametxtbox.Size = New System.Drawing.Size(311, 22)
@@ -783,11 +783,11 @@ Partial Class Update_Student_Teacher_Course_Info
         '
         'UpdateCourseIDtxtbox
         '
-        Me.UpdateCourseIDtxtbox.Location = New System.Drawing.Point(255, 18)
+        Me.UpdateCourseIDtxtbox.Location = New System.Drawing.Point(285, 18)
         Me.UpdateCourseIDtxtbox.Margin = New System.Windows.Forms.Padding(4)
         Me.UpdateCourseIDtxtbox.Name = "UpdateCourseIDtxtbox"
         Me.UpdateCourseIDtxtbox.Size = New System.Drawing.Size(309, 22)
-        Me.UpdateCourseIDtxtbox.TabIndex = 149
+        Me.UpdateCourseIDtxtbox.TabIndex = 115
         '
         'Label30
         '
@@ -806,7 +806,7 @@ Partial Class Update_Student_Teacher_Course_Info
         Me.UpdateCourseBTN.Location = New System.Drawing.Point(240, 413)
         Me.UpdateCourseBTN.Name = "UpdateCourseBTN"
         Me.UpdateCourseBTN.Size = New System.Drawing.Size(145, 96)
-        Me.UpdateCourseBTN.TabIndex = 141
+        Me.UpdateCourseBTN.TabIndex = 163
         Me.UpdateCourseBTN.Text = "Update"
         Me.UpdateCourseBTN.UseVisualStyleBackColor = True
         '
@@ -816,7 +816,7 @@ Partial Class Update_Student_Teacher_Course_Info
         Me.RemoveCourseBTN.Location = New System.Drawing.Point(404, 413)
         Me.RemoveCourseBTN.Name = "RemoveCourseBTN"
         Me.RemoveCourseBTN.Size = New System.Drawing.Size(160, 96)
-        Me.RemoveCourseBTN.TabIndex = 140
+        Me.RemoveCourseBTN.TabIndex = 164
         Me.RemoveCourseBTN.Text = "Remove"
         Me.RemoveCourseBTN.UseVisualStyleBackColor = True
         '
@@ -826,7 +826,7 @@ Partial Class Update_Student_Teacher_Course_Info
         Me.LookUpBTNCourseInfo.Location = New System.Drawing.Point(50, 413)
         Me.LookUpBTNCourseInfo.Name = "LookUpBTNCourseInfo"
         Me.LookUpBTNCourseInfo.Size = New System.Drawing.Size(173, 96)
-        Me.LookUpBTNCourseInfo.TabIndex = 139
+        Me.LookUpBTNCourseInfo.TabIndex = 162
         Me.LookUpBTNCourseInfo.Text = "Look Up"
         Me.LookUpBTNCourseInfo.UseVisualStyleBackColor = True
         '
@@ -836,7 +836,7 @@ Partial Class Update_Student_Teacher_Course_Info
         Me.UpStuTeachCourInfoMMBTN.Location = New System.Drawing.Point(718, 330)
         Me.UpStuTeachCourInfoMMBTN.Name = "UpStuTeachCourInfoMMBTN"
         Me.UpStuTeachCourInfoMMBTN.Size = New System.Drawing.Size(132, 101)
-        Me.UpStuTeachCourInfoMMBTN.TabIndex = 145
+        Me.UpStuTeachCourInfoMMBTN.TabIndex = 165
         Me.UpStuTeachCourInfoMMBTN.Text = "Main Menu"
         Me.UpStuTeachCourInfoMMBTN.UseVisualStyleBackColor = True
         '
@@ -848,7 +848,7 @@ Partial Class Update_Student_Teacher_Course_Info
         Me.Controls.Add(Me.UpStuTeachCourInfoMMBTN)
         Me.Controls.Add(Me.TabControl1)
         Me.Name = "Update_Student_Teacher_Course_Info"
-        Me.Text = "Update_Student_Teacher_Course_Info"
+        Me.Text = "Update Student/Teacher/Course"
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()

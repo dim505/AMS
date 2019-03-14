@@ -55,8 +55,9 @@ Public Class LogIn
 
                 'shows main menu
                 Main_Menu.Show()
-                'hides current Form
-                Me.Hide()
+                'closes current Form
+                Me.Close()
+
             Else
                 'notifes user username or password wrong
                 MsgBox("Invalid Username or Password")

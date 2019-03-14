@@ -7,7 +7,7 @@
 
         'declares string for SQL query and assigns Query value
         Dim RegisterStudentWithCourseQuery As String = "INSERT INTO CourseRegistration$(StudentID, CourseID) " &
-        "VALUES(" & "'" & CRStuIDTxtBox.Text & "','" & CRCourseIDtxtBox.Text & "','" & "')"
+        "VALUES(" & "'" & CRStuIDTxtBox.Text & "','" & CRCourseIDtxtBox.Text & "')"
 
 
 
@@ -39,10 +39,11 @@
 
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        'hides current form
-        Me.Hide()
         'takes you back to Main Menu
         Main_Menu.Show()
+        'closes current form
+        Me.Close()
+
 
 
     End Sub

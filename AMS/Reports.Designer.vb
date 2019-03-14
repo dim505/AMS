@@ -30,7 +30,7 @@ Partial Class Reports
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.ReportSelComboBox = New System.Windows.Forms.ComboBox()
         Me.RunRptBtn = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.RptfrmMMBtn = New System.Windows.Forms.Button()
         CType(Me.ReportsGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -83,7 +83,7 @@ Partial Class Reports
         'ReportSelComboBox
         '
         Me.ReportSelComboBox.FormattingEnabled = True
-        Me.ReportSelComboBox.Location = New System.Drawing.Point(418, 42)
+        Me.ReportSelComboBox.Location = New System.Drawing.Point(437, 42)
         Me.ReportSelComboBox.Name = "ReportSelComboBox"
         Me.ReportSelComboBox.Size = New System.Drawing.Size(418, 24)
         Me.ReportSelComboBox.TabIndex = 11
@@ -98,22 +98,22 @@ Partial Class Reports
         Me.RunRptBtn.Text = "Run"
         Me.RunRptBtn.UseVisualStyleBackColor = True
         '
-        'Button2
+        'RptfrmMMBtn
         '
-        Me.Button2.Font = New System.Drawing.Font("Showcard Gothic", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
-        Me.Button2.Location = New System.Drawing.Point(913, 277)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(148, 108)
-        Me.Button2.TabIndex = 146
-        Me.Button2.Text = "Main Menu"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.RptfrmMMBtn.Font = New System.Drawing.Font("Showcard Gothic", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.RptfrmMMBtn.Location = New System.Drawing.Point(913, 277)
+        Me.RptfrmMMBtn.Name = "RptfrmMMBtn"
+        Me.RptfrmMMBtn.Size = New System.Drawing.Size(148, 108)
+        Me.RptfrmMMBtn.TabIndex = 146
+        Me.RptfrmMMBtn.Text = "Main Menu"
+        Me.RptfrmMMBtn.UseVisualStyleBackColor = True
         '
         'Reports
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1098, 494)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.RptfrmMMBtn)
         Me.Controls.Add(Me.RunRptBtn)
         Me.Controls.Add(Me.ReportSelComboBox)
         Me.Controls.Add(Me.ReportsGridView)
@@ -133,5 +133,5 @@ Partial Class Reports
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
     Friend WithEvents ReportSelComboBox As ComboBox
     Friend WithEvents RunRptBtn As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents RptfrmMMBtn As Button
 End Class

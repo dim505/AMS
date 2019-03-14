@@ -158,10 +158,12 @@ Public Class Update_Student_Teacher_Course_Info
 
     Private Sub Button10_Click(sender As Object, e As EventArgs) Handles UpStuTeachCourInfoMMBTN.Click
 
-        'hides current form
-        Me.Hide()
         'makes main form active 
         Main_Menu.Show()
+
+        'closes current form
+        Me.Close()
+
 
 
     End Sub
