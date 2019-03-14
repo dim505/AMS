@@ -24,15 +24,16 @@ Public Class Reports
         If (ReportSelComboBox.Text = "All teachers who teach courses") Then
 
 
-            ReportSqlStr = "Select TeaInfo.TeacherFName, TeaInfo.TeacherLName, CourTeaBy.CourseID, CourInfo.[CourseName]
+            ReportSqlStr = "Select TeaInfo.TeacherFName + ' ' + TeaInfo.TeacherLName as [Teacher Name], CourTeaBy.CourseID as [Course ID], CourInfo.[CourseName] as [Course Name]
                             From CourseTeachedBy$ As CourTeaBy
                             Left Join TeacherInfo$ AS TeaInfo
                             On CourTeaBy.TeacherID = TeaInfo.ID
                             inner Join CourseInfo$ as CourInfo
                             On CourTeaBy.CourseID = CourInfo.CourseID"
+
         ElseIf (ReportSelComboBox.Text = "All students with grades of 80 and higher") Then
 
-            ReportSqlStr = "Select StuInfo.[StudentFName], StuInfo.[StudentLName], stuGrd.[StudentID], stuGrd.[CourseID], stuGrd.[Grade]
+            ReportSqlStr = "Select StuInfo.[StudentFName] + ' '+ StuInfo.[StudentLName] as [Student Name], stuGrd.[StudentID] as [Student ID], stuGrd.[CourseID] as [Course ID], stuGrd.[Grade]
                             from [StudentInfo$] As StuInfo
                             Left Join [StudentGrade$] as stuGrd
                             On StuInfo.ID = stuGrd.[StudentID]
@@ -60,6 +61,9 @@ Public Class Reports
             DataAdpt.Fill(DtRptResults)
             'binds the data table to the data source of the grid view Thus prepopulating it with data 
             ReportsGridView.DataSource = DtRptResults
+            'closes DB connection and data reader 
+            DataAdpt.Dispose()
+
 
         End If
 
@@ -72,10 +76,11 @@ Public Class Reports
 
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        'hides current form
-        Me.Hide()
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles RptfrmMMBtn.Click
         'makes main form active 
         Main_Menu.Show()
+        'closes current form
+        Me.Close()
+
     End Sub
 End Class

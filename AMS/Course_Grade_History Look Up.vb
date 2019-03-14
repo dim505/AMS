@@ -8,10 +8,12 @@ Public Class GPA_Academic_History_Look_Up
     Private Sub LookUpGradesBTN_Click(sender As Object, e As EventArgs) Handles LookUpGradesBTN.Click
         'declares string for SQL query and assigns a Query value
         Dim LookUpGPAHistory As String = "
-        select StuInfo.StudentFName, StuInfo.StudentLName, StuGd.StudentID, StuGd.CourseID, StuGd.Grade  
+        select StuInfo.StudentFName +  ' ' + StuInfo.StudentLName as [Student Name], StuGd.StudentID as [Student ID], CI.CourseName as [Course Name], StuGd.CourseID as [Course ID], StuGd.Grade  
         from StudentInfo$ as StuInfo
         inner join StudentGrade$ as StuGd
         on StuInfo.ID = StuGd.StudentID
+		inner join CourseInfo$ as CI
+		on CI.CourseID = StuGd.CourseID
         where StuInfo.ID =" & "'" & AcaHisStuIDTxtBox.Text & "';"
 
 
@@ -26,15 +28,18 @@ Public Class GPA_Academic_History_Look_Up
         DataAdpt.Fill(DtStuResults)
         'binds the data table to the data source of the grid view Thus prepopulating it with data 
         StuGPAGridView.DataSource = DtStuResults
+        'closes DB connection and data reader 
+        DataAdpt.Dispose()
+
 
     End Sub
 
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles BtnMainMenu.Click
-
-        'hides current form
-        Me.Hide()
         'makes main form active 
         Main_Menu.Show()
+        'closes current form
+        Me.Close()
+
     End Sub
 End Class

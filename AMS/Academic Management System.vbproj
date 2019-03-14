@@ -6,11 +6,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{33B7647C-D64D-4FA5-AEAD-6A509F770658}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>AMS.Main_Menu</StartupObject>
+    <StartupObject>AMS.My.MyApplication</StartupObject>
     <RootNamespace>AMS</RootNamespace>
     <AssemblyName>AMS</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -48,6 +48,9 @@
   <PropertyGroup>
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icons8-Windows-8-Business-Graduation-Cap.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -78,6 +81,7 @@
     <Compile Include="Add Course_Teacher_Student.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ApplicationEvents.vb" />
     <Compile Include="Course Registration.Designer.vb">
       <DependentUpon>Course Registration.vb</DependentUpon>
     </Compile>
@@ -88,6 +92,12 @@
       <DependentUpon>Course_Grade_History Look Up.vb</DependentUpon>
     </Compile>
     <Compile Include="Course_Grade_History Look Up.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.Designer.vb">
+      <DependentUpon>LogIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.vb">
@@ -125,7 +135,7 @@
     <Compile Include="Update Student_Teacher_Course Info.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Utility.vb" />
+    <Compile Include="DBConnection.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Add Course_Teacher_Student.resx">
@@ -136,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Course_Grade_History Look Up.resx">
       <DependentUpon>Course_Grade_History Look Up.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
@@ -186,6 +199,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icons8-Windows-8-Business-Graduation-Cap.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
