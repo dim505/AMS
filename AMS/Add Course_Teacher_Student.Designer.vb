@@ -781,7 +781,7 @@ Partial Class Add_Course_Teacher_Student
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.AddCourStuTeaTabControl)
         Me.Name = "Add_Course_Teacher_Student"
-        Me.Text = "Add_Course_Student_Teacher_Info"
+        Me.Text = "Add Course/Student/Teacher"
         Me.AddCourStuTeaTabControl.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()

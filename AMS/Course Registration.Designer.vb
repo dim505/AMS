@@ -32,6 +32,7 @@ Partial Class Course_Registration
         '
         'CRStuIDTxtBox
         '
+        Me.CRStuIDTxtBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CRStuIDTxtBox.Location = New System.Drawing.Point(444, 79)
         Me.CRStuIDTxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.CRStuIDTxtBox.Multiline = True
@@ -61,6 +62,7 @@ Partial Class Course_Registration
         '
         'CRCourseIDtxtBox
         '
+        Me.CRCourseIDtxtBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CRCourseIDtxtBox.Location = New System.Drawing.Point(444, 122)
         Me.CRCourseIDtxtBox.Margin = New System.Windows.Forms.Padding(4)
         Me.CRCourseIDtxtBox.Multiline = True

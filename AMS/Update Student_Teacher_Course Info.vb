@@ -17,22 +17,37 @@ Public Class Update_Student_Teacher_Course_Info
 
 
 
-        'loop read through data 
-        Do While (QueryResults.Read())
 
-            'prepopulates all the text boxes from the query results
-            UpStuIDTxtBox.Text = QueryResults.GetString(0)
-            UpStuFNameTxtBox.Text = QueryResults.GetString(1)
-            UpStuLNameTxtBox.Text = QueryResults.GetString(2)
-            UpStuSSNTxtBox.Text = QueryResults.GetString(3)
+        If (QueryResults.HasRows) Then
 
-            UpStuAddressTxtBox.Text = QueryResults.GetString(4)
-            UpStuCityTxtBox.Text = QueryResults.GetString(5)
-            UpStuStateTxtBox.Text = QueryResults.GetString(6)
-            UpStuPhoneNumTxtBox.Text = QueryResults.GetString(7)
-            UpStuDTP.Text = QueryResults.GetString(8)
 
-        Loop
+
+            'loop read through data 
+            Do While (QueryResults.Read())
+
+                'prepopulates all the text boxes from the query results
+                UpStuIDTxtBox.Text = QueryResults.GetString(0)
+                UpStuFNameTxtBox.Text = QueryResults.GetString(1)
+                UpStuLNameTxtBox.Text = QueryResults.GetString(2)
+                UpStuSSNTxtBox.Text = QueryResults.GetString(3)
+
+                UpStuAddressTxtBox.Text = QueryResults.GetString(4)
+                UpStuCityTxtBox.Text = QueryResults.GetString(5)
+                UpStuStateTxtBox.Text = QueryResults.GetString(6)
+                UpStuPhoneNumTxtBox.Text = QueryResults.GetString(7)
+                UpStuDTP.Text = QueryResults.GetString(8)
+
+            Loop
+
+        Else
+            MsgBox("Could not Find Student ID")
+
+
+
+        End If
+
+
+
         'closes DB connection and data reader 
         QueryResults.Close()
 
@@ -42,6 +57,8 @@ Public Class Update_Student_Teacher_Course_Info
     End Sub
 
     Private Sub Button9_Click(sender As Object, e As EventArgs) Handles LookUpBTNCourseInfo.Click
+
+
 
         'declares string for SQL query and assigns a Query value
         Dim LookUpCourseQuery As String = "Select CourseID, CourseName, CourseDescription, TeacherFName, TeacherLName, TeacherID, DaysTaught, StartTime, EndTime, PreReq from CourseInfo$ where CourseID=" & "'" & UpdateCourseIDtxtbox.Text & "';"
@@ -57,29 +74,47 @@ Public Class Update_Student_Teacher_Course_Info
 
 
 
-        'This loop reads through all the data 
 
-        Do While (QueryResults.Read())
-
-
-            'prepopulates all the text boxes from the query results
-            UpdateCourseIDtxtbox.Text = QueryResults.GetString(0)
-            UpdateCourseNameTxtbox.Text = QueryResults.GetString(1)
-            UpdateCorDesTxtBox.Text = QueryResults.GetString(2)
-            UpdateTeacherFirstNametxtbox.Text = QueryResults.GetString(3)
-            UpdateTeacherLastNametxtbox.Text = QueryResults.GetString(4)
-            UpdateTeacherIDtxtbox.Text = QueryResults.GetString(5)
-            UpdateDaysTaughttxtbox.Text = QueryResults.GetString(6)
-            UpdateStartTimeTxtBox.Text = QueryResults.GetString(7)
-            UpdateEndTimeTxtbox.Text = QueryResults.GetString(8)
-            UpdatePrereqTxtBox.Text = QueryResults.GetString(9)
+        'retrives data if there are rows else it notifes end user could not find ID 
+        If (QueryResults.HasRows) Then
 
 
 
 
+            'This loop reads through all the data 
+
+            Do While (QueryResults.Read())
 
 
-        Loop
+                'prepopulates all the text boxes from the query results
+                UpdateCourseIDtxtbox.Text = QueryResults.GetString(0)
+                UpdateCourseNameTxtbox.Text = QueryResults.GetString(1)
+                UpdateCorDesTxtBox.Text = QueryResults.GetString(2)
+                UpdateTeacherFirstNametxtbox.Text = QueryResults.GetString(3)
+                UpdateTeacherLastNametxtbox.Text = QueryResults.GetString(4)
+                UpdateTeacherIDtxtbox.Text = QueryResults.GetString(5)
+                UpdateDaysTaughttxtbox.Text = QueryResults.GetString(6)
+                UpdateStartTimeTxtBox.Text = QueryResults.GetString(7)
+                UpdateEndTimeTxtbox.Text = QueryResults.GetString(8)
+                UpdatePrereqTxtBox.Text = QueryResults.GetString(9)
+
+
+
+
+
+
+            Loop
+
+        Else
+            MsgBox("Could not Find Course ID")
+
+
+
+        End If
+
+
+
+
 
         'closes DB connection and data reader 
         QueryResults.Close()
@@ -95,6 +130,25 @@ Public Class Update_Student_Teacher_Course_Info
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles UpdateCourseBTN.Click
+
+
+        'loops through all the textboxes in the active tab control page
+        For Each TextBox In UpStuTeaCourInfo.SelectedTab.Controls.OfType(Of TextBox)
+
+            'tests if the textbox is null or has a white space 
+            If (String.IsNullOrEmpty(TextBox.Text)) Then
+
+                'notifes the user to input a value for that textbox 
+                MsgBox("Please Input a Value")
+                'marks the offfending textbox active 
+                TextBox.Select()
+                'Exits the current subprocedure 
+                Exit Sub
+            End If
+
+        Next
+
+
 
         'declares SQL Query 
         Dim UpdateQuery As String = "Update CourseInfo$ SET CourseID ='" & UpdateCourseIDtxtbox.Text & "', " & "CourseName ='" & UpdateCourseNameTxtbox.Text & "', " & "CourseDescription ='" &
@@ -114,6 +168,15 @@ Public Class Update_Student_Teacher_Course_Info
         'if the returned value is greater than or equal to 1, it notifies the user that the update was successful, else it failed
         If (RowFlag > 0) Then
             MsgBox("Course info updated successfully")
+
+            'loops through and clears all textboxes after the entity is registered 
+            For Each TextBox In UpStuTeaCourInfo.SelectedTab.Controls.OfType(Of TextBox)
+
+                TextBox.Text = ""
+            Next
+            'selects the first textbox incase they want to add something again 
+            UpdateCourseIDtxtbox.Select()
+
         Else
             MsgBox("Course info update failed !!")
         End If
@@ -143,6 +206,14 @@ Public Class Update_Student_Teacher_Course_Info
         'exicutes the query and returns the number of rows affected
         If (RowFlag > 0) Then
             MsgBox("Course info deleted successfully")
+            'loops through and clears all textboxes after the entity is registered 
+            For Each TextBox In UpStuTeaCourInfo.SelectedTab.Controls.OfType(Of TextBox)
+
+                TextBox.Text = ""
+            Next
+            'selects the first textbox incase they want to add something again 
+            UpdateCourseIDtxtbox.Select()
+
         Else
             MsgBox("Course info deletion failed !!")
         End If
@@ -170,6 +241,9 @@ Public Class Update_Student_Teacher_Course_Info
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles UpTeachLookUpBtn.Click
 
+
+
+
         'declares string for SQL query and assigns Query value
         Dim LookUpCourseQuery As String = "Select ID, TeacherFName, TeacherLName,SSN, Address, City, State, PhoneNumber, DateOfBirth from TeacherInfo$ where ID=" & "'" & UpTeachIDTxtBox.Text & "';"
 
@@ -182,22 +256,38 @@ Public Class Update_Student_Teacher_Course_Info
         Dim QueryResults As OleDbDataReader = SQLCommand.ExecuteReader()
 
 
-        'This loop reads through all the data 
-        Do While (QueryResults.Read())
 
 
-            'prepopulates all the text boxes from the query results
-            UpTeachIDTxtBox.Text = QueryResults.GetString(0)
-            UpTeachFNameTxtBox.Text = QueryResults.GetString(1)
-            UpTeachLNameTxtBox.Text = QueryResults.GetString(2)
-            UpTeachSSNTxtBox.Text = QueryResults.GetString(3)
-            UpTeachAddressTxtBox.Text = QueryResults.GetString(4)
-            UpTeachCityTxtBox.Text = QueryResults.GetString(5)
-            UpTeachStateTxtBox.Text = QueryResults.GetString(6)
-            UpTeachPhoneTxtBox.Text = QueryResults.GetString(7)
-            UpTeachDOBDTP.Text = QueryResults.GetString(8)
+        If (QueryResults.HasRows) Then
 
-        Loop
+
+
+            'This loop reads through all the data 
+            Do While (QueryResults.Read())
+
+
+                'prepopulates all the text boxes from the query results
+                UpTeachIDTxtBox.Text = QueryResults.GetString(0)
+                UpTeachFNameTxtBox.Text = QueryResults.GetString(1)
+                UpTeachLNameTxtBox.Text = QueryResults.GetString(2)
+                UpTeachSSNTxtBox.Text = QueryResults.GetString(3)
+                UpTeachAddressTxtBox.Text = QueryResults.GetString(4)
+                UpTeachCityTxtBox.Text = QueryResults.GetString(5)
+                UpTeachStateTxtBox.Text = QueryResults.GetString(6)
+                UpTeachPhoneTxtBox.Text = QueryResults.GetString(7)
+                UpTeachDOBDTP.Text = QueryResults.GetString(8)
+
+            Loop
+
+        Else
+            MsgBox("Could not Find Teacher ID")
+
+
+
+        End If
+
+
+
 
         'closes DB connection and data reader 
         QueryResults.Close()
@@ -209,6 +299,24 @@ Public Class Update_Student_Teacher_Course_Info
 
 
     Private Sub UpTeachuPDATEBtn_Click(sender As Object, e As EventArgs) Handles UpTeachuPDATEBtn.Click
+
+
+        'loops through all the textboxes in the active tab control page
+        For Each TextBox In UpStuTeaCourInfo.SelectedTab.Controls.OfType(Of TextBox)
+
+            'tests if the textbox is null or has a white space 
+            If (String.IsNullOrEmpty(TextBox.Text)) Then
+
+                'notifes the user to input a value for that textbox 
+                MsgBox("Please Input a Value")
+                'marks the offfending textbox active 
+                TextBox.Select()
+                'Exits the current subprocedure 
+                Exit Sub
+            End If
+
+        Next
+
 
 
         'declares string for SQL query and assigns a Query value
@@ -233,6 +341,16 @@ Public Class Update_Student_Teacher_Course_Info
         'if the returned value is greater than or equal to 1, it notifies the user that update was successful, else it failed
         If (RowFlag > 0) Then
             MsgBox("Teacher info updated successfully")
+
+            'loops through and clears all textboxes after the entity is registered 
+            For Each TextBox In UpStuTeaCourInfo.SelectedTab.Controls.OfType(Of TextBox)
+
+                TextBox.Text = ""
+            Next
+            'selects the first textbox incase they want to add something again 
+            UpTeachIDTxtBox.Select()
+
+
         Else
             MsgBox("Teacher info update failed !!")
         End If
@@ -261,6 +379,16 @@ Public Class Update_Student_Teacher_Course_Info
         'if the returned value is greater than or equal to 1, it notifies the user that delete was successful, else it failed
         If (RowFlag > 0) Then
             MsgBox("Teacher record deleted successfully")
+
+            'loops through and clears all textboxes after the entity is registered 
+            For Each TextBox In UpStuTeaCourInfo.SelectedTab.Controls.OfType(Of TextBox)
+
+                TextBox.Text = ""
+            Next
+            'selects the first textbox incase they want to add something again 
+            UpTeachIDTxtBox.Select()
+
+
         Else
             MsgBox("Teacher record deletion failed !!")
         End If
@@ -271,6 +399,25 @@ Public Class Update_Student_Teacher_Course_Info
     End Sub
 
     Private Sub UpStuUpdateBTN_Click(sender As Object, e As EventArgs) Handles UpStuUpdateBTN.Click
+
+
+        'loops through all the textboxes in the active tab control page
+        For Each TextBox In UpStuTeaCourInfo.SelectedTab.Controls.OfType(Of TextBox)
+
+            'tests if the textbox is null or has a white space 
+            If (String.IsNullOrEmpty(TextBox.Text)) Then
+
+                'notifes the user to input a value for that textbox 
+                MsgBox("Please Input a Value")
+                'marks the offfending textbox active 
+                TextBox.Select()
+                'Exits the current subprocedure 
+                Exit Sub
+            End If
+
+        Next
+
+
 
         'declares SQL Query 
         Dim UpdateQuery As String = "Update StudentInfo$ SET ID ='" & UpStuIDTxtBox.Text & "', " & "StudentFName ='" & UpStuFNameTxtBox.Text & "', " &
@@ -291,6 +438,17 @@ Public Class Update_Student_Teacher_Course_Info
         'if the returned value is greater than or equal to 1, it notifies the user that update was successful, else it failed
         If (RowFlag > 0) Then
             MsgBox("Student info updated successfully")
+
+            'loops through and clears all textboxes after the entity is registered 
+            For Each TextBox In UpStuTeaCourInfo.SelectedTab.Controls.OfType(Of TextBox)
+
+                TextBox.Text = ""
+            Next
+            'selects the first textbox incase they want to add something again 
+            UpStuIDTxtBox.Select()
+
+
+
         Else
             MsgBox("Student info update failed !!")
         End If
@@ -319,6 +477,16 @@ Public Class Update_Student_Teacher_Course_Info
         'if the returned value is greater than or equal to 1, it notifies the user that delete was successful, else it failed
         If (RowFlag > 0) Then
             MsgBox("Student record deleted successfully")
+            'loops through and clears all textboxes after the entity is registered 
+            For Each TextBox In UpStuTeaCourInfo.SelectedTab.Controls.OfType(Of TextBox)
+
+                TextBox.Text = ""
+            Next
+            'selects the first textbox incase they want to add something again 
+            UpStuIDTxtBox.Select()
+
+
+
         Else
             MsgBox("Student record deletion failed !!")
         End If
