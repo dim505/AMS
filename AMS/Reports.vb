@@ -24,7 +24,7 @@ Public Class Reports
         If (ReportSelComboBox.Text = "All teachers who teach courses") Then
 
 
-            ReportSqlStr = "Select TeaInfo.TeacherFName + ' ' + TeaInfo.TeacherLName as [Teacher Name], CourTeaBy.CourseID as [Course ID], CourInfo.[CourseName] as [Course Name]
+            ReportSqlStr = "Select TeaInfo.TeacherFName + '  ' + TeaInfo.TeacherLName as [Teacher Name], CourTeaBy.CourseID as [Course ID], CourInfo.[CourseName] as [Course Name]
                             From CourseTeachedBy$ As CourTeaBy
                             Left Join TeacherInfo$ AS TeaInfo
                             On CourTeaBy.TeacherID = TeaInfo.ID
@@ -33,7 +33,7 @@ Public Class Reports
 
         ElseIf (ReportSelComboBox.Text = "All students with grades of 80 and higher") Then
 
-            ReportSqlStr = "Select StuInfo.[StudentFName] + ' '+ StuInfo.[StudentLName] as [Student Name], stuGrd.[StudentID] as [Student ID], stuGrd.[CourseID] as [Course ID], stuGrd.[Grade]
+            ReportSqlStr = "Select StuInfo.[StudentFName] + '  '+ StuInfo.[StudentLName] as [Student Name], stuGrd.[StudentID] as [Student ID], stuGrd.[CourseID] as [Course ID], stuGrd.[Grade]
                             from [StudentInfo$] As StuInfo
                             Left Join [StudentGrade$] as stuGrd
                             On StuInfo.ID = stuGrd.[StudentID]

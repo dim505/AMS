@@ -81,6 +81,7 @@ Partial Class GPA_Academic_History_Look_Up
         '
         'AcaHisStuIDTxtBox
         '
+        Me.AcaHisStuIDTxtBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AcaHisStuIDTxtBox.Location = New System.Drawing.Point(267, 94)
         Me.AcaHisStuIDTxtBox.Multiline = True
         Me.AcaHisStuIDTxtBox.Name = "AcaHisStuIDTxtBox"

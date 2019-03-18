@@ -11,14 +11,30 @@ Public Class Add_Course_Teacher_Student
 
 
 
-        'declares string for SQL query and assigns Query value
-        Dim RegisterCourseQuery As String = "INSERT INTO   CourseInfo$(CourseID, CourseName, CourseDescription, TeacherFName, TeacherLName, TeacherID, DaysTaught, StartTime, EndTime, PreReq) " &
+
+        'loops through all the textboxes in the active tab control page
+        For Each TextBox In AddCourStuTeaTabControl.SelectedTab.Controls.OfType(Of TextBox)
+
+            'tests if the textbox is null or has a white space 
+            If (String.IsNullOrEmpty(TextBox.Text)) Then
+
+                'notifes the user to input a value for that textbox 
+                MsgBox("Please Input a Value")
+                'marks the offfending textbox
+                TextBox.Select()
+                'Exits the current subprocedure 
+                Exit Sub
+            End If
+
+        Next
+
+
+            'declares string for SQL query and assigns Query value
+            Dim RegisterCourseQuery As String = "INSERT INTO   CourseInfo$(CourseID, CourseName, CourseDescription, TeacherFName, TeacherLName, TeacherID, DaysTaught, StartTime, EndTime, PreReq) " &
         "VALUES(" & "'" & CourseIDtxtbox.Text & "','" + CourseNameTxtbox.Text & "','" & CorDesTxtBox.Text & "','" &
         TeacherFirstNametxtbox.Text & "','" & TeacherLastNametxtbox.Text & "','" & TeacherIDtxtbox.Text & "','" & DaysTaughttxtbox.Text &
       "','" & StartTimeTxtBox.Text & "','" & EndTimeTxtbox.Text &
         "','" & PrereqTxtBox.Text & "')"
-
-
 
 
 
@@ -31,29 +47,27 @@ Public Class Add_Course_Teacher_Student
         'declares variable for rows affected after Query is run
         Dim rowsAffected As Integer = 0
 
+
+
+
         'exicutes the query and returns the number of rows affected
         rowsAffected = SQLCommand.ExecuteNonQuery()
 
         'if the returned value is greater than or equal to 1, it notifies the user that registration was successful, else it failed
         If (rowsAffected > 0) Then
             MsgBox("Course was registered successfully")
-            'clears all textboxes after course is registered 
-            CourseIDtxtbox.Clear()
-            CourseNameTxtbox.Clear()
-            CorDesTxtBox.Clear()
-            TeacherFirstNametxtbox.Clear()
-            TeacherLastNametxtbox.Clear()
-            TeacherIDtxtbox.Clear()
-            DaysTaughttxtbox.Clear()
-            StartTimeTxtBox.Clear()
-            EndTimeTxtbox.Clear()
-            PrereqTxtBox.Clear()
+            'loops through and clears all textboxes after the entity is registered 
+            For Each TextBox In AddCourStuTeaTabControl.SelectedTab.Controls.OfType(Of TextBox)
+
+                TextBox.Text = ""
+            Next
+            'selects the first textbox incase they want to add something again 
+            TeacherFirstNametxtbox.Select()
+
 
         Else
             MsgBox("Course registerion failed!!")
         End If
-
-
 
 
 
@@ -62,6 +76,25 @@ Public Class Add_Course_Teacher_Student
 
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles RegisterTeacher.Click
+
+
+        'loops through all the textboxes in the active tab control page
+        For Each TextBox In AddCourStuTeaTabControl.SelectedTab.Controls.OfType(Of TextBox)
+
+            'tests if the textbox is null or has a white space 
+            If (String.IsNullOrEmpty(TextBox.Text)) Then
+
+                'notifes the user to input a value for that textbox 
+                MsgBox("Please Input a Value")
+                'marks the offfending textbox active 
+                TextBox.Select()
+                'Exits the current subprocedure 
+                Exit Sub
+            End If
+
+        Next
+
+
 
         'declares string for SQL query and assigns a Query value
         Dim RegisterTeacherQuery As String = "INSERT INTO TeacherInfo$(ID, TeacherFName, TeacherLName, SSN, Address, City, State, PhoneNumber, DateOfBirth) " &
@@ -89,6 +122,14 @@ Public Class Add_Course_Teacher_Student
         'if the returned value is greater than or equal to 1, it notifies the user that registration was successful, else it failed
         If (rowsAffected > 0) Then
             MsgBox("Teacher was added successfully")
+            'loops through and clears all textboxes after the entity is registered 
+            For Each TextBox In AddCourStuTeaTabControl.SelectedTab.Controls.OfType(Of TextBox)
+
+                TextBox.Text = ""
+            Next
+            'selects the first textbox incase they want to add something again 
+            TFNametxtbox.Select()
+
         Else
             MsgBox("Teacher adding failed!!")
         End If
@@ -106,6 +147,26 @@ Public Class Add_Course_Teacher_Student
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Register_Student.Click
+
+
+
+        'loops through all the textboxes in the active tab control page
+        For Each TextBox In AddCourStuTeaTabControl.SelectedTab.Controls.OfType(Of TextBox)
+
+            'tests if the textbox is null or has a white space 
+            If (String.IsNullOrEmpty(TextBox.Text)) Then
+
+                'notifes the user to input a value for that textbox 
+                MsgBox("Please Input a Value")
+                'marks the offfending textbox active 
+                TextBox.Select()
+                'Exits the current subprocedure 
+                Exit Sub
+            End If
+
+        Next
+
+
 
 
 
@@ -137,6 +198,14 @@ Public Class Add_Course_Teacher_Student
         'if the returned value is greater than or equal to 1, it notifies the user that registration was successful, else it failed
         If (rowsAffected > 0) Then
             MsgBox("Student was added successfully")
+            'loops through and clears all textboxes after the entity is registered 
+            For Each TextBox In AddCourStuTeaTabControl.SelectedTab.Controls.OfType(Of TextBox)
+                'CLEARS TEXTbox text
+                TextBox.Text = ""
+            Next
+            'selects the first textbox incase they want to add something again 
+            StuFNameTBox.Select()
+
         Else
             MsgBox("Student adding failed!!")
         End If
@@ -165,7 +234,5 @@ Public Class Add_Course_Teacher_Student
 
     End Sub
 
-    Private Sub Add_Course_Teacher_Student_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-    End Sub
 End Class

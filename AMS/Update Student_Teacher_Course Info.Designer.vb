@@ -22,7 +22,7 @@ Partial Class Update_Student_Teacher_Course_Info
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.UpStuTeaCourInfo = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.UpStuIDTxtBox = New System.Windows.Forms.TextBox()
@@ -92,22 +92,22 @@ Partial Class Update_Student_Teacher_Course_Info
         Me.RemoveCourseBTN = New System.Windows.Forms.Button()
         Me.LookUpBTNCourseInfo = New System.Windows.Forms.Button()
         Me.UpStuTeachCourInfoMMBTN = New System.Windows.Forms.Button()
-        Me.TabControl1.SuspendLayout()
+        Me.UpStuTeaCourInfo.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.Update_Teacher_Info.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         Me.SuspendLayout()
         '
-        'TabControl1
+        'UpStuTeaCourInfo
         '
-        Me.TabControl1.Controls.Add(Me.TabPage1)
-        Me.TabControl1.Controls.Add(Me.Update_Teacher_Info)
-        Me.TabControl1.Controls.Add(Me.TabPage3)
-        Me.TabControl1.Location = New System.Drawing.Point(65, 3)
-        Me.TabControl1.Name = "TabControl1"
-        Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(651, 544)
-        Me.TabControl1.TabIndex = 0
+        Me.UpStuTeaCourInfo.Controls.Add(Me.TabPage1)
+        Me.UpStuTeaCourInfo.Controls.Add(Me.Update_Teacher_Info)
+        Me.UpStuTeaCourInfo.Controls.Add(Me.TabPage3)
+        Me.UpStuTeaCourInfo.Location = New System.Drawing.Point(65, 3)
+        Me.UpStuTeaCourInfo.Name = "UpStuTeaCourInfo"
+        Me.UpStuTeaCourInfo.SelectedIndex = 0
+        Me.UpStuTeaCourInfo.Size = New System.Drawing.Size(651, 544)
+        Me.UpStuTeaCourInfo.TabIndex = 0
         '
         'TabPage1
         '
@@ -412,9 +412,9 @@ Partial Class Update_Student_Teacher_Course_Info
         'UpTeachuPDATEBtn
         '
         Me.UpTeachuPDATEBtn.Font = New System.Drawing.Font("Showcard Gothic", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
-        Me.UpTeachuPDATEBtn.Location = New System.Drawing.Point(234, 385)
+        Me.UpTeachuPDATEBtn.Location = New System.Drawing.Point(255, 385)
         Me.UpTeachuPDATEBtn.Name = "UpTeachuPDATEBtn"
-        Me.UpTeachuPDATEBtn.Size = New System.Drawing.Size(125, 105)
+        Me.UpTeachuPDATEBtn.Size = New System.Drawing.Size(151, 105)
         Me.UpTeachuPDATEBtn.TabIndex = 127
         Me.UpTeachuPDATEBtn.Text = "Update"
         Me.UpTeachuPDATEBtn.UseVisualStyleBackColor = True
@@ -432,9 +432,9 @@ Partial Class Update_Student_Teacher_Course_Info
         'UpTeachLookUpBtn
         '
         Me.UpTeachLookUpBtn.Font = New System.Drawing.Font("Showcard Gothic", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
-        Me.UpTeachLookUpBtn.Location = New System.Drawing.Point(75, 385)
+        Me.UpTeachLookUpBtn.Location = New System.Drawing.Point(97, 385)
         Me.UpTeachLookUpBtn.Name = "UpTeachLookUpBtn"
-        Me.UpTeachLookUpBtn.Size = New System.Drawing.Size(125, 105)
+        Me.UpTeachLookUpBtn.Size = New System.Drawing.Size(152, 105)
         Me.UpTeachLookUpBtn.TabIndex = 126
         Me.UpTeachLookUpBtn.Text = "Look Up"
         Me.UpTeachLookUpBtn.UseVisualStyleBackColor = True
@@ -846,10 +846,10 @@ Partial Class Update_Student_Teacher_Course_Info
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(862, 586)
         Me.Controls.Add(Me.UpStuTeachCourInfoMMBTN)
-        Me.Controls.Add(Me.TabControl1)
+        Me.Controls.Add(Me.UpStuTeaCourInfo)
         Me.Name = "Update_Student_Teacher_Course_Info"
         Me.Text = "Update Student/Teacher/Course"
-        Me.TabControl1.ResumeLayout(False)
+        Me.UpStuTeaCourInfo.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
         Me.Update_Teacher_Info.ResumeLayout(False)
@@ -860,7 +860,7 @@ Partial Class Update_Student_Teacher_Course_Info
 
     End Sub
 
-    Friend WithEvents TabControl1 As TabControl
+    Friend WithEvents UpStuTeaCourInfo As TabControl
     Friend WithEvents TabPage1 As TabPage
     Friend WithEvents Update_Teacher_Info As TabPage
     Friend WithEvents TabPage3 As TabPage
