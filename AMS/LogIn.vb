@@ -2,6 +2,12 @@
 
 Public Class LogIn
 
+
+
+
+
+
+
     Private Sub LoginCancelBTN_Click(sender As Object, e As EventArgs) Handles LoginCancelBTN.Click
         'gracfully closes the application
         Application.Exit()
@@ -34,7 +40,8 @@ Public Class LogIn
         Else
 
             'sets sql command that will be exicuted against DB along with its parameters 
-            SQLCommand.CommandText = "select * from LogInCreds where Rtrim(LTrim(UserName)) = ? and Rtrim(LTrim(Password)) = ?"
+            SQLCommand.CommandText = "select * from LogInCreds where Rtrim(LTrim(UserName)) = ?"
+
             'declares datareader, this allows you to read rows of  data from a data source
             Dim reader As OleDbDataReader
 
@@ -44,7 +51,6 @@ Public Class LogIn
             'declares the parameters for the SQl statement and assigns a value from the textboxs  
             With SQLCommand.Parameters
                 .Add("@p0", OleDbType.VarChar).Value = LogInUserTxtBox.Text
-                .Add("@p1", OleDbType.VarChar).Value = LoginPassTxtBox.Text
             End With
 
             'declares a data reader so you can read a stream of data rows from a database and exicutes it 
