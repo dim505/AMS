@@ -1,9 +1,19 @@
 ﻿Imports System.Data.OleDb
+Imports System.Security.Cryptography
 
 Public Class LogIn
 
 
 
+
+    Public Function GenHash(PasswordString As String) As String
+        Dim HashGenerator As SHA256CryptoServiceProvider
+        Dim PasswordBytes = System.Text.Encoding.Unicode.GetBytes(PasswordString)
+        Dim GeneratedHash = HashGenerator.ComputeHash(PasswordBytes)
+        Dim GenHashStr As String = GeneratedHash.ToString
+        Return GenHashStr
+
+    End Function
 
 
 
@@ -56,32 +66,55 @@ Public Class LogIn
             'declares a data reader so you can read a stream of data rows from a database and exicutes it 
             reader = SQLCommand.ExecuteReader()
 
-            'if the query returns any results, it will show Main menu, if not, it will display error
-            If (reader.HasRows) Then
-
-                'shows main menu
-                Main_Menu.Show()
-                'closes current Form
-                Me.Close()
-
-            Else
-                'notifes user username or password wrong
-                MsgBox("Invalid Username or Password")
-                'clears user name and password text boxes
-
-                LogInUserTxtBox.Clear()
-                LoginPassTxtBox.Clear()
-                'focuses cursor baack on the user text box
-                LogInUserTxtBox.Select()
 
 
-            End If
+
+            While (reader.Read())
+
+                Dim SaltHashPassword As String = reader.GetString(2)
+                Dim Salt As String = reader.GetString(3)
+                Dim UserGuessPass As String = Trim(Salt) + Trim(LoginPassTxtBox.Text)
+                Dim UsrGeussPassHash As String = GenHash(UserGuessPass)
+
+                If UsrGeussPassHash = SaltHashPassword Then
+
+
+                    'if the query returns any results, it will show Main menu, if not, it will display error
+                    '  If (reader.HasRows) Then
+
+                    'shows main menu
+                    Main_Menu.Show()
+                    'closes current Form
+                    Me.Close()
+
+
+
+                Else
+                    'notifes user username or password wrong
+                    MsgBox("Invalid Username or Password")
+                    'clears user name and password text boxes
+
+                    LogInUserTxtBox.Clear()
+                    LoginPassTxtBox.Clear()
+                    'focuses cursor baack on the user text box
+                    LogInUserTxtBox.Select()
+
+
+
+                End If
+
+            End While
+
+
+
+
+
             'closes reader object so it can be used else where in the program
             reader.Close()
 
+
+
         End If
-
-
 
 
     End Sub
