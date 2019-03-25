@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AMS OVERVIEW 
 I call my desktop application Academic Management System (AMS). I wrote this in VB.NET. This connects to a Microsoft SQL Server database.
 The master branch is version 1.1.1. The various functionalities of this application are the ability to add teachers, students, and courses into the database, update the entities information, register students with their respective classes, run predefined reports, and look up a student’s grades. 
@@ -10,6 +11,12 @@ User Logging into the application:
 
 A user registering a student:
 ![Register Student](https://user-images.githubusercontent.com/47749320/54579108-67845480-49d8-11e9-8c47-e937bc8919ed.gif)
+=======
+# AMS
+FeatureSecureLogin
+This current minor update is adding password hashing and salting to the login screen for username test as an experiment for secure logins. 
+
+>>>>>>> origin/FeatureSecureLogin
 
 A user running some predefined reports:
 ![Reports](https://user-images.githubusercontent.com/47749320/54579109-67845480-49d8-11e9-9d02-23947fcf2f52.gif)
