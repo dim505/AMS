@@ -54,4 +54,10 @@ Public Class Main_Menu
     Private Sub Main_Menu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub AddUserToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddUserToolStripMenuItem.Click
+
+        AddUserFrm.ShowDialog()
+
+    End Sub
 End Class

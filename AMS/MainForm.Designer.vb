@@ -22,6 +22,7 @@ Partial Class Main_Menu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.AddStuTeaCourBTN = New System.Windows.Forms.Button()
         Me.Course_RegistrationBTNMM = New System.Windows.Forms.Button()
         Me.UpStuTeachCourBTN = New System.Windows.Forms.Button()
@@ -30,7 +31,12 @@ Partial Class Main_Menu
         Me.MMExitBtn = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.MMPanel = New System.Windows.Forms.Panel()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.UserMaintToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AddUserToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MMPanel.SuspendLayout()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'AddStuTeaCourBTN
@@ -131,16 +137,49 @@ Partial Class Main_Menu
         Me.MMPanel.Size = New System.Drawing.Size(861, 383)
         Me.MMPanel.TabIndex = 13
         '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UserMaintToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(1039, 28)
+        Me.MenuStrip1.TabIndex = 15
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'UserMaintToolStripMenuItem
+        '
+        Me.UserMaintToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddUserToolStripMenuItem})
+        Me.UserMaintToolStripMenuItem.Name = "UserMaintToolStripMenuItem"
+        Me.UserMaintToolStripMenuItem.Size = New System.Drawing.Size(95, 24)
+        Me.UserMaintToolStripMenuItem.Text = "User Maint."
+        '
+        'AddUserToolStripMenuItem
+        '
+        Me.AddUserToolStripMenuItem.Name = "AddUserToolStripMenuItem"
+        Me.AddUserToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.AddUserToolStripMenuItem.Text = "Add User"
+        '
         'Main_Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1039, 492)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.MMPanel)
         Me.Controls.Add(Me.Label1)
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Main_Menu"
         Me.Text = "Main Menu"
         Me.MMPanel.ResumeLayout(False)
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -153,4 +192,8 @@ Partial Class Main_Menu
     Friend WithEvents MMExitBtn As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents MMPanel As Panel
+    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents UserMaintToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AddUserToolStripMenuItem As ToolStripMenuItem
 End Class

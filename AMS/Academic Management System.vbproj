@@ -81,6 +81,12 @@
     <Compile Include="Add Course_Teacher_Student.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AddUser.Designer.vb">
+      <DependentUpon>AddUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="ApplicationEvents.vb" />
     <Compile Include="Course Registration.Designer.vb">
       <DependentUpon>Course Registration.vb</DependentUpon>
@@ -140,6 +146,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Add Course_Teacher_Student.resx">
       <DependentUpon>Add Course_Teacher_Student.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Course Registration.resx">
       <DependentUpon>Course Registration.vb</DependentUpon>
