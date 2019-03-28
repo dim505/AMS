@@ -117,7 +117,7 @@ Partial Class Main_Menu
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.DarkBlue
-        Me.Label1.Location = New System.Drawing.Point(110, 9)
+        Me.Label1.Location = New System.Drawing.Point(110, 28)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(873, 69)
         Me.Label1.TabIndex = 12
@@ -132,7 +132,7 @@ Partial Class Main_Menu
         Me.MMPanel.Controls.Add(Me.UpStuTeachCourBTN)
         Me.MMPanel.Controls.Add(Me.ReportBTN)
         Me.MMPanel.Controls.Add(Me.CourseHistory_GPALookUpBTN)
-        Me.MMPanel.Location = New System.Drawing.Point(122, 81)
+        Me.MMPanel.Location = New System.Drawing.Point(122, 106)
         Me.MMPanel.Name = "MMPanel"
         Me.MMPanel.Size = New System.Drawing.Size(861, 383)
         Me.MMPanel.TabIndex = 13
@@ -163,14 +163,14 @@ Partial Class Main_Menu
         'AddUserToolStripMenuItem
         '
         Me.AddUserToolStripMenuItem.Name = "AddUserToolStripMenuItem"
-        Me.AddUserToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.AddUserToolStripMenuItem.Size = New System.Drawing.Size(145, 26)
         Me.AddUserToolStripMenuItem.Text = "Add User"
         '
         'Main_Menu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1039, 492)
+        Me.ClientSize = New System.Drawing.Size(1039, 506)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.MMPanel)
         Me.Controls.Add(Me.Label1)

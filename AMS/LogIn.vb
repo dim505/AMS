@@ -80,9 +80,9 @@ Public Class LogIn
             'reads rows from reader one row at a time
             While (reader.Read())
                 'declares salted pass from DB
-                Dim SaltHashPassword As String = reader.GetString(2)
+                Dim SaltHashPassword As String = reader.GetString(1)
                 'declares salt used from DB
-                Dim Salt As String = reader.GetString(3)
+                Dim Salt As String = reader.GetString(2)
                 'combines user guess password with the salt retrived from DB
                 Dim UserGuessPass As String = Trim(Salt) + Trim(LoginPassTxtBox.Text)
                 'Runs the guess password string through a gen hash functions and stores it in UsrGeussPassHash

@@ -60,4 +60,8 @@ Public Class Main_Menu
         AddUserFrm.ShowDialog()
 
     End Sub
+
+    Private Sub MMPanel_Paint(sender As Object, e As PaintEventArgs) Handles MMPanel.Paint
+
+    End Sub
 End Class
