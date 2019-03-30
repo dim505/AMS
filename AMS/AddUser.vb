@@ -4,43 +4,6 @@ Imports System.Text
 Public Class AddUserFrm
     Private ReadOnly Utility As Object
 
-    ''Combine these 2 functions into a class 
-
-    Public Function GenSalt() As String
-        Dim SaltGen = New RNGCryptoServiceProvider()
-        Dim SaltSize = 24
-        Dim SaltSizeByte(SaltSize) As Byte
-
-        SaltGen.GetNonZeroBytes(SaltSizeByte)
-
-        Dim GensaltString = Utility.GetString(SaltSizeByte)
-        Return GensaltString
-
-
-
-
-    End Function
-
-
-
-    Public Function GenHash(PasswordString As String) As String
-        'declares the hash generator
-        Dim HashGenerator As SHA256 = SHA256Managed.Create()
-        'converts password string to btyes --needed before computing the hash
-        Dim PasswordBytes = System.Text.Encoding.Unicode.GetBytes(PasswordString)
-        'generates the hash
-        Dim GeneratedHash = HashGenerator.ComputeHash(PasswordBytes)
-        'declares StringBuilder instance
-        Dim stringBuilder As New StringBuilder
-        'loops through and builds the string from the byte hash 
-        For i As Integer = 0 To GeneratedHash.Length - 1
-            stringBuilder.Append(GeneratedHash(i).ToString("X2"))
-        Next
-        'returns the password string
-        Return stringBuilder.ToString()
-
-    End Function
-
 
 
 
@@ -49,13 +12,8 @@ Public Class AddUserFrm
     Private Sub AddUsrCreateBtn_Click(sender As Object, e As EventArgs) Handles AddUsrCreateBtn.Click
 
 
-
-
-
-
-
-
-
+        'compares password in both text boxes and makes sure they are the same
+        'notifes end user, reset password textbox
         If (AddUsrPassTxtbox.Text <> AddUsrCnfirmPassTxt.Text) Then
             MsgBox("Passwords do not match. Please retype your passwords")
 
@@ -66,14 +24,15 @@ Public Class AddUserFrm
 
         End If
 
-
+        'Gets the generated salt string from function
         Dim GenSaltStr = GenSalt()
+        'combines salt with inputted password
         Dim PasswordString = Trim(GenSaltStr) + Trim(AddUsrPassTxtbox.Text)
+        'generates password hash and returns it back into a variable
         Dim PassHashStr = GenHash(PasswordString)
 
         'declares string for SQL query and assigns Query value
-        Dim AddUserQuery As String = "INSERT INTO LogInCreds (UserName, Password, salt) 
-        values (" & "'" & AddUsrTxtbx.Text & "','" & " '" & AddUsrPassTxtbox.Text & "','" & PassHashStr & "','" & " ')"
+        Dim AddUserQuery As String = "INSERT INTO LogInCreds (UserName, Password, salt) values (" & "'" & AddUsrTxtbx.Text & "','" & PassHashStr & "','" & GenSaltStr & "'" & " )"
 
         'sets sql command that will be exicuted against DB 
         SQLCommand.CommandText = AddUserQuery
@@ -85,12 +44,18 @@ Public Class AddUserFrm
         rowsAffected = SQLCommand.ExecuteNonQuery()
 
 
+        'test to see if sql query was exicuted properly
         If (rowsAffected > 0) Then
             MsgBox("User was registered successfully")
             'loops through and clears all textboxes after the entity is registered 
+            AddUsrPassTxtbox.Select()
+            AddUsrPassTxtbox.Clear()
+            AddUsrCnfirmPassTxt.Clear()
 
 
         Else
+            'notfies user and clears out the password textbox
+
             MsgBox("User registerion failed!!")
 
             AddUsrPassTxtbox.Select()
@@ -110,7 +75,9 @@ Public Class AddUserFrm
     End Sub
 
     Private Sub AddUsrCancelBtn_Click(sender As Object, e As EventArgs) Handles AddUsrCancelBtn.Click
+        'closes current form
         Me.Close()
 
     End Sub
+
 End Class

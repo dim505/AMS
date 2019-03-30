@@ -8,25 +8,6 @@ Public Class LogIn
 
 
 
-    Public Function GenHash(PasswordString As String) As String
-        'declares the hash generator
-        Dim HashGenerator As SHA256 = SHA256Managed.Create()
-        'converts password string to btyes --needed before computing the hash
-        Dim PasswordBytes = System.Text.Encoding.Unicode.GetBytes(PasswordString)
-        'generates the hash
-        Dim GeneratedHash = HashGenerator.ComputeHash(PasswordBytes)
-        'declares StringBuilder instance
-        Dim stringBuilder As New StringBuilder
-        'loops through and builds the string from the byte hash 
-        For i As Integer = 0 To GeneratedHash.Length - 1
-            stringBuilder.Append(GeneratedHash(i).ToString("X2"))
-        Next
-        'returns the password string
-        Return stringBuilder.ToString()
-
-    End Function
-
-
 
 
     Private Sub LoginCancelBTN_Click(sender As Object, e As EventArgs) Handles LoginCancelBTN.Click

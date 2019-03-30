@@ -141,7 +141,7 @@
     <Compile Include="Update Student_Teacher_Course Info.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DBConnection.vb" />
+    <Compile Include="ReuseCode.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Add Course_Teacher_Student.resx">
