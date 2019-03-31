@@ -30,18 +30,20 @@ Partial Class AddUserFrm
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.AddUsrRoleCmbx = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'AddUsrTxtbx
         '
-        Me.AddUsrTxtbx.Location = New System.Drawing.Point(135, 43)
+        Me.AddUsrTxtbx.Location = New System.Drawing.Point(140, 13)
         Me.AddUsrTxtbx.Name = "AddUsrTxtbx"
         Me.AddUsrTxtbx.Size = New System.Drawing.Size(161, 22)
         Me.AddUsrTxtbx.TabIndex = 0
         '
         'AddUsrCnfirmPassTxt
         '
-        Me.AddUsrCnfirmPassTxt.Location = New System.Drawing.Point(135, 155)
+        Me.AddUsrCnfirmPassTxt.Location = New System.Drawing.Point(140, 125)
         Me.AddUsrCnfirmPassTxt.Name = "AddUsrCnfirmPassTxt"
         Me.AddUsrCnfirmPassTxt.Size = New System.Drawing.Size(161, 22)
         Me.AddUsrCnfirmPassTxt.TabIndex = 1
@@ -49,7 +51,7 @@ Partial Class AddUserFrm
         '
         'AddUsrPassTxtbox
         '
-        Me.AddUsrPassTxtbox.Location = New System.Drawing.Point(135, 99)
+        Me.AddUsrPassTxtbox.Location = New System.Drawing.Point(140, 69)
         Me.AddUsrPassTxtbox.Name = "AddUsrPassTxtbox"
         Me.AddUsrPassTxtbox.Size = New System.Drawing.Size(161, 22)
         Me.AddUsrPassTxtbox.TabIndex = 2
@@ -78,7 +80,7 @@ Partial Class AddUserFrm
         'Label1
         '
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(7, 39)
+        Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(119, 23)
         Me.Label1.TabIndex = 5
@@ -87,7 +89,7 @@ Partial Class AddUserFrm
         'Label2
         '
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(7, 95)
+        Me.Label2.Location = New System.Drawing.Point(12, 65)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(111, 47)
         Me.Label2.TabIndex = 6
@@ -96,17 +98,36 @@ Partial Class AddUserFrm
         'Label3
         '
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(12, 142)
+        Me.Label3.Location = New System.Drawing.Point(12, 112)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(115, 68)
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Confirm Password"
+        '
+        'Label4
+        '
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(12, 180)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(115, 27)
+        Me.Label4.TabIndex = 8
+        Me.Label4.Text = "Role"
+        '
+        'AddUsrRoleCmbx
+        '
+        Me.AddUsrRoleCmbx.FormattingEnabled = True
+        Me.AddUsrRoleCmbx.Location = New System.Drawing.Point(140, 183)
+        Me.AddUsrRoleCmbx.Name = "AddUsrRoleCmbx"
+        Me.AddUsrRoleCmbx.Size = New System.Drawing.Size(161, 24)
+        Me.AddUsrRoleCmbx.TabIndex = 9
         '
         'AddUserFrm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(331, 329)
+        Me.Controls.Add(Me.AddUsrRoleCmbx)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -130,4 +151,6 @@ Partial Class AddUserFrm
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents AddUsrRoleCmbx As ComboBox
 End Class

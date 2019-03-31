@@ -64,4 +64,9 @@ Public Class Main_Menu
     Private Sub MMPanel_Paint(sender As Object, e As PaintEventArgs) Handles MMPanel.Paint
 
     End Sub
+
+    Private Sub DeleteUserToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DeleteUserToolStripMenuItem.Click
+        DelUsrFrm.ShowDialog()
+    End Sub
+
 End Class

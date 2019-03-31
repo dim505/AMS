@@ -35,6 +35,7 @@ Partial Class Main_Menu
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.UserMaintToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AddUserToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DeleteUserToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MMPanel.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -155,7 +156,7 @@ Partial Class Main_Menu
         '
         'UserMaintToolStripMenuItem
         '
-        Me.UserMaintToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddUserToolStripMenuItem})
+        Me.UserMaintToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddUserToolStripMenuItem, Me.DeleteUserToolStripMenuItem})
         Me.UserMaintToolStripMenuItem.Name = "UserMaintToolStripMenuItem"
         Me.UserMaintToolStripMenuItem.Size = New System.Drawing.Size(95, 24)
         Me.UserMaintToolStripMenuItem.Text = "User Maint."
@@ -163,8 +164,14 @@ Partial Class Main_Menu
         'AddUserToolStripMenuItem
         '
         Me.AddUserToolStripMenuItem.Name = "AddUserToolStripMenuItem"
-        Me.AddUserToolStripMenuItem.Size = New System.Drawing.Size(145, 26)
+        Me.AddUserToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
         Me.AddUserToolStripMenuItem.Text = "Add User"
+        '
+        'DeleteUserToolStripMenuItem
+        '
+        Me.DeleteUserToolStripMenuItem.Name = "DeleteUserToolStripMenuItem"
+        Me.DeleteUserToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.DeleteUserToolStripMenuItem.Text = "Delete User"
         '
         'Main_Menu
         '
@@ -196,4 +203,5 @@ Partial Class Main_Menu
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents UserMaintToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AddUserToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents DeleteUserToolStripMenuItem As ToolStripMenuItem
 End Class

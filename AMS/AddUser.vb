@@ -32,7 +32,7 @@ Public Class AddUserFrm
         Dim PassHashStr = GenHash(PasswordString)
 
         'declares string for SQL query and assigns Query value
-        Dim AddUserQuery As String = "INSERT INTO LogInCreds (UserName, Password, salt) values (" & "'" & AddUsrTxtbx.Text & "','" & PassHashStr & "','" & GenSaltStr & "'" & " )"
+        Dim AddUserQuery As String = "INSERT INTO LogInCreds values (" & "'" & AddUsrTxtbx.Text & "','" & PassHashStr & "','" & GenSaltStr & "','" & AddUsrRoleCmbx.Text & "'" & " )"
 
         'sets sql command that will be exicuted against DB 
         SQLCommand.CommandText = AddUserQuery
@@ -56,7 +56,7 @@ Public Class AddUserFrm
         Else
             'notfies user and clears out the password textbox
 
-            MsgBox("User registerion failed!!")
+            MsgBox("User registration failed!!")
 
             AddUsrPassTxtbox.Select()
             AddUsrPassTxtbox.Clear()
@@ -80,4 +80,13 @@ Public Class AddUserFrm
 
     End Sub
 
+    Private Sub AddUserFrm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'this prepoplates the dropbox with report options
+        AddUsrRoleCmbx.Items.Clear()
+        AddUsrRoleCmbx.Items.Add("Administrator")
+        AddUsrRoleCmbx.Items.Add("Regular User")
+        AddUsrRoleCmbx.Text = "Select from..."
+
+
+    End Sub
 End Class
