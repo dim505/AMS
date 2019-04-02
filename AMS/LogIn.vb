@@ -72,6 +72,7 @@ Public Class LogIn
                 'compares user geuss password hash with hash for account from DB
                 If UsrGeussPassHash = SaltHashPassword Then
 
+                    GlobalVariables.Role = reader.GetString(3)
                     'shows main menu
                     Main_Menu.Show()
                     'closes current Form

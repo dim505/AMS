@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Main_Menu
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Main_Menu
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.AddStuTeaCourBTN = New System.Windows.Forms.Button()
@@ -106,6 +106,7 @@ Partial Class Main_Menu
         Me.MMExitBtn.BackgroundImage = Global.AMS.My.Resources.Resources._exit1
         Me.MMExitBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.MMExitBtn.Font = New System.Drawing.Font("Showcard Gothic", 13.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle))
+        Me.MMExitBtn.ForeColor = System.Drawing.SystemColors.InfoText
         Me.MMExitBtn.Location = New System.Drawing.Point(531, 202)
         Me.MMExitBtn.Name = "MMExitBtn"
         Me.MMExitBtn.Size = New System.Drawing.Size(239, 155)
@@ -164,13 +165,13 @@ Partial Class Main_Menu
         'AddUserToolStripMenuItem
         '
         Me.AddUserToolStripMenuItem.Name = "AddUserToolStripMenuItem"
-        Me.AddUserToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.AddUserToolStripMenuItem.Size = New System.Drawing.Size(161, 26)
         Me.AddUserToolStripMenuItem.Text = "Add User"
         '
         'DeleteUserToolStripMenuItem
         '
         Me.DeleteUserToolStripMenuItem.Name = "DeleteUserToolStripMenuItem"
-        Me.DeleteUserToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.DeleteUserToolStripMenuItem.Size = New System.Drawing.Size(161, 26)
         Me.DeleteUserToolStripMenuItem.Text = "Delete User"
         '
         'Main_Menu

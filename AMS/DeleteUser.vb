@@ -26,12 +26,15 @@ Public Class DelUsrFrm
 
 
             Loop
-
+            'turns text box green signaifying secuess
             DelUsrTxtbx.BackColor = Color.LightGreen
             MsgBox("User Found!")
 
         Else
+
+
             MsgBox("Could not Find User ID")
+            'turns textbox red signafying failure
             DelUsrTxtbx.BackColor = Color.Red
 
 
@@ -64,7 +67,7 @@ Public Class DelUsrFrm
             MsgBox("User was deleted successfully")
 
 
-
+            ''clears textboxes and returns it back to white 
             DelUsrTxtbx.Text = ""
             DelUsrTxtbx.BackColor = Color.FloralWhite
             DelUsrTxtbx.Select()

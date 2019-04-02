@@ -53,6 +53,32 @@ Public Class Main_Menu
 
     Private Sub Main_Menu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        If (GlobalVariables.Role = "Regular User") Then
+
+
+            AddStuTeaCourBTN.BackgroundImage = Nothing
+            AddStuTeaCourBTN.Font = Nothing
+            AddStuTeaCourBTN.Text = "Add Student/Teacher/Course (DISABLED)"
+            AddStuTeaCourBTN.Font = New Font("Microsoft Sans Serif", 13.8, FontStyle.Regular)
+            AddStuTeaCourBTN.Enabled = False
+
+            UpStuTeachCourBTN.BackgroundImage = Nothing
+            UpStuTeachCourBTN.Font = Nothing
+            UpStuTeachCourBTN.Text = "Update Student/Teacher/Course (DISABLED)"
+            UpStuTeachCourBTN.Font = New Font("Microsoft Sans Serif", 13.8, FontStyle.Regular)
+            UpStuTeachCourBTN.Enabled = False
+
+            CourseHistory_GPALookUpBTN.BackgroundImage = Nothing
+            CourseHistory_GPALookUpBTN.Font = Nothing
+            CourseHistory_GPALookUpBTN.Text = "Course History/GPA Look Up (DISABLED)"
+            CourseHistory_GPALookUpBTN.Font = New Font("Microsoft Sans Serif", 13.8, FontStyle.Regular)
+            CourseHistory_GPALookUpBTN.Enabled = False
+
+
+            UserMaintToolStripMenuItem.Enabled = False
+
+
+        End If
     End Sub
 
     Private Sub AddUserToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddUserToolStripMenuItem.Click
@@ -61,12 +87,11 @@ Public Class Main_Menu
 
     End Sub
 
-    Private Sub MMPanel_Paint(sender As Object, e As PaintEventArgs) Handles MMPanel.Paint
 
-    End Sub
 
     Private Sub DeleteUserToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DeleteUserToolStripMenuItem.Click
         DelUsrFrm.ShowDialog()
     End Sub
+
 
 End Class

@@ -15,6 +15,10 @@ Public Module ReuseCode
 
 
 
+    Public Class GlobalVariables
+        Public Shared Role As String
+    End Class
+
     Public Function GenSalt() As String
 
         'declares object that can generate salt 

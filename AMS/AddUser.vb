@@ -15,8 +15,10 @@ Public Class AddUserFrm
         'compares password in both text boxes and makes sure they are the same
         'notifes end user, reset password textbox
         If (AddUsrPassTxtbox.Text <> AddUsrCnfirmPassTxt.Text) Then
+            'alerts user
             MsgBox("Passwords do not match. Please retype your passwords")
 
+            'clears out passwod textboxes
             AddUsrPassTxtbox.Select()
             AddUsrPassTxtbox.Clear()
             AddUsrCnfirmPassTxt.Clear()
@@ -46,21 +48,25 @@ Public Class AddUserFrm
 
         'test to see if sql query was exicuted properly
         If (rowsAffected > 0) Then
+            'notifies user 
             MsgBox("User was registered successfully")
-            'loops through and clears all textboxes after the entity is registered 
+            ' clears all textboxes after the entity is registered 
             AddUsrPassTxtbox.Select()
             AddUsrPassTxtbox.Clear()
             AddUsrCnfirmPassTxt.Clear()
+            AddUsrRoleCmbx.Text = "Select from..."
+            AddUsrTxtbx.Clear()
 
 
         Else
             'notfies user and clears out the password textbox
 
             MsgBox("User registration failed!!")
-
             AddUsrPassTxtbox.Select()
             AddUsrPassTxtbox.Clear()
             AddUsrCnfirmPassTxt.Clear()
+            AddUsrRoleCmbx.Text = "Select from..."
+            AddUsrTxtbx.Clear()
 
 
         End If
