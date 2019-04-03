@@ -234,5 +234,7 @@ Public Class Add_Course_Teacher_Student
 
     End Sub
 
+    Private Sub Add_Course_Teacher_Student_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    End Sub
 End Class

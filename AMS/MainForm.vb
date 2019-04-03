@@ -52,29 +52,45 @@ Public Class Main_Menu
     End Sub
 
     Private Sub Main_Menu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        'test to see if current user logged in is a regular user 
         If (GlobalVariables.Role = "Regular User") Then
 
-
+            'remove BTN background image 
             AddStuTeaCourBTN.BackgroundImage = Nothing
+            'clears font 
             AddStuTeaCourBTN.Font = Nothing
+            'sets btn text
             AddStuTeaCourBTN.Text = "Add Student/Teacher/Course (DISABLED)"
+            'sets few font rules
             AddStuTeaCourBTN.Font = New Font("Microsoft Sans Serif", 13.8, FontStyle.Regular)
+            'disables button 
             AddStuTeaCourBTN.Enabled = False
 
+
+            'remove BTN background image 
             UpStuTeachCourBTN.BackgroundImage = Nothing
+            'clears font 
             UpStuTeachCourBTN.Font = Nothing
+            'sets btn text
             UpStuTeachCourBTN.Text = "Update Student/Teacher/Course (DISABLED)"
+            'sets few font rules
             UpStuTeachCourBTN.Font = New Font("Microsoft Sans Serif", 13.8, FontStyle.Regular)
+            'disables button 
             UpStuTeachCourBTN.Enabled = False
 
+
+            'remove BTN background image 
             CourseHistory_GPALookUpBTN.BackgroundImage = Nothing
+            'clears font 
             CourseHistory_GPALookUpBTN.Font = Nothing
+            'sets btn text
             CourseHistory_GPALookUpBTN.Text = "Course History/GPA Look Up (DISABLED)"
+            'sets few font rules
             CourseHistory_GPALookUpBTN.Font = New Font("Microsoft Sans Serif", 13.8, FontStyle.Regular)
+            'disables button 
             CourseHistory_GPALookUpBTN.Enabled = False
 
-
+            'disables menu 
             UserMaintToolStripMenuItem.Enabled = False
 
 
@@ -82,7 +98,7 @@ Public Class Main_Menu
     End Sub
 
     Private Sub AddUserToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AddUserToolStripMenuItem.Click
-
+        'SHOWS add user form when delete user sub menu is clicked 
         AddUserFrm.ShowDialog()
 
     End Sub
@@ -90,6 +106,7 @@ Public Class Main_Menu
 
 
     Private Sub DeleteUserToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DeleteUserToolStripMenuItem.Click
+        'SHOWS del user form when delete user sub menu is clicked 
         DelUsrFrm.ShowDialog()
     End Sub
 

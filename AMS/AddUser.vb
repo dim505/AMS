@@ -59,7 +59,7 @@ Public Class AddUserFrm
 
 
         Else
-            'notfies user and clears out the password textbox
+            'notfies user and clears out the textboxs
 
             MsgBox("User registration failed!!")
             AddUsrPassTxtbox.Select()

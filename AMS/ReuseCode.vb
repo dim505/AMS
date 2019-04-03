@@ -14,7 +14,7 @@ Public Module ReuseCode
     Public SQLCommand As OleDbCommand = New OleDbCommand()
 
 
-
+    'declares public class and property to store user role to determine access rights 
     Public Class GlobalVariables
         Public Shared Role As String
     End Class

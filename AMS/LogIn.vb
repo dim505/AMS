@@ -17,7 +17,7 @@ Public Class LogIn
 
     Private Sub LogInBtn_Click_1(sender As Object, e As EventArgs) Handles LogInBtn.Click
 
-
+        'test if user textbox is null or empty
         If (String.IsNullOrWhiteSpace(LogInUserTxtBox.Text)) Then
 
             'notifes user they can't leave a blank user name
@@ -28,7 +28,7 @@ Public Class LogIn
             LogInUserTxtBox.Select()
 
 
-
+            'tests if the password textbox is null or empty
         ElseIf (String.IsNullOrWhiteSpace(LoginPassTxtBox.Text)) Then
 
 

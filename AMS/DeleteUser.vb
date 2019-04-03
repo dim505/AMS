@@ -13,7 +13,7 @@ Public Class DelUsrFrm
 
 
 
-
+        'tests if the results returned any rowws
         If (QueryResults.HasRows) Then
 
 
