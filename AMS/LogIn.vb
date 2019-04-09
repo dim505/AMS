@@ -26,6 +26,8 @@ Public Class LogIn
             LogInUserTxtBox.Clear()
             'points cursor on textbox
             LogInUserTxtBox.Select()
+            Exit Sub
+
 
 
             'tests if the password textbox is null or empty
@@ -38,6 +40,7 @@ Public Class LogIn
             LoginPassTxtBox.Clear()
             'points cursor on textbox
             LoginPassTxtBox.Select()
+            Exit Sub
 
         Else
 

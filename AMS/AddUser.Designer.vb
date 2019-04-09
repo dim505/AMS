@@ -46,7 +46,7 @@ Partial Class AddUserFrm
         Me.AddUsrCnfirmPassTxt.Location = New System.Drawing.Point(140, 125)
         Me.AddUsrCnfirmPassTxt.Name = "AddUsrCnfirmPassTxt"
         Me.AddUsrCnfirmPassTxt.Size = New System.Drawing.Size(161, 22)
-        Me.AddUsrCnfirmPassTxt.TabIndex = 1
+        Me.AddUsrCnfirmPassTxt.TabIndex = 3
         Me.AddUsrCnfirmPassTxt.UseSystemPasswordChar = True
         '
         'AddUsrPassTxtbox
@@ -63,7 +63,7 @@ Partial Class AddUserFrm
         Me.AddUsrCreateBtn.Location = New System.Drawing.Point(25, 224)
         Me.AddUsrCreateBtn.Name = "AddUsrCreateBtn"
         Me.AddUsrCreateBtn.Size = New System.Drawing.Size(151, 83)
-        Me.AddUsrCreateBtn.TabIndex = 3
+        Me.AddUsrCreateBtn.TabIndex = 5
         Me.AddUsrCreateBtn.Text = "Create"
         Me.AddUsrCreateBtn.UseVisualStyleBackColor = True
         '
@@ -73,7 +73,7 @@ Partial Class AddUserFrm
         Me.AddUsrCancelBtn.Location = New System.Drawing.Point(182, 224)
         Me.AddUsrCancelBtn.Name = "AddUsrCancelBtn"
         Me.AddUsrCancelBtn.Size = New System.Drawing.Size(137, 83)
-        Me.AddUsrCancelBtn.TabIndex = 4
+        Me.AddUsrCancelBtn.TabIndex = 6
         Me.AddUsrCancelBtn.Text = "Cancel"
         Me.AddUsrCancelBtn.UseVisualStyleBackColor = True
         '
@@ -119,7 +119,7 @@ Partial Class AddUserFrm
         Me.AddUsrRoleCmbx.Location = New System.Drawing.Point(140, 183)
         Me.AddUsrRoleCmbx.Name = "AddUsrRoleCmbx"
         Me.AddUsrRoleCmbx.Size = New System.Drawing.Size(161, 24)
-        Me.AddUsrRoleCmbx.TabIndex = 9
+        Me.AddUsrRoleCmbx.TabIndex = 4
         '
         'AddUserFrm
         '

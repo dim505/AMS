@@ -1,4 +1,5 @@
-﻿Imports System.Security.Cryptography
+﻿Imports System.Data.OleDb
+Imports System.Security.Cryptography
 Imports System.Text
 
 Public Class AddUserFrm
@@ -12,9 +13,45 @@ Public Class AddUserFrm
     Private Sub AddUsrCreateBtn_Click(sender As Object, e As EventArgs) Handles AddUsrCreateBtn.Click
 
 
-        'compares password in both text boxes and makes sure they are the same
-        'notifes end user, reset password textbox
-        If (AddUsrPassTxtbox.Text <> AddUsrCnfirmPassTxt.Text) Then
+
+
+        'declares SQL Query 
+        Dim LookUpUsr As String = "select * from LoginCreds where UserName = " & "'" & AddUsrTxtbx.Text & "';"
+
+        'sets sql command that will be exicuted against DB 
+        SQLCommand.CommandText = LookUpUsr
+
+        ' this combines the sql query with the Connection and builds a OleDbDataReader.
+        Dim QueryResults As OleDbDataReader = SQLCommand.ExecuteReader()
+
+
+        If (QueryResults.HasRows) Then
+            MsgBox("Please Choose Another Username")
+            AddUsrTxtbx.Clear()
+            AddUsrTxtbx.Select()
+            'closes DB connection and data reader 
+            QueryResults.Close()
+            Exit Sub
+
+        End If
+
+
+
+        'closes DB connection and data reader 
+        QueryResults.Close()
+
+
+
+
+        If (String.IsNullOrWhiteSpace(AddUsrTxtbx.Text)) Then
+
+            MsgBox("Please Input a User Name")
+            AddUsrTxtbx.Clear()
+            AddUsrTxtbx.Select()
+            Exit Sub
+            'compares password in both text boxes and makes sure they are the same also enforces that both password fields are typed in
+            'notifes end user, reset password textbox
+        ElseIf (AddUsrPassTxtbox.Text <> AddUsrCnfirmPassTxt.Text Or (String.IsNullOrWhiteSpace(AddUsrPassTxtbox.Text) Or String.IsNullOrWhiteSpace(AddUsrCnfirmPassTxt.Text))) Then
             'alerts user
             MsgBox("Passwords do not match. Please retype your passwords")
 
@@ -22,6 +59,12 @@ Public Class AddUserFrm
             AddUsrPassTxtbox.Select()
             AddUsrPassTxtbox.Clear()
             AddUsrCnfirmPassTxt.Clear()
+            Exit Sub
+
+        ElseIf (AddUsrRoleCmbx.Text = "Select from...") Then
+            MsgBox("Please Select A Role")
+            AddUsrRoleCmbx.Select()
+            Exit Sub
 
 
         End If
@@ -51,7 +94,7 @@ Public Class AddUserFrm
             'notifies user 
             MsgBox("User was registered successfully")
             ' clears all textboxes after the entity is registered 
-            AddUsrPassTxtbox.Select()
+            AddUsrTxtbx.Select()
             AddUsrPassTxtbox.Clear()
             AddUsrCnfirmPassTxt.Clear()
             AddUsrRoleCmbx.Text = "Select from..."
@@ -62,7 +105,7 @@ Public Class AddUserFrm
             'notfies user and clears out the textboxs
 
             MsgBox("User registration failed!!")
-            AddUsrPassTxtbox.Select()
+            AddUsrTxtbx.Select()
             AddUsrPassTxtbox.Clear()
             AddUsrCnfirmPassTxt.Clear()
             AddUsrRoleCmbx.Text = "Select from..."
@@ -75,6 +118,8 @@ Public Class AddUserFrm
 
 
 
+        'closes DB connection and data reader 
+        QueryResults.Close()
 
 
 

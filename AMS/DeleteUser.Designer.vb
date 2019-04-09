@@ -60,7 +60,7 @@ Partial Class DelUsrFrm
         Me.DelUsrLookUpBTN.Location = New System.Drawing.Point(12, 214)
         Me.DelUsrLookUpBTN.Name = "DelUsrLookUpBTN"
         Me.DelUsrLookUpBTN.Size = New System.Drawing.Size(151, 102)
-        Me.DelUsrLookUpBTN.TabIndex = 3
+        Me.DelUsrLookUpBTN.TabIndex = 1
         Me.DelUsrLookUpBTN.Text = "Look Up"
         Me.DelUsrLookUpBTN.UseVisualStyleBackColor = True
         '
@@ -70,7 +70,7 @@ Partial Class DelUsrFrm
         Me.DelUsrDelBTN.Location = New System.Drawing.Point(188, 214)
         Me.DelUsrDelBTN.Name = "DelUsrDelBTN"
         Me.DelUsrDelBTN.Size = New System.Drawing.Size(121, 102)
-        Me.DelUsrDelBTN.TabIndex = 4
+        Me.DelUsrDelBTN.TabIndex = 2
         Me.DelUsrDelBTN.Text = "Delete"
         Me.DelUsrDelBTN.UseVisualStyleBackColor = True
         '
