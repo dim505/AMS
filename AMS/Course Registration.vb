@@ -8,7 +8,7 @@ Public Class Course_Registration
 
 
 
-        'loops through all the textboxes in the active tab control page
+        'loops through all the textboxes 
         For Each TextBox In Me.Controls.OfType(Of TextBox)
 
             'tests if the textbox is null or has a white space 
@@ -29,7 +29,7 @@ Public Class Course_Registration
 
 
         'declares SQL Query 
-        Dim LookUpCourID As String = "select * from [CourseID] where [CourseName] = " & "'" & CRCourseIDtxtBox.Text & "';"
+        Dim LookUpCourID As String = "select * from CourseInfo$ where [CourseID] = " & "'" & CRCourseIDtxtBox.Text & "';"
 
         'sets sql command that will be exicuted against DB 
         SQLCommand.CommandText = LookUpCourID
@@ -37,12 +37,14 @@ Public Class Course_Registration
         ' this combines the sql query with the Connection and builds a OleDbDataReader.
         Dim QueryResults As OleDbDataReader = SQLCommand.ExecuteReader()
 
+        'tests to see if query returned any results
+        If (Not QueryResults.HasRows) Then
 
-        If (QueryResults.HasRows) Then
-
-        Else
+            'notifies user to input a valid course ID
             MsgBox("Please Choose a Valid Course ID")
+            'clears course textbox
             CRCourseIDtxtBox.Clear()
+            'makes course textbox active 
             CRCourseIDtxtBox.Select()
             'closes DB connection and data reader 
             QueryResults.Close()
@@ -51,6 +53,8 @@ Public Class Course_Registration
 
         End If
 
+        'closes DB connection and data reader.  
+        QueryResults.Close()
 
 
         'declares SQL Query 
@@ -62,15 +66,16 @@ Public Class Course_Registration
         ' this combines the sql query with the Connection and builds a OleDbDataReader.
         QueryResults = SQLCommand.ExecuteReader()
 
-
-        If (QueryResults.HasRows) Then
-
-        Else
+        'tests to see if query returned any results
+        If (Not QueryResults.HasRows) Then
+            'notifies user to input a valid student ID
             MsgBox("Please Choose a Valid Student ID")
-            CRCourseIDtxtBox.Clear()
-            CRCourseIDtxtBox.Select()
+            CRStuIDTxtBox.Clear()
+            'ckears student textbox
+            CRStuIDTxtBox.Select()
             'closes DB connection and data reader 
             QueryResults.Close()
+            'exits subprocedure 
             Exit Sub
 
 

@@ -15,7 +15,7 @@ Public Class AddUserFrm
 
 
 
-        'declares SQL Query 
+        'declares SQL Query. This checks to see if any choosen name exists in the db
         Dim LookUpUsr As String = "select * from LoginCreds where UserName = " & "'" & AddUsrTxtbx.Text & "';"
 
         'sets sql command that will be exicuted against DB 
@@ -24,13 +24,17 @@ Public Class AddUserFrm
         ' this combines the sql query with the Connection and builds a OleDbDataReader.
         Dim QueryResults As OleDbDataReader = SQLCommand.ExecuteReader()
 
-
+        'checks if Query returns any results.
         If (QueryResults.HasRows) Then
+            'notifies user to choose anther username
             MsgBox("Please Choose Another Username")
+            'clears the add user name textbox
             AddUsrTxtbx.Clear()
+            'makes the add use name textbox active
             AddUsrTxtbx.Select()
             'closes DB connection and data reader 
             QueryResults.Close()
+            'exits current sub procedure 
             Exit Sub
 
         End If
@@ -42,12 +46,15 @@ Public Class AddUserFrm
 
 
 
-
+        'checks to see if add user text box is white space or null
         If (String.IsNullOrWhiteSpace(AddUsrTxtbx.Text)) Then
-
+            'notifies user to input a username
             MsgBox("Please Input a User Name")
+            'clears add user textbox text
             AddUsrTxtbx.Clear()
+            'makes that textbox active
             AddUsrTxtbx.Select()
+            'exits current sub procedure
             Exit Sub
             'compares password in both text boxes and makes sure they are the same also enforces that both password fields are typed in
             'notifes end user, reset password textbox
@@ -55,15 +62,18 @@ Public Class AddUserFrm
             'alerts user
             MsgBox("Passwords do not match. Please retype your passwords")
 
-            'clears out passwod textboxes
+            'clears out passwod textboxes and makes the first one active
             AddUsrPassTxtbox.Select()
             AddUsrPassTxtbox.Clear()
             AddUsrCnfirmPassTxt.Clear()
             Exit Sub
-
+            'checks to see if the user choose a role
         ElseIf (AddUsrRoleCmbx.Text = "Select from...") Then
+            'notifies user to select a role
             MsgBox("Please Select A Role")
+            'selects the combo box
             AddUsrRoleCmbx.Select()
+            'exits sub procedure 
             Exit Sub
 
 
