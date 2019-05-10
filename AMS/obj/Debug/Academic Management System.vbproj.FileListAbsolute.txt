@@ -35,3 +35,4 @@ C:\Users\bob\Documents\Visual Studio 2015\Projects\Academic Management System\AM
 C:\Users\bob\Documents\Visual Studio 2015\Projects\Academic Management System\AMS\obj\Debug\AMS.Update_Student_Teacher_Course_Info.resources
 C:\Users\bob\Documents\Visual Studio 2015\Projects\Academic Management System\AMS\obj\Debug\Academic Management System.vbproj.GenerateResource.Cache
 C:\Users\bob\Documents\Visual Studio 2015\Projects\OLD_PROJECTS\Academic Management System\AMS\obj\Debug\AMS.DelUsrFrm.resources
+C:\Users\bob\Documents\Visual Studio 2015\Projects\Academic Management System\AMS\obj\Debug\AMS.DelUsrFrm.resources
